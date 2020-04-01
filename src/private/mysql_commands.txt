@@ -1,0 +1,339 @@
+
+SHOW DATABASES;
+
+CREATE DATABASE photo_collection;
+USE photo_collection;
+
+
+CREATE TABLE countries
+(
+  country_id INT unsigned NOT NULL AUTO_INCREMENT,
+  name VARCHAR(90) NOT NULL,
+  abbreviation VARCHAR(10) NOT NULL,
+  PRIMARY KEY (country_id)
+);
+
+INSERT INTO countries (country_id, name, abbreviation) VALUES
+('1','United States', 'US');
+
+SELECT * FROM countries;
+
+
+CREATE TABLE states
+(
+  state_id INT unsigned NOT NULL AUTO_INCREMENT,
+  name VARCHAR(60) NOT NULL,
+  abbreviation VARCHAR(10),
+  country_id INT unsigned NOT NULL,
+  FOREIGN KEY (country_id) REFERENCES countries (country_id) ON DELETE RESTRICT ON UPDATE CASCADE,
+  PRIMARY KEY (state_id)
+);
+
+INSERT INTO states (state_id, name, abbreviation, country_id) VALUES
+('1', 'Texas', 'TX', '1'),
+('2', 'Wisconsin', 'WI', '1'),
+('3', 'Colorado', 'CO', '1'),
+('4', 'Washington, DC', 'DC', '1'),
+('5', 'California', 'CA', '1'),
+('6', 'Utah', 'UT', '1'),
+('7', 'Arizona', 'AZ', '1'),
+('8', 'Nevada', 'NV', '1'),
+('9', 'New Mexico', 'NM', '1');
+
+SELECT * FROM states;
+
+
+
+CREATE TABLE places
+(
+  place_id INT unsigned NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  state_id INT unsigned NOT NULL,
+  FOREIGN KEY (state_id) REFERENCES states (state_id) ON DELETE RESTRICT ON UPDATE CASCADE,
+  PRIMARY KEY (place_id)
+);
+
+INSERT INTO places (place_id, name, state_id) VALUES
+('1', 'Austin', '1'),
+('2', 'Big Bend National Park', '1'),
+('3', 'Washington Union Station', '4'),
+('4', 'United States Capitol', '4'),
+('5', 'Gallery Place-Chinatown station', '4'),
+('6', 'Tidal Basin', '4'),
+('7', 'Death Valley', '5'),
+('8', 'Grand Canyon National Park', '7'),
+('9', 'Great Sand Dunes National Park', '3'),
+('10', 'Gulf of Mexico', '1'),
+('11', 'Lyndon B Johnson National Historical Park', '1'),
+('12', 'Manor', '1'),
+('13', 'Monument Valley', '7'),
+('14', 'Hoover Dam', '8'),
+('15', 'Beloit', '2'),
+('16', 'Marfa', '1'),
+('17', 'New Braunfels', '1'),
+('18', 'Padre Island National Seashore', '1'),
+('19', 'Page', '7'),
+('20', 'Pedernales Falls State Park', '1'),
+('21', 'Pflugerville', '1'),
+('22', 'Rocky Mountain National Park', '3'),
+('23', 'San Marcos', '1'),
+('24', 'The Wave', '7'),
+('25', 'White Sands National Monument', '9'),
+('26', 'Zion National Park', '6'),
+('27', 'Dripping Springs', '1');
+
+SELECT * FROM places;
+
+
+CREATE TABLE photos
+(
+  id  INT unsigned NOT NULL AUTO_INCREMENT, # Unique ID for each photo
+  filename  VARCHAR(140) NOT NULL, # File names of photos
+  date_captured  DATE NOT NULL, # Date captured of photos
+  date_uploaded  DATE NOT NULL, # Date uploaded of photos
+  title  VARCHAR(140) NOT NULL, # Titles of photos
+  place_id  INT unsigned NOT NULL, # Places where photos were captured
+  caption  VARCHAR(1120), # Photo captions
+  PRIMARY KEY (id), # Make id the primary key
+  FOREIGN KEY (place_id) REFERENCES places (place_id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+
+# IMPORT FILE
+LOAD DATA LOCAL INFILE '~/desktop/photo_catalog_web/photos.txt' INTO TABLE photos LINES TERMINATED BY '\r\n';
+
+SELECT * FROM photos;
+UPDATE photos SET title = 'The sun rising out of the mountain of despair, a stone of hope' where id = 34;
+SELECT * FROM photos;
+
+
+CREATE TABLE people
+(
+  person_id  INT unsigned NOT NULL AUTO_INCREMENT, # Unique ID for each person
+  name  VARCHAR(70) NOT NULL, # Names of people
+  PRIMARY KEY  (person_id) # Make the person_id the primary key
+);
+
+INSERT INTO people(person_id, name) VALUES
+('1', 'Aaron Tang'),
+('2', 'Elizabeth Contreras'),
+('3', 'Ludmila Santana');
+
+SELECT * FROM people;
+
+
+CREATE TABLE people_in_photos
+(
+  person_id  INT unsigned NOT NULL, # Unique ID of each person
+  id  INT unsigned NOT NULL, # Unique ID of each photo
+  PRIMARY KEY (person_id, id),
+  FOREIGN KEY (id) REFERENCES photos (id) ON DELETE RESTRICT ON UPDATE CASCADE,
+  FOREIGN KEY (person_id) REFERENCES people (person_id) ON DELETE RESTRICT ON UPDATE CASCADE
+);
+
+INSERT INTO people_in_photos(person_id, id) VALUES
+('1', '57'),
+('1', '91'),
+('2', '20'),
+('3', '18');
+
+SELECT * FROM people_in_photos;
+
+
+CREATE TABLE categories
+(
+  category_id INT unsigned NOT NULL AUTO_INCREMENT,
+  name VARCHAR(24) NOT NULL,
+  PRIMARY KEY (category_id)
+);
+
+INSERT INTO categories (category_id, name) VALUES
+('1', 'bnw'),
+('2', 'landscape'),
+('3', 'long_exposure'),
+('4', 'night'),
+('5', 'portrait'),
+('6', 'street'),
+('7', 'travel'),
+('8', 'urban'),
+('9', 'wildlife');
+
+SELECT * FROM categories;
+
+
+
+CREATE TABLE photos_in_categories
+(
+  id  INT unsigned NOT NULL,
+  category_id  INT unsigned NOT NULL,
+  FOREIGN KEY (id) REFERENCES photos (id) ON DELETE RESTRICT ON UPDATE CASCADE,
+  FOREIGN KEY (category_id) REFERENCES categories (category_id) ON DELETE RESTRICT ON UPDATE CASCADE,
+  PRIMARY KEY (id, category_id)
+);
+
+
+# IMPORT FILE
+LOAD DATA LOCAL INFILE '~/desktop/photo_catalog_web/photos_in_categories.txt' INTO TABLE photos_in_categories LINES TERMINATED BY '\r\n';
+
+SELECT * FROM photos_in_categories;
+
+
+
+
+
+
+# AMMENDMENTS
+
+USE photo_collection;
+
+UPDATE photos SET title = 'Dragonfly' WHERE id = 60;
+UPDATE photos SET title = 'Are you registered to vote?' WHERE id = 20;
+UPDATE photos SET title = 'I can turn my head 270 degrees' WHERE id = 76;
+UPDATE photos SET title = 'Such big eyes' WHERE id = 22;
+UPDATE photos SET title = 'Practically flying' WHERE id = 79;
+UPDATE photos SET title = 'The Milky Way on US Route 290' WHERE id = 8;
+UPDATE photos SET title = 'Surfing' WHERE id = 28;
+
+INSERT INTO photos_in_categories(id, category_id) VALUES('54','3');
+INSERT INTO photos_in_categories(id, category_id) VALUES('28','3');
+
+
+UPDATE photos SET title = 'Studying on the train' WHERE id = 39;
+UPDATE photos SET title = 'Sunrise at the Stone of Hope - MLK Memorial' WHERE id = 34;
+UPDATE photos SET title = 'Kayaks - Padre Island National Seashore' WHERE id = 4;
+UPDATE photos SET title = 'The road to the wild west - Big Bend National Park' WHERE id = 61;
+UPDATE photos SET title = 'Looking down from the Hoover Dam' WHERE id = 59;
+UPDATE photos SET title = 'Santa Elena Canyon - Big Bend National Park' WHERE id = 11;
+UPDATE photos SET title = 'Meandering streams in Rocky Mountain National Park' WHERE id = 68;
+UPDATE photos SET title = 'Sand dunes at White Sands National Monument' WHERE id = 64;
+
+UPDATE photos SET title = "Serenity at Bear Lake - Rocky Mountain National Park" WHERE id = 13;
+UPDATE photos SET title = "Bench by the Bear Lake - Rocky Mountain National Park" WHERE id = 14;
+UPDATE photos SET title = "Footprints on a sand dune - White Sands National Monument" WHERE id = 63;
+UPDATE photos SET title = "Catching a football on sand dunes - White Sands National Monument" WHERE id = 62;
+UPDATE photos SET title = 'Morning clouds 1 - Padre Island National Seashore' WHERE id = 3;
+UPDATE photos SET title = 'The Milky Way over the ocean - Padre Island National Seashore' WHERE id = 5;
+UPDATE photos SET title = 'Sunrise over the ocean - Padre Island National Seashore' WHERE id = 6;
+UPDATE photos SET title = 'Portuguese man-of-war - Padre Island National Seashore' WHERE id = 7;
+UPDATE photos SET title = 'Seagull landing - Padre Island National Seashore' WHERE id = 10;
+UPDATE photos SET title = 'Pelicans 1 - Padre Island National Seashore' WHERE id = 72;
+UPDATE photos SET title = 'Pelicans 2 - Padre Island National Seashore' WHERE id = 73;
+UPDATE photos SET title = 'Flying over sunset - Padre Island National Seashore' WHERE id = 74;
+UPDATE photos SET title = 'Morning clouds 2 - Padre Island National Seashore' WHERE id = 75;
+UPDATE photos SET title = "Mountains by Badwater Basin - Death Valley" WHERE id = 42;
+UPDATE photos SET title = "Salt flats in Badwater Basin - Death Valley" WHERE id = 43;
+UPDATE photos SET title = "Devil’s Golf Course - Death Valley" WHERE id = 44;
+UPDATE photos SET title = "Sunset at Great Sand Dunes National Park" WHERE id = 66;
+UPDATE photos SET title = "Mules in Grand Canyon National Park" WHERE id = 58;
+UPDATE photos SET title = "Moonrise at Zion National Park" WHERE id = 46;
+
+
+INSERT INTO photos(id ,filename, date_captured, date_uploaded, title, place_id, caption) VALUES
+('92','SD_N18_5890_2_Web.jpg','2019-01-20','2020-03-28','The Wave Arizona 4','24',NULL),
+('93','SD_N18_5243_2_Web.jpg','2019-01-18','2020-03-28','Badlands - Death Valley','7',NULL),
+('94','SD_N18_2755_2_Web.jpg','2018-11-10','2020-03-28','Fall colors of Austin','1',NULL),
+('95','SD_N18_1365_Web.jpg','2018-06-07','2020-03-28','Koi','1',NULL),
+('96','SD_IMG_1940_Web.jpg','2018-09-23','2020-03-28','Looking up - Sculpture by Tom Friedman','1',NULL);
+
+INSERT INTO photos_in_categories(id, category_id) VALUES
+('92','1'),
+('92','2'),
+('92','7'),
+('93','2'),
+('93','7'),
+('94','8'),
+('95','8'),
+('96','1');
+
+
+
+INSERT INTO photos_in_categories(id, category_id) VALUES('82','5');
+
+
+INSERT INTO places(place_id, name, state_id) VALUES ('28','Enchanted Rock State Natural Area','1');
+INSERT INTO people(person_id, name) VALUES ('4','Wanying Wang');
+INSERT INTO photos(id ,filename, date_captured, date_uploaded, title, place_id, caption) VALUES('97','SD__A7T2401_Edit_Web.jpg','2019-08-25','2020-03-28','Sk8er girl','28',NULL);
+INSERT INTO people_in_photos(person_id, id) VALUES ('4','97');
+INSERT INTO photos_in_categories(id, category_id) VALUES('97','5');
+
+
+
+
+
+INSERT INTO photos(id ,filename, date_captured, date_uploaded, title, place_id, caption) VALUES ('98','SD_N18_7362_2_Web.jpg','2019-06-22','2020-03-28','My shadow on sands - White Sands National Monument','25',NULL);
+
+INSERT INTO photos_in_categories(id, category_id) VALUES('98','7');
+
+
+INSERT INTO photos(id ,filename, date_captured, date_uploaded, title, place_id, caption) VALUES ('99','SD_N18_7452_2_Web.jpg','2019-06-23','2020-03-28','Great Sand Dunes National Park 2','9',NULL);
+
+INSERT INTO photos_in_categories(id, category_id) VALUES('99','2');
+INSERT INTO photos_in_categories(id, category_id) VALUES('99','7');
+INSERT INTO photos_in_categories(id, category_id) VALUES('65','9');
+
+UPDATE photos SET filename = 'SD_N18_7469_2_Web.jpg' WHERE id = 65;
+UPDATE photos SET title = 'Great Sand Dunes National Park 1' WHERE id = 65;
+
+
+UPDATE photos SET filename = 'SD_N18_7361_2_Edit_Web.jpg' WHERE id = 64;
+
+UPDATE photos SET filename = 'SD_N18_5747_2_Web.jpg' WHERE id = 47;
+UPDATE photos SET filename = 'SD_N18_5887_3_IG.jpg' WHERE id = 49;
+
+
+
+UPDATE photos SET title = 'Aaron at the Wave Arizona 1' WHERE id = 91;
+INSERT INTO photos(id ,filename, date_captured, date_uploaded, title, place_id, caption) VALUES ('100','SD_N18_5767_2_Web.jpg','2019-01-20','2020-03-29','Aaron at the Wave Arizona 2','24',NULL);
+INSERT INTO photos_in_categories(id, category_id) VALUES('100','2');
+INSERT INTO photos_in_categories(id, category_id) VALUES('100','7');
+INSERT INTO people_in_photos(person_id, id) VALUES('1','100');
+
+
+
+INSERT INTO people(person_id, name) VALUES
+('5','Philomena Yuqian Gan'),
+('6','Arnold Mathijssen');
+
+INSERT INTO photos(id ,filename, date_captured, date_uploaded, title, place_id, caption) VALUES
+('101','SD__A7T2099_Edit_Web.jpg','2019-08-24','2020-03-30','Philomena 1','28',NULL),
+('102','SD__A7T2266_Edit_Web.jpg','2019-08-24','2020-03-30','Philomena and Arnold','28',NULL);
+
+INSERT INTO people_in_photos(person_id,id) VALUES
+('5','101'),
+('5','102'),
+('6','102');
+
+INSERT INTO photos_in_categories(id, category_id) VALUES
+('101','5'),
+('102','5'),
+('102','7');
+
+
+
+UPDATE photos SET title = 'Owl on my balcony 1' where id = 76;
+UPDATE photos SET caption = 'Owls can turn their head 270 degrees.' WHERE id = 76;
+
+INSERT INTO photos(id ,filename, date_captured, date_uploaded, title, place_id, caption) VALUES
+('103','SD__A6T0551_Edit_Web.jpg','2019-10-12','2020-03-30','Owl on my balcony 2','1',NULL);
+
+INSERT INTO photos_in_categories(id, category_id) VALUES
+('103','9');
+UPDATE photos SET caption = 'One morning this angel came to my balcony.' WHERE id = 103;
+
+
+
+INSERT INTO photos (id ,filename, date_captured, date_uploaded, title, place_id, caption) VALUES
+('104','SD_A7T00736_Edit_Web.jpg','2019-08-07','2020-03-31','Star trails above Enchanted Rock','28',NULL);
+
+INSERT INTO photos_in_categories(id, category_id) VALUES
+('104','2'),
+('104','3'),
+('104','4'),
+('104','7');
+
+
+
+
+UPDATE photos SET title = "Devil’s Golf Course - Death Valley" WHERE id = 44;
+
+

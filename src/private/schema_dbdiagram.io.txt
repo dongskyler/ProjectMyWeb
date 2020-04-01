@@ -1,0 +1,53 @@
+// Database schema
+// https://dbdiagram.io/
+// Use GitHub logim
+
+
+Table countries {
+  country_id int [pk, not null, increment]
+  name varchar [not null]
+  abbreviation varchar
+}
+
+Table states {
+  state_id int [pk, not null, increment]
+  name varcahr [not null]
+  abbreviation varchar
+  country_id int [not null, ref: > countries.country_id]
+}
+
+Table places {
+  place_id int [pk, not null, increment]
+  name varchar [not null]
+  state_id int [not null, ref: > states.state_id]
+}
+
+Table photos {
+  id int [pk, not null, increment]
+  filename varchar [not null]
+  date_captured date [not null]
+  date_uploaded date [not null]
+  title varchar [not null]
+  place_id int [not null, ref: < places.place_id]
+  caption varchar
+}
+
+Table photos_in_categories {
+  id int [pk, not null, ref: < photos.id]
+  category_id int [pk, not null, ref: > categories.category_id]
+}
+
+Table categories {
+  category_id int [pk, not null]
+  name varchar [not null]
+}
+
+Table people_in_photos {
+  person_id int [pk, not null, ref: > people.person_id]
+  id int [pk, not null, ref: > photos.id]
+}
+
+Table people {
+  person_id int [pk, not null]
+  name varchar [not null]
+}
