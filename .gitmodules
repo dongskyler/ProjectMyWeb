@@ -1,0 +1,3 @@
+[submodule "public_repo"]
+	path = public_repo
+	url = https://github.com/dongskyler/personal_website.git
