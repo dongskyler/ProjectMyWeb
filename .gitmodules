@@ -1,3 +1,8 @@
 [submodule "public_repo"]
 	path = public_repo
 	url = https://github.com/dongskyler/personal_website.git
+
+[submodule "build/release"]
+	path = build/release
+	url = https://gitlab.com/dongskyler/projectmywebrelease.git
+
