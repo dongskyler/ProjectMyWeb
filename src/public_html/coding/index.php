@@ -23,6 +23,17 @@
     <div class="row">
       <div class='col-12 mx-auto col-md-10'>
         <div class="post-preview">
+          <a href="scrape-google-trends.php">
+            <h2 class="post-title">
+              How to Scrape Google Trends with Object-Oriented Python
+            </h2>
+            <h3 class="post-subtitle">
+              With exception handling feature
+            </h3>
+          </a>
+          <hr/>
+        </div><!--post-preview-->
+        <div class="post-preview">
           <a href="this-website.php">
             <h2 class="post-title">
             How I'm Building This Website

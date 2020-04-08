@@ -9,7 +9,7 @@
       </div>
       <div class="d-flex col-12 justify-content-left col-md-4 justify-content-md-end">
         <ul class="social-icon">
-          <li><a href="mailto:dongskyler@gmail.com"><img class="fa-icon" src='<?php echo PATH;?>/images/icon/<?php
+          <li><a href="mailto:skyler@skylerdong.com"><img class="fa-icon" src='<?php echo PATH;?>/images/icon/<?php
             if (!defined('FOOTER_COLOR') || FOOTER_COLOR=='dark'){
               echo 'Envelope_icon_white.png';
             }

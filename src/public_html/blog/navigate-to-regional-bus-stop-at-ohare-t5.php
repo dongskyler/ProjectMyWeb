@@ -1,9 +1,10 @@
 <?php
+  include_once '../common/methods.php';
   define("NAVBAR_COLOR",'light');
   define("HEADER_TYPE",'blogpost');
   define("BG_IMG_MD",'blog/IMG_20150114_181603.jpg');
   define("BG_IMG_LG",'blog/IMG_20150114_181603.jpg');
-  define("SITE_TITLE",'<h1>How to Navigate to Regional Bus Stops at Terminal 5 of O&#39;Hare Airport of Chicago</h1>');
+  define("SITE_TITLE",'How to Navigate to Regional Bus Stops at Terminal 5 of O&#39;Hare Airport of Chicago');
   define("SITE_SUBTITLE",'Step-by-step instruction');
   define("SITE_SUBSUBTITLE",'Updated on March 29, 2020<br/>Posted on Jan. 6, 2016 (Retroactively)');
 ?>
@@ -20,11 +21,6 @@
 <?php
   include_once '../common/navbar.php';
   include_once '../common/header.php';
-  function loadImage($image){
-    list($width,$height)=getimagesize('../images/blog/'.$image);
-    $aspect=round($height/$width*10000)/100;
-    echo '<div class="responsive-container" style="padding-bottom:',$aspect,'%;">','<img class="lozad" data-src="../images/blog/',$image,'" alt="Blog - SkylerDong.com"></div>',"\r\n";
-  }
 ?>
 <!-- Blog Content -->
 <div class="container maincontent">
@@ -37,17 +33,17 @@
       <hr/>
       <p>The floor plan of Terminal 5 is fairly straightforward. After the baggage claim, you walk directly into the lobby. When you walk out of any exit and walk across the road, you'll arrive at an island. Regional bus stops are along the island.</p>
       <p>The signage for different buses are not clear. Originally, I wrote this blog for <a href="https://web.coachusa.com/vangalder/" target="_blank">Van Galder</a> bus. I apologize that I don't have step-by-step instructions for other buses, but all of them are somewhere along the island. For example, buses to Indianapolis are closer to Exit 5B and 5C. <a href="https://web.coachusa.com/vangalder/" target="_blank">Van Galder</a> bus is closer to Exit 5E. If you have information and photos on different buses, I appreciate it if you could <a href="../contact/">contact me</a> to make this blog better for other travelers.</p>
-      <div><?php loadImage('IMG_20150114_175520.jpg');?></div>
+      <div><?php loadImage_blog('IMG_20150114_175520.jpg');?></div>
       <p>If you will take the <a href="https://web.coachusa.com/vangalder/" target="_blank">Van Galder</a> bus, look for Exit 5E near the McDonald&apos;s. Exit 5E is annotated by the yellow arrow in the photo.</p>
-      <div><?php loadImage('IMG_20150114_175251.jpg');?></div>
+      <div><?php loadImage_blog('IMG_20150114_175251.jpg');?></div>
       <p>Walk out of Exit 5E and walk across the road to the island. Turn right and walk about 100 feet (30 meters) on the island."</p>
       <div class="row photo-block">
         <div class="col-md-6 mx-auto">
-            <?php loadImage('VanGalderBusStopAtT5Ohare_1.jpg');?>
+            <?php loadImage_blog('VanGalderBusStopAtT5Ohare_1.jpg');?>
             <div class="text-center"><p>Photo credit of Erica Elliott</p></div>
         </div>
         <div class="col-md-6 mx-auto">
-            <?php loadImage('VanGalderBusStopAtT5Ohare_2.jpg');?>
+            <?php loadImage_blog('VanGalderBusStopAtT5Ohare_2.jpg');?>
             <div class="text-center"><p>Photo credit of Erica Elliott</p></div>
         </div>
       </div><!--ROW-->

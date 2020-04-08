@@ -1,0 +1,91 @@
+1	SD_A6T00011_HDR_Edit_Web.jpg	2019-08-06	2020-03-24	Half moon	1	NULL
+2	SD_A7T00077_Web.jpg	2019-07-04	2020-03-24	Fireworks over Lake Austin	1	4th of July celebration of 2019
+3	SD_A7T00224_Edit_Web.jpg	2019-07-06	2020-03-24	Flying over clouds	18	NULL
+4	SD_A7T00236_IG.jpg	2019-07-06	2020-03-24	Kayaks	18	NULL
+5	SD_A7T00248_Edit_Web.jpg	2019-07-06	2020-03-24	The Milky Way over the ocean	18	NULL
+6	SD_A7T00310_Web.jpg	2019-07-07	2020-03-24	Sunrise over the ocean	18	NULL
+7	SD_A7T00335_HDR_IG.jpg	2019-07-07	2020-03-24	Portuguese man-of-war	18	NULL
+8	SD_A7T00550_Edit_Web.jpg	2019-08-01	2020-03-24	The Milky Way by the road	27	NULL
+9	SD_D7K_0140_Web.jpg	2013-08-07	2020-03-24	Wave function of a Canadian goose	15	NULL
+10	SD_D7K_7935_IG.jpg	2019-07-06	2020-03-24	Seagull	18	NULL
+11	SD_IMG_0749_Web.jpg	2019-06-21	2020-03-24	Santa Elena Canyon	2	NULL
+12	SD_IMG_0803_Web.jpg	2019-06-21	2020-03-24	Prada Marfa	16	NULL
+13	SD_IMG_1033_Web.jpg	2019-06-24	2020-03-24	Bear Lake	22	NULL
+14	SD_IMG_1039_Enhanced_Web.jpg	2019-06-24	2020-03-24	Bench by the Bear Lake	22	NULL
+15	SD_IMG_2270_Web.jpg	2018-12-14	2020-03-24	A man and pigeons	3	NULL
+16	SD_IMG_3828_Web.jpg	2017-03-06	2020-03-24	Playing cornhole on a helipad	10	NULL
+17	SD_N18_1560_Web.jpg	2018-09-28	2020-03-24	Cobweb	1	NULL
+18	SD_N18_1709_Edit_Web.jpg	2018-10-02	2020-03-24	Mila	1	NULL
+19	SD_N18_1889_Web.jpg	2018-10-06	2020-03-24	Lip print	1	NULL
+20	SD_N18_1921_Edit_Web.jpg	2018-10-09	2020-03-24	Have you registered to vote	1	NULL
+21	SD_N18_2034_Web.jpg	2018-10-17	2020-03-24	Doves outside my window	1	NULL
+22	SD_N18_2043_Web.jpg	2018-10-18	2020-03-24	Ms. Cat	1	NULL
+23	SD_N18_2066_Web.jpg	2018-10-23	2020-03-24	Birds on wires 2	1	NULL
+24	SD_N18_2113_Web.jpg	2018-10-23	2020-03-24	Bird on wires 1	1	NULL
+25	SD_N18_2650_2_Web.jpg	2018-11-08	2020-03-24	Spider	17	NULL
+26	SD_N18_2791_Web.jpg	2018-11-10	2020-03-24	It was a good nap	1	NULL
+27	SD_N18_2866_Web.jpg	2018-11-11	2020-03-24	Oh deer	1	NULL
+28	SD_N18_3087_2_Web.jpg	2018-11-17	2020-03-24	Surfing	23	NULL
+29	SD_N18_3292_Web.jpg	2018-11-23	2020-03-24	Sunset at Lake Pflugerville 1	21	NULL
+30	SD_N18_3348_Web.jpg	2018-11-23	2020-03-24	Sunset at Lake Pflugerville 2	21	NULL
+31	SD_N18_3360_Web.jpg	2018-11-23	2020-03-24	New Sweden Evangelical Lutheran Church	12	NULL
+32	SD_N18_3716_Web.jpg	2018-12-11	2020-03-24	Washington Monument at sunrise	6	NULL
+33	SD_N18_3815_Web.jpg	2018-12-11	2020-03-24	Washington Monument and its reflection in the Tidal Basin	6	NULL
+34	SD_N18_3878_2_Web.jpg	2018-12-11	2020-03-24	"The sun rising out of the mountain of despair, a stone of hope"	6	NULL
+35	SD_N18_4188_Web.jpg	2018-12-13	2020-03-24	Looking at the United States Capitol	3	NULL
+36	SD_N18_4289_2_Web.jpg	2018-12-13	2020-03-24	United States Capitol	4	NULL
+37	SD_N18_4637_Web.jpg	2018-12-14	2020-03-24	Subway station	5	NULL
+38	SD_N18_4732_Web.jpg	2018-12-15	2020-03-24	United States Capitol dome	4	NULL
+39	SD_N18_4772_2_Web.jpg	2018-12-15	2020-03-24	On the train	3	NULL
+40	SD_N18_4934_2_Web.jpg	2018-12-22	2020-03-24	Super model out of work	1	NULL
+41	SD_N18_5110_2_Web.jpg	2018-12-28	2020-03-24	Pennybacker Bridge	1	NULL
+42	SD_N18_5374_IG.jpg	2019-01-18	2020-03-24	Mountains by Badwater Basin	7	NULL
+43	SD_N18_5393_IG.jpg	2019-01-18	2020-03-24	Salt flats in Badwater Basin	7	NULL
+44	SD_N18_5431_2_Web.jpg	2019-01-18	2020-03-24	Devil’s Golf Course	7	NULL
+45	SD_N18_5518_IG.jpg	2019-01-19	2020-03-24	Hiking Angels Landing Trail in winter	26	NULL
+46	SD_N18_5588_2_Enhanced_Web.jpg	2019-01-19	2020-03-24	Moonrise at Zion	26	NULL
+47	SD_N18_5761_2_Web.jpg	2019-01-20	2020-03-24	The Wave Arizona 3	24	NULL
+48	SD_N18_5783_2_Web.jpg	2019-01-20	2020-03-24	The Wave Arizona 2	24	NULL
+49	SD_N18_5887_3_IG.jpg	2019-01-20	2020-03-24	The Wave Arizona 1	24	NULL
+50	SD_N18_6043_Web.jpg	2019-01-20	2020-03-24	Monument Valley 2	13	NULL
+51	SD_N18_6168_IG.jpg	2019-01-20	2020-03-24	Monument Valley 1	13	NULL
+52	SD_N18_6232_IG.jpg	2019-01-21	2020-03-24	Horseshoe Bend	19	NULL
+53	SD_N18_6291_2_Pano_Web.jpg	2019-01-21	2020-03-24	Grand Canyon 1	8	NULL
+54	SD_N18_6344_2_Enhanced_Web.jpg	2019-01-21	2020-03-24	Snowing in Grand Canyon	8	NULL
+55	SD_N18_6390_2_Edit_2_Web.jpg	2019-01-22	2020-03-24	Sunrise in Grand Canyon	8	NULL
+56	SD_N18_6425_2_Web.jpg	2019-01-22	2020-03-24	Grand Canyon 2	8	NULL
+57	SD_N18_6436_Edit_IG.jpg	2019-01-22	2020-03-24	Aaron photographing the Grand Canyon	8	NULL
+58	SD_N18_6584_2_Web.jpg	2019-01-22	2020-03-24	Mules in the Grand Canyon village	8	NULL
+59	SD_N18_6645_Pano_IG.jpg	2019-03-26	2020-03-24	Hoover Dam	14	NULL
+60	SD_N18_6914_Web.jpg	2019-06-08	2020-03-24	Butterfly	1	NULL
+61	SD_N18_7039_2_Web.jpg	2019-06-21	2020-03-24	The road to the wild west	2	NULL
+62	SD_N18_7334_2_Web.jpg	2019-06-22	2020-03-24	Catching a football on sand dunes	25	NULL
+63	SD_N18_7358_2_Web.jpg	2019-06-22	2020-03-24	Footprints on a sand dune	25	NULL
+64	SD_N18_7361_IG.jpg	2019-06-22	2020-03-24	Sand dunes	25	NULL
+65	SD_N18_7469_IG.jpg	2019-06-23	2020-03-24	Great Sand Dunes National Park	9	NULL
+66	SD_N18_7515_Web.jpg	2019-06-23	2020-03-24	Sunset over dunes	9	NULL
+67	SD_N18_7635_Web.jpg	2019-06-24	2020-03-24	Deer in Rocky Mountain National Park	22	NULL
+68	SD_N18_7687_Edit_Web.jpg	2019-06-24	2020-03-24	Meandering stream	22	NULL
+69	SD__A6T0063_Enhanced_Edit_Web.jpg	2019-08-17	2020-03-24	Almost full moon	1	NULL
+70	SD__A6T0091_Web.jpg	2019-08-18	2020-03-24	Butterfly	1	NULL
+71	SD__A6T0164_IG.jpg	2019-08-25	2020-03-24	I’m a sheep	11	NULL
+72	SD__A6T0234_Web.jpg	2019-09-14	2020-03-24	Pelicans 1	18	NULL
+73	SD__A6T0262_Web.jpg	2019-09-14	2020-03-24	Pelicans 2	18	NULL
+74	SD__A6T0275_Edit_Web.jpg	2019-09-14	2020-03-24	Flying over sunset	18	NULL
+75	SD__A6T0512_Edit_Web.jpg	2019-09-15	2020-03-24	Moon in the morning	18	NULL
+76	SD__A6T0549_Edit_2_Web.jpg	2019-10-12	2020-03-24	Owl on my balcony	1	NULL
+77	SD__A7T0801_Web.jpg	2019-08-17	2020-03-24	Shadow of a photographer	20	NULL
+78	SD__A7T0813_Edit_IG.jpg	2019-08-17	2020-03-24	Bus stop	1	NULL
+79	SD__A7T0901_Edit_Web.jpg	2019-08-20	2020-03-24	BMX	1	NULL
+80	SD__A7T2443_Web.jpg	2019-08-25	2020-03-24	LBJ’s Air Force One	11	NULL
+81	SD__A7T2543_Web.jpg	2019-08-27	2020-03-24	A dog and its owner	1	NULL
+82	SD__A7T2553_Edit_2_Web.jpg	2019-08-29	2020-03-24	The most beautiful smile	1	NULL
+83	SD__A7T2560_Edit_2_Web.jpg	2019-08-29	2020-03-24	Vintage Chevy	1	NULL
+84	SD__A7T2738_Edit_Web.jpg	2019-08-31	2020-03-24	Chicken on a man	1	NULL
+85	SD__A7T2774_Edit_Web.jpg	2019-08-31	2020-03-24	Pit master	1	NULL
+86	SD__A7T2795_Edit_Web.jpg	2019-09-01	2020-03-24	Warning: zombies ahead	1	NULL
+87	SD__A7T2886_Web.jpg	2019-09-12	2020-03-24	By the river	1	NULL
+88	SD__A7T2919_Web.jpg	2019-09-12	2020-03-24	Guitarist	1	NULL
+89	SD__A7T2980_IG.jpg	2019-09-12	2020-03-24	Street artist 1	1	NULL
+90	SD__A7T3149_Web.jpg	2019-11-17	2020-03-24	Street artist 2	1	NULL
+91	SD_N18_5933_2_Web.jpg	2019-01-20	2020-03-27	Aaron at the Wave Arizona	24	NULL

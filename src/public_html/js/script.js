@@ -84,10 +84,10 @@ $(function() {
     // console.log(photo_url);
 
     if (typeof $meta_og_image_0 == 'undefined') {
-        console.log('Log: $meta_og_image_0 undefined!');
+        // console.log('Log: $meta_og_image_0 undefined!');
         $meta_og_image_0 = $('#meta_og_image').attr('content');
-        console.log('Define $meta_og_image_0:');
-        console.log($meta_og_image_0);
+        //console.log('Define $meta_og_image_0:');
+        // console.log($meta_og_image_0);
     }
 
     // Activate filter on loading if URL parameters present

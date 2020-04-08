@@ -606,7 +606,7 @@ $(function() {
 });
 
 observer.observe()</code></pre>
-        <p>Also, you need00 p to use <code class="language-html">data-src=""</code> instead of the regular <code class="language-html">src=""</code> in <code class="language-html">&lt;img&gt;</code> elements.</p>
+        <p>Also, you need to use <code class="language-html">data-src=""</code> instead of the regular <code class="language-html">src=""</code> in <code class="language-html">&lt;img&gt;</code> elements.</p>
         <p>The following is my own invention &mdash; well, invention is a big word. I have built upon it and made it a little smarter. I use a 3-stage lazy loading with different margin ranges fired at different times after the webpage is loaded with <code class="language-javascript">setTimeout</code> function. The idea is to focus on loading the images visible inside the viewport only, immediately after loading the webpage. After a few seconds, broaden the margin range and to pre-load more images as users scroll down to enhance user experience.</p>
         <pre><code class="language-javascript">const observer_1 = lozad('.lozad', {
     rootMargin: '0px', // syntax similar to that of CSS Margin
