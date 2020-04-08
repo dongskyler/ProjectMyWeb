@@ -16,7 +16,8 @@
       <div><h1>Contact me</h1></div>
       <div class="mb-3"><p>Thank you for your interest in contacting me.</p></div>
       <div>
-        <p>Email: <a href="mailto:dongskyler@gmail.com">dongskyler@gmail.com</a></p>
+        <p>Email: <a href="mailto:skyler@skylerdong.com">skyler@skylerdong.com</a></p>
+        <p>Photography inquiries: <a href="mailto:photo@skylerdong.com">photo@skylerdong.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/dongt/" target="_blank">Tiannong Skyler Dong</a></p>
         <p>Instagram: <a href="https://www.instagram.com/skyler.dong.art/" target="_blank">@skyler.dong.art</a></p>
       </div>

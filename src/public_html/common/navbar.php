@@ -26,6 +26,9 @@
               <a class="nav-link" href= "<?php echo PATH; ?>/coding">Coding</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href= "<?php echo PATH; ?>/app">App</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href= "<?php echo PATH; ?>/photography">Photography</a>
             </li>
             <li class="nav-item">

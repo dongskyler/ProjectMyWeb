@@ -13,7 +13,7 @@
 ?>
 <head>
   <?php include_once '../common/head.php'; ?>
-  <title><h1>Helpful Resources | Coding - Skyler Dong</h1></title>
+  <title>Helpful Resources | Coding - Skyler Dong</title>
 </head>
 <body>
 <?php

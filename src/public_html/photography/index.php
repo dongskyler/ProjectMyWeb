@@ -96,14 +96,32 @@
         for ($i=0; $i<$rows_catnames; ++$i) {
           $result_catnames->data_seek($i);
           $catname = htmlspecialchars($result_catnames->fetch_assoc()['name']);
-          echo '<button type="button" class="btn btn-dark" data-class="', $catname,'">', modifyQueryStr_cat($catname), '</button>';
+          echo '<button type="button" class="btn btn-dark" data-class="', $catname,'">', modifyQueryStr_cat($catname), '</button>',"\r\n";
         }
         $result_catnames->close();
         // END: QUERY CATEGORY NAMES
       ?>
+      <button type="button" class="btn btn-dark" data-class="last-uploaded">Last uploaded</button>
     </div><!--FILTER BUTTON-->
   <div class="gallery">
   <?php
+
+      // START: QUERY LAST UPLOADED PHOTOS
+      $query_lastupload = "SELECT filename FROM photos WHERE date_uploaded IN (SELECT max(date_uploaded) FROM photos)";
+      $result_lastupload = $conn->query($query_lastupload);
+      if (!$result_lastupload) die("Fatal Error");
+
+      $json = mysqli_fetch_all ($result_lastupload, MYSQLI_ASSOC);
+
+      echo json_encode($json);
+
+      if (in_array('SD_A7T00736_Edit_Web.jpg',$json)) {
+        echo 'Yes';
+      }
+      else echo 'No';
+      // $result_cat->fetch_assoc()['filename']
+      // END: QUERY LAST UPLOADED PHOTOS
+
     chdir('../images/photography');
     $images=glob('*.jpg',GLOB_BRACE);
     shuffle($images);

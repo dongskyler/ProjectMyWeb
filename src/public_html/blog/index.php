@@ -25,25 +25,25 @@
   <div class="row">
       <div class="col-12 mx-auto col-md-10">
         <div class="post-preview">
+          <a href="photo-color-grading.php">
+            <h2 class="post-title">How to Color Grade Your Photographs to Make Art</h2>
+            <h3 class="post-subtitle">&quot;You don&apos;t take a photograph, you make it.&quot; &mdash; Ansel Adams</h3>
+          </a>
+          <p class="post-meta">Posted on April 2, 2020</p>
+          <hr/>
+        </div><!--POST-PREVIEW-->
+        <div class="post-preview">
           <a href="navigate-to-regional-bus-stop-at-ohare-t5.php">
-            <h2 class="post-title">
-              How to Navigate to Regional Bus Stops at Terminal 5 of O&#39;Hare Airport of Chicago
-            </h2>
-            <h3 class="post-subtitle">
-                
-            </h3>
+            <h2 class="post-title">How to Navigate to Regional Bus Stops at Terminal 5 of O&#39;Hare Airport of Chicago</h2>
+            <h3 class="post-subtitle"></h3>
           </a>
           <p class="post-meta">Posted on January 6, 2016 (Retroactively)</p>
           <hr/>
         </div><!--POST-PREVIEW-->
         <div class="post-preview">
           <a href="navigate-to-ohare-shuttle-center-from-t123.php">
-            <h2 class="post-title">
-            How to Navigate to Shuttle Center from T1, T2, or T3 at O'Hare Airport of Chicago
-            </h2>
-            <h3 class="post-subtitle">
-              Step-by-step instruction.
-            </h3>
+            <h2 class="post-title">How to Navigate to Shuttle Center from T1, T2, or T3 at O'Hare Airport of Chicago</h2>
+            <h3 class="post-subtitle">Step-by-step instruction.</h3>
           </a>
           <p class="post-meta">Posted on January 6, 2016 (Retroactively)</p>
           <hr/>

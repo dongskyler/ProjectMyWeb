@@ -1,9 +1,10 @@
 <?php
+  include_once '../common/methods.php';
   define("NAVBAR_COLOR",'light');
   define("HEADER_TYPE",'blogpost');
   define("BG_IMG_MD",'blog/IMG_20150114_181603.jpg');
   define("BG_IMG_LG",'blog/IMG_20150114_181603.jpg');
-  define("SITE_TITLE",'<h1>How to Navigate to Shuttle Center from T1, T2, or T3 at O&#39;Hare Airport of Chicago</h1>');
+  define("SITE_TITLE",'How to Navigate to Shuttle Center from T1, T2, or T3 at O&#39;Hare Airport of Chicago');
   define("SITE_SUBTITLE",'Step-by-step instruction');
   define("SITE_SUBSUBTITLE",'Updated on March 22, 2020<br/>Posted on Jan. 6, 2016 (Retroactively)');
 ?>
@@ -20,11 +21,6 @@
 <?php
   include_once '../common/navbar.php';
   include_once '../common/header.php';
-  function loadImage($image){
-    list($width,$height)=getimagesize('../images/blog/'.$image);
-    $aspect=round($height/$width*10000)/100;
-    echo '<div class="responsive-container" style="padding-bottom:',$aspect,'%;">','<img class="lozad" data-src="../images/blog/',$image,'" alt="Blog - SkylerDong.com"></div>',"\r\n";
-  }
 ?>
 <!-- Blog Content -->
 <div class="container maincontent">
@@ -37,38 +33,38 @@
       <hr/>
       <div class="row">
         <div class="col-md-6 mx-auto">
-            <?php loadImage('IMG_20150114_181417.jpg');?>
+            <?php loadImage_blog('IMG_20150114_181417.jpg');?>
         </div>
         <div class="col-md-6 mx-auto">
-            <?php loadImage('IMG_20150114_181503.jpg');?>
+            <?php loadImage_blog('IMG_20150114_181503.jpg');?>
         </div>
       </div><!--ROW-->
       <p>Once you arrive at Terminal 1, 2, or 3, look up, physically. Look for the signs "Bus/Shuttle Center" as circled in the pictures above. Follow the signs and find your way to go down one floor via escalator, elevator, or stairs.</p>
       <div class="row">
         <div class="col-md-6 mx-auto">
-          <?php loadImage('IMG_20150114_181620.jpg');?>
+          <?php loadImage_blog('IMG_20150114_181620.jpg');?>
         </div>
         <div class="col-md-6 mx-auto">
           <?php
-          loadImage('IMG_20150114_181526.jpg');
-          loadImage('IMG_20150114_181603.jpg');
+          loadImage_blog('IMG_20150114_181526.jpg');
+          loadImage_blog('IMG_20150114_181603.jpg');
           ?>
         </div>
       </div><!--ROW-->
       <p>Or you can follow the big red arrows on the floor.</p>
       <p>Once you arrive at the lower level, follow signs hung from the ceiling or on the floor. This walk might take a few minutes.</p>
-      <div><?php loadImage('IMG_20150114_191549.jpg');?></div>
+      <div><?php loadImage_blog('IMG_20150114_191549.jpg');?></div>
       <p>Keep walking while following the signs.</p>
-      <div><?php loadImage('IMG_20150114_191512.jpg');?></div>
+      <div><?php loadImage_blog('IMG_20150114_191512.jpg');?></div>
       <p>Keep walking until you see a large sign saying "Elevator Center" and "Elevators to Bus/Shuttle Center."</p>
-      <div><?php loadImage('IMG_20150114_191422.jpg');?></div>
+      <div><?php loadImage_blog('IMG_20150114_191422.jpg');?></div>
       <p>There are several elevators that can take you to the Shuttle Center. Walk into one of them. Then you might find elevator buttons confusing. Especially, for someone who just took a 16-hour-long flight.</p>
       <div class="row">
         <div class="col-md-6 mx-auto">
-          <?php loadImage('IMG_20150114_191353.jpg');?>
+          <?php loadImage_blog('IMG_20150114_191353.jpg');?>
         </div>
         <div class="col-md-6 mx-auto">
-          <?php loadImage('IMG_20150114_191309.jpg');?>
+          <?php loadImage_blog('IMG_20150114_191309.jpg');?>
         </div>
       </div><!--ROW-->
       <p>Let me explain. You are currently at the Terminal (T) level and you want to reach the 1st level, so press the button next to "P1," which is also in the same row with "1" and "Chicago Cubs."</p>
