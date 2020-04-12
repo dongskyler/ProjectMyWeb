@@ -2,9 +2,11 @@ h1, h2 {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.navbar {
-  font-family: 'Ubuntu', sans-serif;
+a {
+  text-decoration: none;
+  color: #0672bf;
 }
+
 .navbar-brand {
   padding-top: 1px;
   font-size: 1.25rem;
@@ -16,7 +18,6 @@ h1, h2 {
     font-size: 1.375rem;
   }
 }
-
 .bg-lightdark {
   background-color: #303030;
   color: #F9F9F9;
@@ -276,7 +277,7 @@ header.masthead .post-heading .meta {
 }
 .post-preview > a:focus, .post-preview > a:hover {
   text-decoration: none;
-  color: #33AAFF;
+  color: #0672bf;
 }
 .post-preview > a > .post-title {
   font-family: 'Ubuntu', sans-serif;
@@ -293,7 +294,7 @@ header.masthead .post-heading .meta {
   font-size: 0.9rem;
   font-style: italic;
   margin-top: 0;
-  color: #868e96;
+  color: #656b70;
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
@@ -301,7 +302,7 @@ header.masthead .post-heading .meta {
 }
 .post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
   text-decoration: underline;
-  color: #33AAFF;
+  color: #0672bf;
 }
 @media screen and (min-width: 992px) and (min-height: 480px) {
   .post-preview > a > .post-title {
@@ -352,6 +353,11 @@ header.masthead .post-heading .meta {
 .photo-block p {
   line-height: 1.4;
   font-size: 0.95rem;
+}
+
+.photo-block a, 
+.photo-block a div {
+  cursor: pointer;
 }
 
 .fade-in {
@@ -408,27 +414,23 @@ footer {
   background-color: #585858;
   color: #F9F9F9;
 }
+
 footer a {
   color: #F9F9F9;
 }
+
 footer a:hover {
   color: #F9F9F9;
 }
+
 footer .social-icon {
   padding-inline-start: 0;
 }
+
 footer .social-icon li {
   display:inline-block;
   list-style-type:none;
   user-select:none;
-}
-footer .social-icon li a {
-  border-bottom: none;
-}
-footer .social-icon li img {
-  width: 32px;
-  height: 32px;
-  margin-right: 16px;
 }
 
 .maincontent .filter-button button {
@@ -447,35 +449,44 @@ footer .social-icon li img {
   }
 }
 
+.modal .modal-title {
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: #000000;
+}
+
 .modal-content {
-  background-color: #080808;
+  background-color: #F9F9F9;
   font-family: 'Noto Sans', sans-serif;
 }
 
-.modal .modal-body {
+.modal-backdrop {
+    opacity:0.8 !important;
+}
+
+#imagemodal .modal-body{
   padding: 0;
 }
 
-.modal img {
+#imagemodal .modal-content {
+  background-color: #080808;
+}
+
+#imagemodal img {
   width: 100%;
   height: auto;
 }
 
-.modal p {
+#imagemodal p {
   padding: 0.5rem;
 }
 
-.modal .modal-title {
+#imagemodal p.modal-photo-title {
   font-weight: 600;
   font-size: 1.15rem;
 }
 
-.modal .modal-location {
+#imagemodal p.modal-photo-location {
   font-size: 0.95rem;
-}
-
-.modal-backdrop
-{
-    opacity:0.8 !important;
 }
 

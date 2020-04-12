@@ -137,55 +137,59 @@ class Trend:
 
 ##############################
 
-kw_list = ['"Canon" "camera"', '"Nikon" "camera"', '"Sony" "camera"']
-# Set keyword list as a list of strings
+def main():
+  kw_list = ['"Canon" "camera"', '"Nikon" "camera"', '"Sony" "camera"']
+  # Set keyword list as a list of strings
 
-for y in range(2006, 2021):
-# Scrape data froms year 2006 to 2020
+  for y in range(2006, 2021):
+  # Scrape data froms year 2006 to 2020
 
-  for m in range(1, 13):
-  # Scrape data from months 1 to 12
+    for m in range(1, 13):
+    # Scrape data from months 1 to 12
 
-    if (y == 2020 and m>3):
-      break
-    # Stop data scraping after March 2020, as this code was written in April 2020
-
-    while True:
-    # Exception handing. Google might limit frequent data scraping and throw errors
-
-      try:
-      # Scrape data using Trend class (defined in this code snippet)
-
-        t = Trend(y, m, kw_list)
-        # Trend class is defined in this code snippet
-
-        t.scrape()
-        # Scrape data
-
-        t.toPickle('camera', 'data/raw/camera')
-        # Serializing and exporting data using pickle module
-
-        t.scatter()
-        # Generate a simple scatter plot to preview the data
-
-        print(str(y) + '-' + str(m) + ': DONE')
-        # Print a confirmation message
-
-        time.sleep(0.1)  # in seconds
-        # Pause for 0.1 second before the next loop
-
+      if (y == 2020 and m>3):
         break
-        # Break "while True" exception handler to continue the next for-loop
+      # Stop data scraping after March 2020, as this code was written in April 2020
 
-      except:
-      # Handle errors if any
+      while True:
+      # Exception handing. Google might limit frequent data scraping and throw errors
 
-        print("Error catched. Going to pause for some duration...")
-        # Print a message
+        try:
+        # Scrape data using Trend class (defined in this code snippet)
 
-        time.sleep(60)
-        # Pause 60 seconds before next try</code></pre>
-        <p>This is a work in progress. I'm currently writing this section.</p>
+          t = Trend(y, m, kw_list)
+          # Trend class is defined in this code snippet
+
+          t.scrape()
+          # Scrape data
+
+          t.toPickle('camera', 'data/raw/camera')
+          # Serializing and exporting data using pickle module
+
+          t.scatter()
+          # Generate a simple scatter plot to preview the data
+
+          print(str(y) + '-' + str(m) + ': DONE')
+          # Print a confirmation message
+
+          time.sleep(0.1)  # in seconds
+          # Pause for 0.1 second before the next loop
+
+          break
+          # Break "while True" exception handler to continue the next for-loop
+
+        except:
+        # Handle errors if any
+
+          print("Error catched. Going to pause for some duration...")
+          # Print a message
+
+          time.sleep(60)
+          # Pause 60 seconds before next try
+
+if __name__ == "__main__"
+  main()</code></pre>
+        <p>This is a work in progress.</p>
       </div>
     </div>
   </div><!--row-->

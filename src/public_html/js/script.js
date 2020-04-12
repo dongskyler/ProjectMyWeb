@@ -104,8 +104,8 @@ $(function() {
         let $photoid = $("#" + photo_url);
         let $image_src = $photoid.find('img').attr('data-src');
         $('.modal-img').attr('src', $image_src);
-        $('p.modal-title').text($photoid.find('p.photo-title').text());
-        $('p.modal-location').text($photoid.find('p.photo-location').text());
+        $('p.modal-photo-title').text($photoid.find('p.photo-title').text());
+        $('p.modal-photo-location').text($photoid.find('p.photo-location').text());
         $('#imagemodal').modal('show');
 
         // $('#meta_og_image').attr('content', $image_src);
@@ -115,8 +115,8 @@ $(function() {
     $('.gallery .photo-block .pop').on('click', function() {
         let $image_src = $(this).find('img').attr('data-src');
         $('.modal-img').attr('src', $image_src);
-        $('p.modal-title').text($(this).find('p.photo-title').text());
-        $('p.modal-location').text($(this).find('p.photo-location').text());
+        $('p.modal-photo-title').text($(this).find('p.photo-title').text());
+        $('p.modal-photo-location').text($(this).find('p.photo-location').text());
         $('#imagemodal').modal('show');
         
         let param = "?photo=";

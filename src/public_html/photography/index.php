@@ -33,7 +33,6 @@
       $og_image_default = 'https://skylerdong.com/images/photography/SD_N18_5890_2_Web.jpg';
     }
   }
-
   define("NAVBAR_COLOR",'dark');
   define("BG_IMG_MD",'photography/SD_N18_5890_2_Web.jpg');
   define("BG_IMG_LG",'large/SD_N18_5890_2_Web_LG.jpg');
@@ -76,7 +75,6 @@
 <head>
 <?php include_once '../common/head.php'; ?>
 <meta name="keywords" content="photography,photo,gallery,portfolio,picture">
-
 <title>Photography - Skyler Dong</title>
 </head>
 <body class="bg-deepdark">
@@ -105,23 +103,6 @@
     </div><!--FILTER BUTTON-->
   <div class="gallery">
   <?php
-
-      // START: QUERY LAST UPLOADED PHOTOS
-      $query_lastupload = "SELECT filename FROM photos WHERE date_uploaded IN (SELECT max(date_uploaded) FROM photos)";
-      $result_lastupload = $conn->query($query_lastupload);
-      if (!$result_lastupload) die("Fatal Error");
-
-      $json = mysqli_fetch_all ($result_lastupload, MYSQLI_ASSOC);
-
-      echo json_encode($json);
-
-      if (in_array('SD_A7T00736_Edit_Web.jpg',$json)) {
-        echo 'Yes';
-      }
-      else echo 'No';
-      // $result_cat->fetch_assoc()['filename']
-      // END: QUERY LAST UPLOADED PHOTOS
-
     chdir('../images/photography');
     $images=glob('*.jpg',GLOB_BRACE);
     shuffle($images);
@@ -199,8 +180,8 @@
     <div class="modal-content">
       <div class="modal-body">
         <img src="" class="modal-img">
-        <p class="modal-title text-center">Title</p>
-        <p class="modal-location">Location</p>
+        <p class="modal-photo-title text-center">Title</p>
+        <p class="modal-photo-location">Location</p>
       </div>
     </div>
   </div>
@@ -208,7 +189,6 @@
 <?php include_once '../common/footer.php';?>
 </body>
 </html>
-
 <?php
   $conn->close();
 ?>
