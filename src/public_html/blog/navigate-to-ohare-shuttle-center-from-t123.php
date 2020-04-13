@@ -4,9 +4,9 @@
   define("HEADER_TYPE",'blogpost');
   define("BG_IMG_MD",'blog/IMG_20150114_181603.jpg');
   define("BG_IMG_LG",'blog/IMG_20150114_181603.jpg');
-  define("SITE_TITLE",'How to Navigate to Shuttle Center from T1, T2, or T3 at O&#39;Hare Airport of Chicago');
+  define("SITE_TITLE",'How to Navigate to Shuttle Center from T1, T2 or T3 at O&#39;Hare Airport of Chicago');
   define("SITE_SUBTITLE",'Step-by-step instruction');
-  define("SITE_SUBSUBTITLE",'Updated on March 22, 2020<br/>Posted on Jan. 6, 2016 (Retroactively)');
+  define("SITE_SUBSUBTITLE",'<p>Updated on March 22, 2020</p><p>Posted on Jan. 6, 2016 (Retroactively)</p>');
 ?>
 <!doctype html>
 <?php
@@ -15,7 +15,7 @@
 ?>
 <head>
     <?php include_once '../common/head.php';?>
-    <title>Navigate to Shuttle Center from T1, T2, or T3 at O&#39;Hare Airport | Blog - Skyler Dong</title>
+    <title>Navigate to Shuttle Center from T1, T2 or T3 at O&#39;Hare Airport | Blog - Skyler Dong</title>
 </head>
 <body>
 <?php
@@ -26,7 +26,7 @@
 <div class="container maincontent">
   <div class="row">
     <div class="col-12 mx-auto col-md-10">
-      <p>This blog shows you how to navigate to the Shuttle Center from Terminal 1, 2, or 3 at O&#39;Hare Airport of Chicago with step-by-step instructions.</p>
+      <p>This blog shows you how to navigate to the Shuttle Center from Terminal 1, 2 or 3 at O&#39;Hare Airport of Chicago with step-by-step instructions.</p>
       <p>If you will arrive at Terminal 5, the route is different. Most buses make a stop at Terminal 5. <a href="navigate-to-regional-bus-stop-at-ohare-t5.php">Click here for instructions</a>.</p>
       <p>Feel free to print a copy of this webpage and bring it with you for your personal, non-commercial use.</p>
       <!--简体中文版请点击这里-->
@@ -39,7 +39,7 @@
             <?php loadImage_blog('IMG_20150114_181503.jpg');?>
         </div>
       </div><!--ROW-->
-      <p>Once you arrive at Terminal 1, 2, or 3, look up, physically. Look for the signs "Bus/Shuttle Center" as circled in the pictures above. Follow the signs and find your way to go down one floor via escalator, elevator, or stairs.</p>
+      <p>Once you arrive at Terminal 1, 2 or 3, look up, physically. Look for the signs "Bus/Shuttle Center" as circled in the pictures above. Follow the signs and find your way to go down one floor via escalator, elevator, or stairs.</p>
       <div class="row">
         <div class="col-md-6 mx-auto">
           <?php loadImage_blog('IMG_20150114_181620.jpg');?>
@@ -72,7 +72,7 @@
       <p>Well done! Now you are at the Shuttle Center! Several shuttles will pick passengers up right outside the lobby. For example, the bus stop of <a href="https://web.coachusa.com/vangalder/" target="_blank">Van Galder Bus</a> is outside Door 3.</p>
       <p>Have a safe trip!</p>
       <hr/>
-      <p>This blog was originally posted on <a href="https://sites.google.com/site/dongskyler/nav-ohare/" target="_blank">my old website</a>. If you have any suggestion or question, please feel free to <a href="../contact/">contact me</a>.</p>
+      <p>This blog was originally posted on <a href="https://sites.google.com/site/dongskyler/nav-ohare/" target="_blank">my old website</a>. If you have any suggestion or question, please feel free to <a href="../contact/">contact me</a>. <i class="fas fa-ankh"></i></p>
     </div><!--COL-->
   </div><!--ROW-->
 </div><!--maincontent-->
