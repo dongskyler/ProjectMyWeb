@@ -298,7 +298,7 @@
         <p>There you go, that's basically how to do color grading. The point is to show you basic techniques and encourage you to develop your own taste and become a better artist. Making art isn't about what camera or lens you use. Some photos in this blog and in <a href="../photography" target="_blank">my photo gallery</a> were taken by my smartphones, but I bet you can't really tell.</p>
         <p>Next time you take a photo, try to be bold, freely explore the possibilities and envision the final photo even before you press the shutter.</p>
         <p>You can, of course, keep advancing your skills in color grading. There are lots of in-depth videos, blogs and books in photography and cinematography about color grading, including color theory and complex techniques (such as advanced Photoshop skills).</p>
-        <p>Anyway, now you know how to do basic color grading, so why not make some art.</p>
+        <p>Anyway, now you know how to do basic color grading, so why not make some art. <i class="fas fa-ankh"></i></p>
       </div><!--blog-color-grading-final-words-->
       <hr/>
       <p class="footnote mb-3">Acknowledgements: Thanks to <a href="https://instagram.com/aaront.wn?igshid=1fj61pajls9ub" target="_blank">Aaron Tang</a> for comments and edits.</p>

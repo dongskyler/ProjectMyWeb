@@ -37,7 +37,7 @@
   define("BG_IMG_MD",'photography/SD_N18_5890_2_Web.jpg');
   define("BG_IMG_LG",'large/SD_N18_5890_2_Web_LG.jpg');
   define("SITE_TITLE",'Photography');
-  define("SITE_SUBTITLE",'<p><a href="https://www.instagram.com/skyler.dong.art/" target="_blank">Instagram: @skyler.dong.art</a> </p><p><a href="../coding/this-website.php">Read about how I&apos;m building this website.</a></p>');
+  define("SITE_SUBTITLE",'<p><a href="https://www.instagram.com/skyler.dong.art/" target="_blank">Instagram: @skyler.dong.art</a> </p><p><a href="../blog/this-website.php">Read about how I&apos;m building this website</a></p>');
   define("FADE_IN",'yes');
   define("COPYRIGHT_NOTICE",'Images');
 
@@ -84,8 +84,8 @@
 ?>
 <!-- Main Content -->
 <div class="container-xl maincontent fade-in">
-    <div class="col-12 filter-button mb-3">
-      <button type="button" class="btn btn-dark active" data-class="all">All</button>
+    <div class="filter-button-bar col-12 mx-auto col-md-10 filter-bar-photo mb-3">
+      <button type="button" class="filter-button btn btn-dark active" data-class="all">All</button>
       <?php // START: QUERY CATEGORY NAMES (catname)
         $query_catnames = "SELECT name FROM categories";
         $result_catnames = $conn->query($query_catnames);
@@ -94,12 +94,12 @@
         for ($i=0; $i<$rows_catnames; ++$i) {
           $result_catnames->data_seek($i);
           $catname = htmlspecialchars($result_catnames->fetch_assoc()['name']);
-          echo '<button type="button" class="btn btn-dark" data-class="', $catname,'">', modifyQueryStr_cat($catname), '</button>',"\r\n";
+          echo '<button type="button" class="filter-button btn btn-dark" data-class="', $catname,'">', modifyQueryStr_cat($catname), '</button>',"\r\n";
         }
         $result_catnames->close();
         // END: QUERY CATEGORY NAMES
       ?>
-      <button type="button" class="btn btn-dark" data-class="last-uploaded">Last uploaded</button>
+      <!--<button type="button" class="filter-button btn btn-dark" data-class="latest">Latest</button>-->
     </div><!--FILTER BUTTON-->
   <div class="gallery">
   <?php
@@ -109,9 +109,9 @@
     foreach ($images as $image) {
       list($width,$height)=getimagesize($image);
       $aspect=round($height/$width*10000)/100;      
-      echo '<div class="photo-block mb-3" data-class="';
+      echo '<div class="photo-block filterE mb-3" data-class="';
 
-      // START: QUERY CATEGORIES OF EACH PHOTO
+      // START: QUERY FILTER CATEGORIES OF EACH PHOTO
       $query_cat = "SELECT categories.name FROM photos_in_categories INNER JOIN photos ON photos.id = photos_in_categories.id INNER JOIN categories ON categories.category_id = photos_in_categories.category_id WHERE filename = '$image'";
       $result_cat = $conn->query($query_cat);
       if (!$result_cat) die("Fatal Error");
@@ -123,7 +123,7 @@
         echo $category_class;
       }
       $result_cat->close();
-      // END: QUERY CATEGORIES OF EACH PHOTO
+      // END: QUERY FILTER CATEGORIES OF EACH PHOTO
 
       echo '"><a class="pop" id="photoid_';
       

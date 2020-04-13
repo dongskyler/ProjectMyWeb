@@ -26,13 +26,10 @@
         <a class="nav-link" href= "<?php if ($_SERVER["SERVER_NAME"]=="localhost") {echo PATH,'/app';} else {echo 'https://app.skylerdong.com';} ?>">App</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href= "<?php echo PATH; ?>/coding">Coding</a>
+        <a class="nav-link" href= "<?php echo PATH; ?>/blog">Blog</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href= "<?php echo PATH; ?>/photography">Photography</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href= "<?php echo PATH; ?>/blog">Blog</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href= "<?php echo PATH; ?>/contact">Contact</a>
@@ -44,7 +41,5 @@
   </div>
 </nav>
 <style>
-.navbar {
-  font-family: 'Ubuntu', sans-serif;
-}
+.navbar {font-family: 'Ubuntu', sans-serif;}
 </style>

@@ -1,153 +1,145 @@
 // Lozad
 const observer_1 = lozad('.lozad', {
-    rootMargin: '0px', // syntax similar to that of CSS Margin
-    threshold: 0 // ratio of element convergence
+  rootMargin: '0px', // syntax similar to that of CSS Margin
+  threshold: 0 // ratio of element convergence
 });
 
 const observer_2 = lozad('.lozad', {
-    rootMargin: '200px 0px', // syntax similar to that of CSS Margin
-    threshold: 0 // ratio of element convergence
+  rootMargin: '200px 0px', // syntax similar to that of CSS Margin
+  threshold: 0 // ratio of element convergence
 });
 
 const observer_3 = lozad('.lozad', {
-    rootMargin: '600px 0px', // syntax similar to that of CSS Margin
-    threshold: 0 // ratio of element convergence
+  rootMargin: '600px 0px', // syntax similar to that of CSS Margin
+  threshold: 0 // ratio of element convergence
 });
 
 observer_1.observe();
 
-setTimeout(function(){
-    observer_2.observe();
-},5000);
+setTimeout(function () {
+  observer_2.observe();
+}, 5000);
 
-setTimeout(function(){
-    observer_3.observe();
-},10000);
+setTimeout(function () {
+  observer_3.observe();
+}, 10000);
 // END: Lozad
 
 // Photo gallery filtering
-const photoCat = document.querySelectorAll('.maincontent .filter-button button');
-const allPhotos = document.querySelectorAll('.maincontent .gallery .photo-block');
+const filterCat = document.querySelectorAll('.maincontent .filter-button');
+const filterE = document.querySelectorAll('.maincontent .filterE');
 
-for(let i = 0; i < photoCat.length; ++i){
-    photoCat[i].addEventListener('click', function(){
-        toggleActiveClass(photoCat[i]);
-        toggleimages(photoCat[i].dataset.class);
-        let param = "?category=";
-        param = param.concat(photoCat[i].dataset.class);
-        if (photoCat[i].dataset.class == 'all')
-            param = window.location.pathname;
-        window.history.replaceState(null, null, param);
-    });
-}
-
-function toggleActiveClass(active){
-    photoCat.forEach(item => {
-      item.classList.remove('active');
-    })
-    active.classList.add('active');
-}
-
-function toggleimages(dataClass){
-    if(dataClass === 'all'){
-        for(let i = 0; i<allPhotos.length; ++i){
-            allPhotos[i].style.display = 'block';
-        }
-    }else{
-        for(let i = 0; i<allPhotos.length; ++i) {
-            if (allPhotos[i].dataset.class.includes(dataClass))
-                allPhotos[i].style.display = 'block';
-            else allPhotos[i].style.display = 'none';
-        }
+filterCat.forEach(cat => {
+  cat.addEventListener('click', () => {
+    toggleFilterCat(cat);
+    toggleFilterE(cat.dataset.class);
+    let param = ("?category=").concat(cat.dataset.class);
+    if (cat.dataset.class == 'all') {
+      param = window.location.pathname;
     }
+    window.history.replaceState(null, null, param);
+  });
+})
+
+function toggleFilterCat(activeCat) {
+  filterCat.forEach(cat => {
+    if (activeCat.dataset.class === cat.dataset.class) {
+      cat.classList.add('active');
+    }
+    else {cat.classList.remove('active');}
+  })
+}
+
+function toggleFilterE(dataClass) {
+  if (dataClass === 'all') {
+    filterE.forEach(e => {
+      e.style.display = 'block';
+    })
+  }
+  else {
+    filterE.forEach(e => {
+      if (e.dataset.class.includes(dataClass)) {
+        e.style.display = 'block';
+      }
+      else {e.style.display = 'none';}
+    })
+  }
 }
 
 // END: Photo gallery filtering
 
+$(function () {
+  // START: Do things when URL parameters present during page loading
 
+  const queryURLString = window.location.search;
+  // console.log(queryURLString);
 
+  const urlParams = new URLSearchParams(queryURLString);
 
+  const category_url = urlParams.get('category');
+  // console.log(category_url);
 
-$(function() {
+  const photo_url = urlParams.get('photo');
+  // console.log(photo_url);
 
-    // START: Do things when URL parameters present during page loading
+  if (typeof $meta_og_image_0 == 'undefined') {
+    // console.log('Log: $meta_og_image_0 undefined!');
+    $meta_og_image_0 = $('#meta_og_image').attr('content');
+    //console.log('Define $meta_og_image_0:');
+    // console.log($meta_og_image_0);
+  }
 
-    const queryURLString = window.location.search;
-    // console.log(queryURLString);
-
-    const urlParams = new URLSearchParams(queryURLString);
-
-    const category_url = urlParams.get('category');
-    // console.log(category_url);
-
-    const photo_url = urlParams.get('photo');
-    // console.log(photo_url);
-
-    if (typeof $meta_og_image_0 == 'undefined') {
-        // console.log('Log: $meta_og_image_0 undefined!');
-        $meta_og_image_0 = $('#meta_og_image').attr('content');
-        //console.log('Define $meta_og_image_0:');
-        // console.log($meta_og_image_0);
-    }
-
-    // Activate filter on loading if URL parameters present
-    if (category_url != null) {
-        for (let i = 0; i < photoCat.length; ++i) {
-            if (photoCat[i].dataset.class === category_url)
-                toggleActiveClass(photoCat[i]);
-        }
-        toggleimages(category_url);
-    }
-
-    // Activate modal on loading if URL parameters present
-    if (photo_url != null) {
-        let $photoid = $("#" + photo_url);
-        let $image_src = $photoid.find('img').attr('data-src');
-        $('.modal-img').attr('src', $image_src);
-        $('p.modal-photo-title').text($photoid.find('p.photo-title').text());
-        $('p.modal-photo-location').text($photoid.find('p.photo-location').text());
-        $('#imagemodal').modal('show');
-
-        // $('#meta_og_image').attr('content', $image_src);
-    }
-
-    // Open modal
-    $('.gallery .photo-block .pop').on('click', function() {
-        let $image_src = $(this).find('img').attr('data-src');
-        $('.modal-img').attr('src', $image_src);
-        $('p.modal-photo-title').text($(this).find('p.photo-title').text());
-        $('p.modal-photo-location').text($(this).find('p.photo-location').text());
-        $('#imagemodal').modal('show');
-        
-        let param = "?photo=";
-        param = param.concat($(this).attr('id'));
-        window.history.replaceState(null, null, param);
-
-        $('#meta_og_image').attr('content', $image_src);
-
-        // let path = window.location.href;
-        // path = path.concat(param);
-        $('#meta_og_url').attr('content', window.location.href);
-    });
-
-    // Click anywhere to close modal
-
-    $(document).click(function(e) { 
-        if (e.button == 0) {
-            $('#imagemodal').modal('hide');
-        }
-    });
-
-    // Update URL when modal is closed
-    $('#imagemodal').on('hidden.bs.modal', function () {
-        // console.log($meta_og_image_0);
-        $('#meta_og_image').attr('content', $meta_og_image_0);
-
-        let param = window.location.pathname;
-        window.history.replaceState(null, null, param);
-        // console.log(param);
-
-        $('#meta_og_url').attr('content', window.location.href);
+  // Activate filter on loading if URL parameters present
+  if (category_url != null) {
+    filterCat.forEach(cat => {
+      if (cat.dataset.class === category_url)
+        toggleFilterCat(cat);
     })
-});
+    toggleFilterE(category_url);
+  }
 
+  // Activate modal on loading if URL parameters present
+
+  if (photo_url != null) {
+    let $photoid = $("#" + photo_url);
+    let $image_src = $photoid.find('img').attr('data-src');
+    $('.modal-img').attr('src', $image_src);
+    $('p.modal-photo-title').text($photoid.find('p.photo-title').text());
+    $('p.modal-photo-location').text($photoid.find('p.photo-location').text());
+    $('#imagemodal').modal('show');
+    // $('#meta_og_image').attr('content', $image_src);
+  }
+
+  // Open modal
+  $('.gallery .photo-block .pop').on('click', function () {
+    let $image_src = $(this).find('img').attr('data-src');
+    $('.modal-img').attr('src', $image_src);
+    $('p.modal-photo-title').text($(this).find('p.photo-title').text());
+    $('p.modal-photo-location').text($(this).find('p.photo-location').text());
+    $('#imagemodal').modal('show');
+    
+    let param = ("?photo=").concat($(this).attr('id'))
+    window.history.replaceState(null, null, param);
+    
+    $('#meta_og_image').attr('content', $image_src);
+    $('#meta_og_url').attr('content', window.location.href);
+  });
+
+  // Click anywhere to close modal
+
+  $(document).click(e => {
+    if (e.button == 0) {
+      $('#imagemodal').modal('hide');
+    }
+  });
+
+  // Update URL when modal is closed
+  $('#imagemodal').on('hidden.bs.modal', () => {
+    $('#meta_og_image').attr('content', $meta_og_image_0);
+
+    let param = window.location.pathname;
+    window.history.replaceState(null, null, param);
+
+    $('#meta_og_url').attr('content', window.location.href);
+  })
+});

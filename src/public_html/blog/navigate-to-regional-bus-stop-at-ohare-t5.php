@@ -6,7 +6,7 @@
   define("BG_IMG_LG",'blog/IMG_20150114_181603.jpg');
   define("SITE_TITLE",'How to Navigate to Regional Bus Stops at Terminal 5 of O&#39;Hare Airport of Chicago');
   define("SITE_SUBTITLE",'Step-by-step instruction');
-  define("SITE_SUBSUBTITLE",'Updated on March 29, 2020<br/>Posted on Jan. 6, 2016 (Retroactively)');
+  define("SITE_SUBSUBTITLE",'<p>Updated on March 29, 2020</p><p>Posted on Jan. 6, 2016 (Retroactively)</p>');
 ?>
 <!doctype html>
 <?php
@@ -50,7 +50,7 @@
       <p>The <a href="https://web.coachusa.com/vangalder/" target="_blank">Van Galder</a> bus stop is near the bus stop shelter on the far end of this island. Unfortunately, there is no obvious sign saying "<a href="https://web.coachusa.com/vangalder/" target="_blank">Van Galder</a>." Special thanks to Erica Elliott for providing the last two photos.</p>
       <p>Have a safe trip!</p>
       <hr/>
-      <p>This blog was originally posted on <a href="https://sites.google.com/site/dongskyler/nav-ohare/van-galder-t5" target="_blank">my old website</a>. If you have any suggestion or question, please feel free to <a href="../contact/">contact me</a>.</p>
+      <p>This blog was originally posted on <a href="https://sites.google.com/site/dongskyler/nav-ohare/van-galder-t5" target="_blank">my old website</a>. If you have any suggestion or question, please feel free to <a href="../contact/">contact me</a>. <i class="fas fa-ankh"></i></p>
     </div><!--COL-->
   </div><!--ROW-->
 </div><!--maincontent-->

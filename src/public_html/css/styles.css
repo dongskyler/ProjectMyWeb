@@ -1,11 +1,20 @@
-h1, h2 {
+h1, 
+h2 {
   font-family: 'Ubuntu', sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: #0672bf;
+  color: #0066cc;
 }
+
+.bg-deepdark {
+  text-decoration: none;
+  color: #2997FF;
+}
+
+/* Inside nvarbar.php now:
+.navbar {font-family: 'Ubuntu', sans-serif;} */
 
 .navbar-brand {
   padding-top: 1px;
@@ -36,8 +45,8 @@ a {
 .anchor::before { 
   display: block; 
   content: " "; 
-  margin-top: -150px; 
-  height: 150px; 
+  margin-top: -100px; 
+  height: 100px; 
   visibility: hidden; 
   pointer-events: none;
 }
@@ -156,8 +165,8 @@ header.masthead a {
 
 /* page-heading */
 header.masthead .page-heading {
-  padding: 20% 0 0;
-  padding: 20vh 0 0;
+  padding: 23% 0 0;
+  padding: 23vh 0 0;
   color: #F9F9F9;
   text-align: center;
 }
@@ -170,7 +179,7 @@ header.masthead .page-heading h1 {
 header.masthead .page-heading .subheading {
   font-family: 'Noto Sans', sans-serif;
   font-size: 1.1rem;
-  line-height: 1.2;
+  line-height: 1.6;
   display: block;
   margin: 10px 0 0;
 }
@@ -180,12 +189,10 @@ header.masthead .page-heading .subheading {
     padding: 25vh 0 0;
   }
   header.masthead .page-heading h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   header.masthead .page-heading .subheading {
     font-size: 1.5rem;
-    line-height: 1.1;
-    display: block;
     margin: 10px 0 0;
   }
 }
@@ -199,32 +206,30 @@ header.masthead .page-heading .subheading {
   }
   header.masthead .page-heading .subheading {
     font-size: 1.75rem;
-    line-height: 1.1;
-    display: block;
     margin: 10px 0 0;
   }
 }
 
 /* post-heading */
 header.masthead .post-heading {
-  padding: 10% 0 0;
-  padding: 10vh 0 0;
+  padding: 13% 0 0;
+  padding: 13vh 0 0;
   color: #F9F9F9;
 }
 header.masthead .post-heading h1 {
   font-size: 2rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
 }
 header.masthead .post-heading .subheading, 
 header.masthead .post-heading .meta {
-  line-height: 1.1;
+  line-height: 1.25;
   display: block;
   font-family: 'Noto Sans', sans-serif;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 header.masthead .post-heading .subheading {
   font-size: 1.25rem;
-  margin: 10px 0 10px;
+  margin: 0.5rem 0 0.5rem;
 }
 header.masthead .post-heading .meta {
   font-size: 1rem;
@@ -236,7 +241,7 @@ header.masthead .post-heading .meta {
     padding: 15vh 0 0;
   }
   header.masthead .post-heading h1 {
-    font-size: 3.25rem;
+    font-size: 3rem;
   }
   header.masthead .post-heading .subheading, 
   header.masthead .post-heading .meta {
@@ -272,42 +277,46 @@ header.masthead .post-heading .meta {
 .post-preview h2 {
   font-family: 'Ubuntu', sans-serif;
 }
-.post-preview > a {
+.post-preview a {
   color: #212529;
 }
-.post-preview > a:focus, .post-preview > a:hover {
+.post-preview > a:focus, 
+.post-preview > a:hover {
   text-decoration: none;
-  color: #0672bf;
+  color: #0066CC;
 }
-.post-preview > a > .post-title {
+.post-preview .post-title {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.75rem;
-  margin-top: 1.5rem;
-  margin-bottom: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
-.post-preview > a > .post-subtitle {
+@media screen and (min-width: 992px) and (min-height: 480px) {
+  .post-preview .post-title {
+    font-size: 36px;
+  }
+}
+.post-preview .post-subtitle {
   font-size: 1.2rem;
   font-weight: 300;
   margin: 0 0 10px;
 }
-.post-preview > .post-meta {
-  font-size: 0.9rem;
+.post-preview .post-meta {
+  font-size: 0.95rem;
   font-style: italic;
   margin-top: 0;
   color: #656b70;
 }
-.post-preview > .post-meta > a {
-  text-decoration: none;
-  color: #212529;
+
+.maincontent i.fa-icon {
+  color: #303030;
+  font-size: 1.85rem;
+  margin-right: 0.75rem;
 }
-.post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
-  text-decoration: underline;
-  color: #0672bf;
-}
-@media screen and (min-width: 992px) and (min-height: 480px) {
-  .post-preview > a > .post-title {
-    font-size: 36px;
-  }
+
+.hanging-indent p {
+  text-indent: -1.5rem;
+  padding-left: 3rem;
 }
 
 /* Photography gallery */
@@ -360,6 +369,8 @@ header.masthead .post-heading .meta {
   cursor: pointer;
 }
 
+/* ANIMATIONS */
+
 .fade-in {
   animation-name: fadeInAnimation;
   animation-timing-function: ease;
@@ -410,49 +421,71 @@ header.masthead .post-heading .meta {
 footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  font-size: 0.85rem;
-  background-color: #585858;
-  color: #F9F9F9;
+  font-size: 0.95rem;
+  background-color: #D6D6D6;
+  color: #585858;
 }
 
 footer a {
-  color: #F9F9F9;
+  color: #585858;
 }
 
 footer a:hover {
-  color: #F9F9F9;
+  color: #303030;
 }
 
-footer .social-icon {
+footer .footer-icon {
   padding-inline-start: 0;
 }
 
-footer .social-icon li {
+footer .footer-icon li {
   display:inline-block;
   list-style-type:none;
   user-select:none;
 }
 
-.maincontent .filter-button button {
-  font-size: 0.8rem;
-  background-color: #404040;
-  border-color: #404040;
+footer .footer-icon li i {
+  font-size: 2.5rem;
+}
+
+.maincontent .filter-button-bar button {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
 }
 @media screen and (min-width: 576px) and (min-height: 400px) {
-  .maincontent .filter-button button {
+  .maincontent .filter-button-bar button {
     font-size: 1rem;
   }
 }
 @media screen and (min-width: 992px) and (min-height: 480px) {
-  .maincontent .filter-button button {
-    font-size: 1.1rem;
+  .maincontent .filter-button-bar button {
+    font-size: 1.25rem;
+  }
+}
+
+.maincontent .filter-bar-photo button {
+  background-color: #585858;
+  border-color: #585858;
+}
+
+button.filter-button.btn-sm {
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 576px) and (min-height: 400px) {
+  .maincontent .filter-button-bar button {
+    font-size: 0.95rem;
+  }
+}
+@media screen and (min-width: 992px) and (min-height: 480px) {
+  .maincontent .filter-button-bar button {
+    font-size: 1rem;
   }
 }
 
 .modal .modal-title {
   font-weight: 600;
   font-size: 1.15rem;
-  color: #000000;
+  color: #050505;
 }
 
 .modal-content {
@@ -461,6 +494,10 @@ footer .social-icon li {
 }
 
 .modal-backdrop {
+  opacity:0.4 !important;
+}
+
+#imagemodal .modal-backdrop {
     opacity:0.8 !important;
 }
 

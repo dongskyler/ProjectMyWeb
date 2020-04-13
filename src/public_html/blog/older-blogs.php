@@ -24,7 +24,7 @@
   <div class="row">
     <div class="col-12">
       <div><p>Thank you for your interest in my older blogs. However, if you see this message, it means I don't have "older blogs." This is merely a place holder.</p>
-        <p>When I have more than 10 blogs, the oldest blogs will be automatically moved to this page so that the <a href="../blog/">blog page</a> contains only 10 blogs, powered by PHP. Read about <a href="../coding/this-website.php">how I'm building this website</a>.</p></div>
+        <p>When I have more than 10 blogs, the oldest blogs will be automatically moved to this page so that the <a href="../blog/">blog page</a> contains only 10 blogs, powered by PHP. Read about <a href="this-website.php">how I'm building this website</a>.</p></div>
     </div><!--COL-->
   </div><!--ROW-->
 </div><!--maincontent-->

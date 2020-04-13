@@ -2,7 +2,7 @@
   define("BG_IMG_MD",'medium/SD__A7T3305_Web.jpg');
   define("BG_IMG_LG",'large/SD__A7T3305_Web_LG.jpg');
   define("SITE_TITLE",'App');
-  define("SITE_SUBTITLE",'I&apos;m an aspiring web developer.');
+  define("SITE_SUBTITLE",'<p>I&apos;m an aspiring web developer</p><p><a href="https://skylerdong.com/blog/this-website.php">Read about how I&apos;m building this website</a></p>');
   define("FADE_IN",'no');
   define("FOOTER_COLOR",'dark');
   define("OG_IMAGE",'https://skylerdong.com/images/other/SD-IMG_4854-Edit-Web.jpg');
@@ -27,14 +27,14 @@ include_once '../common/header.php';
     <div class="row">
       <div class='col-12 mx-auto col-md-10'>
         <div class="post-preview">
-          <a href="<?php echo ($_SERVER["SERVER_NAME"]=="localhost") ? 'camera-search-trends/' : 'https://camera-search-trends.app.skylerdong.com' ?>">
+          <a href="<?php echo ($_SERVER["SERVER_NAME"]=="localhost") ? 'camera-search-trends/' : 'https://app.skylerdong.com/camera-search-trends' ?>">
             <h2 class="post-title">Camera Brand Search Trends of Canon, Nikon and Sony</h2>
-            <h3 class="post-subtitle">Comparing Google keyword search trends of camera, DSLR mirrorless of Canon, Nikon and Sony brands</h3>
+            <h3 class="post-subtitle">Comparing Google keyword search trends of camera, DSLR and mirrorless across Canon, Nikon and Sony</h3>
           </a>
           <hr/>
         </div><!--post-preview-->
         <div class="post-preview">
-          <a href="<?php echo ($_SERVER["SERVER_NAME"]=="localhost") ? 'route-optimization/' : 'https://route-optimization.app.skylerdong.com' ?>">
+          <a href="<?php echo ($_SERVER["SERVER_NAME"]=="localhost") ? 'route-optimization/' : 'https://app.skylerdong.com/route-optimization' ?>">
             <h2 class="post-title">Route optimization</h2>
             <h3 class="post-subtitle">Find the fastest route with multiple stops using JavaScript and Google Map API</h3>
           </a>
