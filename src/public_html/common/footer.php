@@ -22,8 +22,7 @@
   <div class="row">
     <div class="d-flex col-12 justify-content-start col-md-3">
       <ul class="footer-icon">
-        <li class="pr-2"><a href="#top"><i class="fas fa-arrow-circle-up"></i>&nbsp;&nbsp;Back to top</a>
-        </li>
+        <a id="back-to-top"><li class="pr-2"><i class="fas fa-arrow-circle-up"></i>&nbsp;&nbsp;Back to top</li></a>
       </ul>
     </div>
     <div class="d-flex col-12 justify-content-start col-md-9 justify-content-md-end">
@@ -34,9 +33,8 @@
         </li>
         <li class="pr-2 pr-sm-3 pr-md-0 pl-md-3"><a href="https://github.com/dongskyler" target="_blank"><i class="fab fa-github"></i></a>
         </li>
-        <li class="pr-2 pr-sm-3 pr-md-0 pl-md-3"><a href="https://gitlab.com/dongskyler" target="_blank"><i class="fab fa-gitlab"></i></a>
-        </li>
-        </li>
+        <!--<li class="pr-2 pr-sm-3 pr-md-0 pl-md-3"><a href="https://gitlab.com/dongskyler" target="_blank"><i class="fab fa-gitlab"></i></a>
+        </li>-->
         <li class="pr-2 pr-sm-3 pr-md-0 pl-md-3"><a href="https://www.instagram.com/skyler.dong.art/" target="_blank"><i class="fab fa-instagram"></i></a>
         </li>
       </ul>

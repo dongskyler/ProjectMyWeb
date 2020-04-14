@@ -1,21 +1,32 @@
+<?php
+define("MASTHEAD_SIZE", 'SM');
+define("BG_IMG_MD", 'photography/SD__A6T0512_Edit_Web.jpg');
+define("BG_IMG_LG", 'large/SD__A6T0512_Edit_Web_Large.jpg');
+define("SITE_TITLE", 'About');
+define("SITE_SUBTITLE", '<p><a href="https://skylerdong.com/blog/this-website.php">Read about how I&apos;m building this website</a></p>');
+define("FADE_IN", 'no');
+define("OG_IMAGE", 'https://skylerdong.com/images/other/SD-IMG_4854-Edit-Web.jpg');
+?>
 <!doctype html>
 <?php
 include_once '../common/config.php';
 include_once '../common/htmlTag.php';
 ?>
-
 <head>
   <?php include_once '../common/head.php'; ?>
   <title>About - Skyler Dong</title>
 </head>
-
 <body>
-  <?php include_once '../common/navbar.php'; ?>
+  <?php
+  include_once '../common/navbar.php';
+  include_once '../common/header.php';
+  ?>
+  <!-- Main Content -->
   <div class="container maincontent">
     <div class="row">
-      <div class="col-12 mb-3">
+      <div class="col-12 mb-3 col-md-10">
         <div>
-          <h1>About me</h1>
+          <h2>About me</h1>
         </div>
         <div class="col-12 float-none mb-3 photo-block text-center small col-sm-6 float-sm-right col-md-4">
           <img class="img-fluid" src="../images/other/SD-IMG_4854-Edit-Web.jpg" alt="Photo of Skyler Dong. Photo courtesy of Alexey Portnov.">Photo courtesy of Alexey Portnov
@@ -72,5 +83,4 @@ include_once '../common/htmlTag.php';
   <!--maincontent-->
   <?php include_once '../common/footer.php'; ?>
 </body>
-
 </html>

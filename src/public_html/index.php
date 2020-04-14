@@ -3,7 +3,7 @@ define("NAVBAR_COLOR", 'lightdark');
 define("BG_IMG_MD", 'photography/SD_N18_7039_2_Web.jpg');
 define("BG_IMG_LG", 'large/SD_N18_7039_2_Web_Large.jpg');
 define("SITE_TITLE", 'Hi, I&#39;m Skyler!');
-define("SITE_SUBTITLE", 'I&#39;m an aspiring web developer');
+define("SITE_SUBTITLE", 'I&#39;m an aspiring <a href="app/">web developer</a> and&nbsp;an&nbsp;<a href="photography">amateur&nbsp;photographer</a>');
 define("FADE_IN", 'no');
 define("FOOTER_COLOR", 'dark');
 define("OG_IMAGE", 'https://skylerdong.com/images/other/SD-IMG_4854-Edit-Web.jpg');
@@ -13,13 +13,11 @@ define("OG_IMAGE", 'https://skylerdong.com/images/other/SD-IMG_4854-Edit-Web.jpg
 include_once 'common/config.php';
 include_once 'common/htmlTag.php';
 ?>
-
 <head>
   <?php include_once 'common/head.php'; ?>
   <meta name="keywords" content="Skyler Dong,Tiannong Dong,Tiannong Skyler Dong,personal website,online portfolio,online resume,blog">
   <title>Skyler Dong</title>
 </head>
-
 <body>
   <?php
   include_once 'common/navbar.php';
@@ -42,5 +40,4 @@ include_once 'common/htmlTag.php';
   <!--maincontent-->
   <?php include_once 'common/footer.php'; ?>
 </body>
-
 </html>
