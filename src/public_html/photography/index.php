@@ -16,7 +16,6 @@
 
   if ($url_query_string != null) {
     parse_str($url_query_string, $url_params);
-
     if ($url_params['photo'] != null) {
       $photoid = explode('_', $url_params['photo']);
 
@@ -37,35 +36,37 @@
   define("BG_IMG_MD",'photography/SD_N18_5890_2_Web.jpg');
   define("BG_IMG_LG",'large/SD_N18_5890_2_Web_LG.jpg');
   define("SITE_TITLE",'Photography');
-  define("SITE_SUBTITLE",'<p><a href="https://www.instagram.com/skyler.dong.art/" target="_blank">Instagram: @skyler.dong.art</a> </p><p><a href="../blog/this-website.php">Read about how I&apos;m building this website</a></p>');
+  define("SITE_SUBTITLE",'<p><a href="https://www.instagram.com/skyler.dong.art/" target="_blank">Instagram: @skyler.dong.art</a></p>');
   define("FADE_IN",'yes');
   define("COPYRIGHT_NOTICE",'Images');
+  function modifyQueryStr_cat($str)
+{
+  $str = str_replace("_", " ", $str);
+  $str = htmlspecialchars($str);
+  if (!strcmp($str, 'bnw'))
+    $str = 'B&amp;W';
+  $str = ucfirst($str);
+  return $str;
+}
 
-  function modifyQueryStr_cat($str) {
-    $str = str_replace("_", " ", $str);
-    $str = htmlspecialchars($str);
-    if (!strcmp($str,'bnw'))
-      $str = 'B&amp;W';
-    $str = ucfirst($str);
-    return $str;
-  }
+function modifyQueryStr_title($str)
+{
+  $str = ucfirst($str);
+  $str = htmlspecialchars($str);
+  $str = str_replace(' - ', ' &ndash; ', $str);
+  $str = str_replace("\w'\w", '&apos;', $str);
+  return $str;
+}
 
-  function modifyQueryStr_title($str) {
-    $str = ucfirst($str);
-    $str = htmlspecialchars($str);
-    $str = str_replace(' - ', ' &ndash; ', $str);
-    $str = str_replace("\w'\w", '&apos;', $str);
-    return $str;
-  }
-
-  function modifyQueryStr_location($str) {
-    $str = ucfirst($str);
-    $str = htmlspecialchars($str);
-    $str = str_replace(' - ', ' &ndash; ', $str);
-    $str = str_replace("\w'\w", '&apos;', $str);
-    return $str;
-  }
-
+function modifyQueryStr_location($str)
+{
+  $str = ucfirst($str);
+  $str = htmlspecialchars($str);
+  $str = str_replace(' - ', ' &ndash; ', $str);
+  $str = str_replace("\w'\w", '&apos;', $str);
+  return $str;
+}
+  include_once '../common/methods.php';
 ?>
 <!doctype html>
 <?php
@@ -84,23 +85,23 @@
 ?>
 <!-- Main Content -->
 <div class="container-xl maincontent fade-in">
-    <div class="filter-button-bar col-12 mx-auto col-md-10 filter-bar-photo mb-3">
-      <button type="button" class="filter-button btn btn-dark active" data-class="all">All</button>
-      <?php // START: QUERY CATEGORY NAMES (catname)
-        $query_catnames = "SELECT name FROM categories";
-        $result_catnames = $conn->query($query_catnames);
-        if (!$result_catnames) die("Fatal Error");
-        $rows_catnames = $result_catnames->num_rows;
-        for ($i=0; $i<$rows_catnames; ++$i) {
-          $result_catnames->data_seek($i);
-          $catname = htmlspecialchars($result_catnames->fetch_assoc()['name']);
-          echo '<button type="button" class="filter-button btn btn-dark" data-class="', $catname,'">', modifyQueryStr_cat($catname), '</button>',"\r\n";
-        }
-        $result_catnames->close();
-        // END: QUERY CATEGORY NAMES
-      ?>
-      <!--<button type="button" class="filter-button btn btn-dark" data-class="latest">Latest</button>-->
-    </div><!--FILTER BUTTON-->
+  <div class="filter-button-bar col-12 mx-auto col-md-10 filter-bar-photo mb-3">
+    <button type="button" class="filter-button btn btn-outline-light active" data-class="all">All</button>
+    <?php // START: QUERY CATEGORY NAMES (catname)
+      $query_catnames = "SELECT name FROM categories";
+      $result_catnames = $conn->query($query_catnames);
+      if (!$result_catnames) die("Fatal Error");
+      $rows_catnames = $result_catnames->num_rows;
+      for ($i=0; $i<$rows_catnames; ++$i) {
+        $result_catnames->data_seek($i);
+        $catname = htmlspecialchars($result_catnames->fetch_assoc()['name']);
+        echo '<button type="button" class="filter-button btn btn-outline-light" data-class="', $catname,'">', modifyQueryStr_cat($catname), '</button>',"\r\n";
+      }
+      $result_catnames->close();
+      // END: QUERY CATEGORY NAMES
+    ?>
+    <!--<button type="button" class="filter-button btn btn-outline-light" data-class="latest">Latest</button>-->
+  </div><!--FILTER BUTTON-->
   <div class="gallery">
   <?php
     chdir('../images/photography');
@@ -136,7 +137,14 @@
       $result_id->close();
       // END: QUERY PHOTO IDS
       
-      echo '"><div class="responsive-container" style="padding-bottom:',$aspect,'%;">',
+      echo '"><div class="responsive-container';
+      if ($aspect >= 100) {
+        echo ' photo-portrait';
+      }
+      else {
+        echo ' photo-landscape';
+      }
+      echo'" style="padding-bottom:',$aspect,'%;">',
       '<img class="img-fluid lozad mb-1" data-src="',PATH,'/images/photography/',$image,
       '" alt="Skyler Dong Photography"></div><div class="text-center"><p class="photo-title">';
 

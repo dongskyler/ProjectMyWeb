@@ -1,4 +1,5 @@
 <?php
+  define("MASTHEAD_SIZE",'SM');
   define("NAVBAR_COLOR",'light');
   define("BG_IMG_MD",'photography/SD_N18_5431_2_Web.jpg');
   define("BG_IMG_LG",'large/SD_N18_5431_2_Web_Large.jpg');
@@ -11,9 +12,9 @@
   include_once '../common/htmlTag.php';
 ?>
 <head>
-    <?php include_once '../common/head.php';?>
-    <meta name="keywords" content="personal website,blog">
-    <title>Blog - Skyler Dong</title>
+  <?php include_once '../common/head.php';?>
+  <meta name="keywords" content="personal website,blog">
+  <title>Blog - Skyler Dong</title>
 </head>
 <body>
 <?php
@@ -24,15 +25,15 @@
 <div class="container maincontent">
   <div class="row">
     <div class="filter-button-bar col-12 mx-auto col-md-10">
-      <button type="button" class="filter-button btn btn-outline-success active" data-class="all">All</button>
-      <button type="button" class="filter-button btn btn-outline-success" data-class="coding">Coding</button>
-      <button type="button" class="filter-button btn btn-outline-success" data-class="photograhy">Photography</button>
-      <button type="button" class="filter-button btn btn-outline-success" data-class="travel">Travel</button>
+      <button type="button" class="filter-button btn btn-outline-info active" data-class="all">All</button>
+      <button type="button" class="filter-button btn btn-outline-info" data-class="coding">Coding</button>
+      <button type="button" class="filter-button btn btn-outline-info" data-class="photograhy">Photography</button>
+      <button type="button" class="filter-button btn btn-outline-info" data-class="travel">Travel</button>
       <hr/>
     </div><!--FILTER BUTTON-->
     <div class="col-12 mx-auto col-md-10">
       <div class="post-preview filterE" data-class="coding">
-        <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="coding">Coding</button>
+        <button type="button" class="filter-button btn btn-outline-info btn-sm" data-class="coding">Coding</button>
         <a href="this-website.php">
           <h2 class="post-title">
             How I'm Building This Website
@@ -47,7 +48,7 @@
         <hr/>
       </div><!--post-preview-->
       <div class="post-preview filterE" data-class="coding">
-        <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="coding">Coding</button>
+        <button type="button" class="filter-button btn btn-outline-info btn-sm" data-class="coding">Coding</button>
         <a href="scrape-google-trends.php">
           <h2 class="post-title">
             How to Scrape Google Trends with Object-Oriented Python
@@ -62,7 +63,7 @@
         <hr/>
       </div><!--post-preview-->
       <div class="post-preview filterE" data-class="photograhy">
-        <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="photograhy">Photography</button>
+        <button type="button" class="filter-button btn btn-outline-info btn-sm" data-class="photograhy">Photography</button>
         <a href="photo-color-grading.php">
           <h2 class="post-title">
             How to Color Grade Your Photographs to Make Art
@@ -77,7 +78,7 @@
         <hr/>
       </div><!--POST-PREVIEW-->
       <div class="post-preview filterE" data-class="coding">
-        <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="coding">Coding</button>
+        <button type="button" class="filter-button btn btn-outline-info btn-sm" data-class="coding">Coding</button>
         <a href="helpful-resources-web-dev.php">
           <h2 class="post-title">
             Helpful Resources for Web Development
@@ -92,7 +93,7 @@
         <hr/>
       </div><!--post-preview-->
       <div class="post-preview filterE" data-class="travel">
-        <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="travel">Travel</button>
+        <button type="button" class="filter-button btn btn-outline-info btn-sm" data-class="travel">Travel</button>
         <a href="navigate-to-regional-bus-stop-at-ohare-t5.php">
           <h2 class="post-title">
             How to Navigate to Regional Bus Stops at Terminal 5 of O&#39;Hare Airport of Chicago
@@ -107,7 +108,7 @@
         <hr/>
       </div><!--POST-PREVIEW-->
       <div class="post-preview filterE" data-class="travel">
-        <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="travel">Travel</button>
+        <button type="button" class="filter-button btn btn-outline-info btn-sm" data-class="travel">Travel</button>
         <a href="navigate-to-ohare-shuttle-center-from-t123.php">
           <h2 class="post-title">
             How to Navigate to Shuttle Center from T1, T2 or T3 at O'Hare Airport of Chicago
@@ -123,7 +124,7 @@
       </div><!--POST-PREVIEW-->
     </div><!--COL-->
     <div class="col-10 mx-auto col-md-8"><!-- Older Blogs button -->
-      <a class="btn btn-outline-primary btn-block" href="older-blogs.php">Older Blogs &rarr;</a>
+      <a class="btn btn-outline-info btn-block" href="older-blogs.php">Older Blogs &rarr;</a>
     </div><!--Older Blogs button-->
   </div><!--ROW-->
 </div><!--maincontent-->

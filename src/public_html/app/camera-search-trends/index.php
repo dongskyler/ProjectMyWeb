@@ -13,7 +13,7 @@
 ?>
 <head>
 <?php include_once '../../common/head.php'; ?>
-<title>Camera Brand Search Trends of Canon, Nikon and Sony | App - Skyler Dong</title>
+<title>Camera Brand Trends of Canon, Nikon and Sony | App - Skyler Dong</title>
 <link rel="preload" type="text/css" href="./inspector.css" as="style" onload="this.rel='stylesheet'">
 </head>
 <body>
