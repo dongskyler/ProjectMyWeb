@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<url>
+  <loc>https://skylerdong.com/</loc>
+  <lastmod>2020-04-15T14:37:39+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://skylerdong.com/about/</loc>
+  <lastmod>2020-04-15T14:37:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://skylerdong.com/blog/</loc>
+  <lastmod>2020-04-15T14:37:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://skylerdong.com/photography/</loc>
+  <lastmod>2020-04-15T14:37:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://skylerdong.com/contact/</loc>
+  <lastmod>2020-04-15T14:37:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://app.skylerdong.com/</loc>
+  <lastmod>2020-04-15T14:37:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://skylerdong.com/blog/this-website.php</loc>
+  <lastmod>2020-04-15T14:37:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://skylerdong.com/sitemap/</loc>
+  <lastmod>2020-04-15T14:37:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://skylerdong.com/blog/scrape-google-trends.php</loc>
+  <lastmod>2020-04-15T14:37:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://skylerdong.com/blog/photo-color-grading.php</loc>
+  <lastmod>2020-04-15T14:37:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://skylerdong.com/blog/helpful-resources-web-dev.php</loc>
+  <lastmod>2020-04-15T14:37:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://skylerdong.com/blog/navigate-to-regional-bus-stop-at-ohare-t5.php</loc>
+  <lastmod>2020-04-15T14:37:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://skylerdong.com/blog/navigate-to-ohare-shuttle-center-from-t123.php</loc>
+  <lastmod>2020-04-15T14:37:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://skylerdong.com/blog/older-blogs.php</loc>
+  <lastmod>2020-04-15T14:37:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+</urlset>
