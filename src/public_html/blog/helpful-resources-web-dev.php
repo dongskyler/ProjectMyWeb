@@ -3,7 +3,7 @@
   define("NAVBAR_COLOR",'light');
   define("BG_IMG_MD",'medium/SD__A7T3305_Web.jpg');
   define("BG_IMG_LG",'large/SD__A7T3305_Web_LG.jpg');
-  define("SITE_TITLE",'Helpful Resources');
+  define("SITE_TITLE",'Helpful Resources for Web Development');
   define("SITE_SUBTITLE",'Resources that I found helpful and worth sharing');
   define("SITE_SUBSUBTITLE",'Posted on March 27, 2020');
 ?>

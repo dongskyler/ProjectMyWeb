@@ -3,7 +3,7 @@ define("MASTHEAD_SIZE", 'SM');
 define("BG_IMG_MD", 'photography/SD__A6T0512_Edit_Web.jpg');
 define("BG_IMG_LG", 'large/SD__A6T0512_Edit_Web_Large.jpg');
 define("SITE_TITLE", 'Contact');
-define("SITE_SUBTITLE", 'I&apos;m an aspiring web developer and an amateur photographer');
+define("SITE_SUBTITLE", 'I&#39;m an aspiring <a href="app/">web developer</a> and&nbsp;an&nbsp;<a href="photography">amateur&nbsp;photographer</a>');
 define("FADE_IN", 'no');
 define("OG_IMAGE", 'https://skylerdong.com/images/other/SD-IMG_4854-Edit-Web.jpg');
 ?>

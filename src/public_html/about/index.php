@@ -26,7 +26,7 @@ include_once '../common/htmlTag.php';
     <div class="row">
       <div class="col-12 mb-3 mx-auto col-md-10">
         <div>
-          <h2>About me</h1>
+          <h2 id="about-me" class="anchor">About me</h1>
         </div>
         <div class="col-12 float-none mb-3 photo-block text-center small col-sm-6 float-sm-right col-md-4">
           <img class="img-fluid" src="../images/other/SD-IMG_4854-Edit-Web.jpg" alt="Photo of Skyler Dong. Photo courtesy of Alexey Portnov.">Photo courtesy of Alexey Portnov
@@ -35,16 +35,7 @@ include_once '../common/htmlTag.php';
           <p>I'm Tiannong "Skyler" Dong.</p>
           <p>I'm an aspiring web developer.</p>
         </div>
-        <div>
-          Short bio:
-          <ul>
-            <li>I grew up in <a href="https://www.tripadvisor.com/Tourism-g297452-Dalian_Liaoning-Vacations.html?fid=8910bef2-878f-4d38-b12a-8db31df194ba" target="_blank">Dalian</a>, a city on the northern coast line of China. I love seafood.</li>
-            <li>I graduated from <a href="https://www.beloit.edu" target="_blank">Beloit College</a>, Wisconsin with a Geology major and a Physics minor.</li>
-            <li>I went to <a href="https://www.jsg.utexas.edu" target="_blank">geoscience graduate school</a> at <a href="https://www.utexas.edu" target="_blank">the University of Texas at Austin</a> to study <a href="https://www.jsg.utexas.edu/news/2017/10/fueling-the-future/" target="_blank">methane hydrate</a>.</li>
-            <li>Now I'm pursuing a career in web development.</li>
-          </ul>
-        </div>
-        <div>Although I have a degree in science, I'm very versatile. I like making things and helping people. I like to use technology to improve the quality of our lives.
+        <div>I have a degree in science and I like making things and helping people.
           <ul>
             <li>I have built 2 websites in the past:
               <ul>

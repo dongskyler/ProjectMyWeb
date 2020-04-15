@@ -74,6 +74,11 @@ body .maincontent h3 {
 .maincontent {
   padding-top: 1rem;
   padding-bottom: 2rem;
+  animation-name: fade-in-animation;
+  animation-timing-function: ease;
+  animation-duration: 0.75s;
+  animation-iteration-count:1;
+  animation-fill-mode: forwards;
 }
 
 .toc_container {
@@ -270,8 +275,8 @@ header.masthead .page-heading .subheading {
 
 /* .masthead-sm .page-heading*/
 header.masthead.masthead-sm .page-heading {
-  padding: 10% 0 0;
-  padding: 10vh 0 0;
+  padding: 14% 0 0;
+  padding: 14vh 0 0;
 }
 @media screen and (min-width: 576px) and (min-height: 400px) {
   header.masthead.masthead-sm .page-heading {
@@ -469,17 +474,40 @@ header.masthead .post-heading .meta {
   cursor: pointer;
 }
 
+/* Column design for text-blocks */
+
+.sitemap {
+  column-count: 1;
+  column-width: 100%;
+  column-gap: 2rem;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+@media screen and (min-width: 992px) and (min-height: 400px) {
+  .sitemap {
+    column-count: 2;
+    column-width: 50%;
+  }
+}
+
+.sitemap-section h2 {
+  font-weight: 600;
+}
+
+
 /* ANIMATIONS */
 
 .fade-in {
-  animation-name: fadeInAnimation;
+  animation-name: fade-in-animation;
   animation-timing-function: ease;
   animation-duration: 2.3s;
   animation-iteration-count:1;
   animation-fill-mode: forwards;
 }
-@keyframes fadeInAnimation {
-  0% {opacity: 0.01;}
+@keyframes fade-in-animation {
+  0% {opacity: 0;}
+  25% {opacity: 0.01;}
   50% {opacity: 0.05;}
   100% {opacity: 1;}
 }
@@ -495,17 +523,13 @@ header.masthead .post-heading .meta {
 }
 
 .fade-in-fast {
-  animation-name: fadeInAnimation;
+  animation-name: fade-in-animation;
   animation-timing-function: ease;
-  animation-duration: 2s;
+  animation-duration: 0.6s;
   animation-iteration-count:1;
   animation-fill-mode: forwards;
 }
-@keyframes fadeInAnimation {
-  0% {opacity: 0.01;}
-  50% {opacity: 0.05;}
-  100% {opacity: 1;}
-}
+
 .slide-in-bottom-fast {
   animation-name: slideInBottom;
   animation-timing-function: ease;
@@ -551,6 +575,11 @@ footer .footer-icon li {
 
 footer .footer-icon li i {
   font-size: 2.5rem;
+}
+
+footer .pipe-footer {
+  padding: 0 0.5rem;
+  color: #86868B;
 }
 
 .maincontent .filter-button-bar .btn {

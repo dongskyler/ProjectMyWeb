@@ -16,11 +16,11 @@
   else echo ' navbar-dark bg-lightdark';
 ?>
 ">
-  <a class="navbar-brand" href= "<?php echo PATH;?>">Skyler Dong</a>
+  <a class="navbar-brand fade-in-fast" href= "<?php echo PATH;?>">Skyler Dong</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse fade-in-fast" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href= "<?php if ($_SERVER["SERVER_NAME"]=="localhost") {echo PATH,'/app';} else {echo 'https://app.skylerdong.com';} ?>">App</a>
