@@ -154,7 +154,7 @@ $(function () {
   var backToTopButton = document.getElementById("back-to-top-button");
 
   window.onscroll = () => {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
       backToTopButton.style.display = "block";
     } else {
       backToTopButton.style.display = "none";

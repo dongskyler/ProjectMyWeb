@@ -42,8 +42,10 @@
     </div>
     <div class="col-10 text-left mb-2">
       <span><a href="<?php echo PATH;?>/contact">Contact</a></span>
-      <span>&nbsp;&#124;&nbsp;</span>
+      <span class="pipe-footer">&#124;</span>
       <span><a href="<?php echo PATH;?>/about/#copyright-notice">Copyright&nbsp;Notice</a></span>
+      <span class="pipe-footer">&#124;</span>
+      <span><a href="<?php echo PATH;?>/sitemap">Site&nbsp;Map</a></span>
     </div>
     <div class="col-10 text-left mb-2"><?php
       if (!defined('COPYRIGHT_NOTICE')) {

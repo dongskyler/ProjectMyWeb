@@ -66,7 +66,7 @@ function modifyQueryStr_location($str)
   $str = str_replace("\w'\w", '&apos;', $str);
   return $str;
 }
-  include_once '../common/methods.php';
+include_once '../common/methods.php';
 ?>
 <!doctype html>
 <?php
