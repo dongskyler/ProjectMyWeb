@@ -1,4 +1,5 @@
 <?php
+  define("MASTHEAD_SIZE",'SM');
   define("NAVBAR_COLOR",'light');
   define("BG_IMG_MD",'photography/SD_N18_5431_2_Web.jpg');
   define("BG_IMG_LG",'large/SD_N18_5431_2_Web_Large.jpg');

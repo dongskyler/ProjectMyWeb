@@ -1,4 +1,10 @@
 <!--Footer-->
+<button id="back-to-top-button" class="hvr-grow">
+  <span class="fa-stack">
+    <i class="fas fa-circle fa-stack-2x"></i>
+    <i class="fas fa-arrow-up fa-stack-2x"></i>
+  </span>
+</button>
 <!-- Search Modal -->
 <div id="modalSearch" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-lg">
@@ -20,38 +26,33 @@
 <footer>
 <div class="container">
   <div class="row">
-    <div class="d-flex col-12 justify-content-start col-md-3">
+    <div class="d-flex col-10 justify-content-start">
       <ul class="footer-icon">
-        <a id="back-to-top"><li class="pr-2"><i class="fas fa-arrow-circle-up"></i>&nbsp;&nbsp;Back to top</li></a>
-      </ul>
-    </div>
-    <div class="d-flex col-12 justify-content-start col-md-9 justify-content-md-end">
-      <ul class="footer-icon">
-        <li class="pr-2 pr-sm-3 pr-md-0 pl-md-3"><a href="mailto:skyler@skylerdong.com"><i class="far fa-envelope"></i></a>
+        <li class="pr-2 pr-sm-3 hvr-float"><a href="mailto:skyler@skylerdong.com"><i class="far fa-envelope"></i></a>
         </li>
-        <li class="pr-2 pr-sm-3 pr-md-0 pl-md-3"><a href="https://www.linkedin.com/in/dongt/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <li class="pr-2 pr-sm-3 hvr-float"><a href="https://www.linkedin.com/in/dongt/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         </li>
-        <li class="pr-2 pr-sm-3 pr-md-0 pl-md-3"><a href="https://github.com/dongskyler" target="_blank"><i class="fab fa-github"></i></a>
+        <li class="pr-2 pr-sm-3 hvr-float"><a href="https://github.com/dongskyler" target="_blank"><i class="fab fa-github"></i></a>
         </li>
-        <!--<li class="pr-2 pr-sm-3 pr-md-0 pl-md-3"><a href="https://gitlab.com/dongskyler" target="_blank"><i class="fab fa-gitlab"></i></a>
+        <!--<li class="pr-2 pr-sm-3 hvr-float"><a href="https://gitlab.com/dongskyler" target="_blank"><i class="fab fa-gitlab"></i></a>
         </li>-->
-        <li class="pr-2 pr-sm-3 pr-md-0 pl-md-3"><a href="https://www.instagram.com/skyler.dong.art/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <li class="pr-2 pr-sm-3 hvr-float"><a href="https://www.instagram.com/skyler.dong.art/" target="_blank"><i class="fab fa-instagram"></i></a>
         </li>
       </ul>
     </div>
-    <div class="col-12 text-left mb-2">
+    <div class="col-10 text-left mb-2">
       <span><a href="<?php echo PATH;?>/contact">Contact</a></span>
       <span>&nbsp;&#124;&nbsp;</span>
-      <span><a href="<?php echo PATH;?>/about/#copyright-notice">Copyright Notice</a></span>
+      <span><a href="<?php echo PATH;?>/about/#copyright-notice">Copyright&nbsp;Notice</a></span>
     </div>
-    <div class="col-12 text-left mb-2"><?php
+    <div class="col-10 text-left mb-2"><?php
       if (!defined('COPYRIGHT_NOTICE')) {
         echo 'Copyright &copy; ',date("Y"),' Skyler Dong.';
       }
       elseif (COPYRIGHT_NOTICE=='Images') {
-        echo 'All images &copy; 2013&#8211;',date("Y"),' Skyler Dong. All rights reserved.';
+        echo 'All&nbsp;images&nbsp;&copy; 2013&#8211;',date("Y"),' Skyler&nbsp;Dong. All&nbsp;rights&nbsp;reserved.';
       }
-      else echo 'Copyright &copy; ',date("Y"),' Skyler Dong.';
+      else echo 'Copyright&nbsp;&copy; ',date("Y"),' Skyler&nbsp;Dong.';
       ?></div>
   </div><!--row-->
 </div><!--container-->

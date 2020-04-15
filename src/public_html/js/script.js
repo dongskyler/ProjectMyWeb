@@ -71,14 +71,12 @@ $(function () {
 
   // END: Photo gallery filtering
 
+  // Query URL parameters
   const queryURLString = window.location.search;
   // console.log(queryURLString);
-
   const urlParams = new URLSearchParams(queryURLString);
-
   const category_url = urlParams.get('category');
   // console.log(category_url);
-
   const photo_url = urlParams.get('photo');
   // console.log(photo_url);
 
@@ -99,7 +97,6 @@ $(function () {
   }
 
   // Activate modal on loading if URL parameters present
-
   if (photo_url != null) {
     let $photoid = $("#" + photo_url);
     if ($photoid.children('div').attr('class').indexOf('photo-landscape') > -1) {
@@ -114,7 +111,7 @@ $(function () {
   }
 
   // Open modal
-  $('.gallery .photo-block .pop').on('click', function () {
+  $('.gallery .photo-block .pop').click(function () {
     if ($(this).children('div').attr('class').indexOf('photo-landscape') > -1) {
       $('#imagemodal>div').attr('class', $('#imagemodal>div').attr('class') + ' modal-lg');
     }
@@ -133,7 +130,6 @@ $(function () {
   });
 
   // Click anywhere to close modal
-
   $(document).click(e => {
     if (e.button == 0) {
       $('#imagemodal').modal('hide');
@@ -154,9 +150,19 @@ $(function () {
     $('#meta_og_url').attr('content', window.location.href);
   })
 
-  // Scroll to top when button clicked
-  $('#back-to-top').click(function () {
-    $('html,body').animate({ scrollTop: 0 }, 'slow');
+    // Back to top button
+  var backToTopButton = document.getElementById("back-to-top-button");
+
+  window.onscroll = () => {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  };
+
+  $('#back-to-top-button').click(function () {
+    $('html,body').animate({scrollTop: 0}, 'slow');
     return false;
   })
 });
