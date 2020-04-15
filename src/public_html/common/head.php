@@ -2,8 +2,6 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="author" content="Tiannong Skyler Dong">
-<meta name="description" content="<?php echo strip_tags(SITE_SUBTITLE);?>" />
 <link rel="preload" href="https://fonts.googleapis.com/css?family=Ubuntu&amp;display=swap" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="https://fonts.googleapis.com/css?family=Noto+Sans&amp;display=swap" as="style" onload="this.rel='stylesheet'">
 <link rel="stylesheet" type="text/css" href= "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css">
@@ -11,6 +9,18 @@
 <link rel="preload" type="text/css" href= "<?php echo PATH; ?>/css/prism.min.css" as="style" onload="this.rel='stylesheet'">
 <link rel="stylesheet" type="text/css" href= "<?php echo PATH; ?>/css/<?php 
   echo ($_SERVER["SERVER_NAME"] == "localhost") ? 'styles.css' : 'styles.min.css';?>">
+<style>
+  #masthead-image {
+    background-image: url('<?php echo PATH;?>/images/<?php echo BG_IMG_MD;?>');
+  }
+  @media only screen and (min-width:768px){
+    #masthead-image {
+      background-image: url('<?php echo PATH;?>/images/<?php echo BG_IMG_LG;?>');
+    }
+  }
+</style>
+<meta name="author" content="Tiannong Skyler Dong">
+<meta name="description" content="<?php echo strip_tags(SITE_SUBTITLE);?>" />
 <meta property="og:title" content="<?php echo strip_tags(SITE_TITLE),' - Skyler Dong';?>" />
 <meta name="og:description" content="<?php echo strip_tags(SITE_SUBTITLE);?>" />
 <meta property="og:type" content="<?php
@@ -39,16 +49,6 @@ $meta_og_image_0 = '<?php echo isset($og_image_default) ? $og_image_default : $o
 <meta name="msapplication-TileColor" content="#f9f9f9">
 <meta name="msapplication-config" content="https://skylerdong.com/images/favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-<style>
-  #masthead-image {
-    background-image: url('<?php echo PATH;?>/images/<?php echo BG_IMG_MD;?>');
-  }
-  @media only screen and (min-width:768px){
-    #masthead-image {
-      background-image: url('<?php echo PATH;?>/images/<?php echo BG_IMG_LG;?>');
-    }
-  }
-</style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106597051-4"></script>
 <script async>
     window.dataLayer = window.dataLayer || [];

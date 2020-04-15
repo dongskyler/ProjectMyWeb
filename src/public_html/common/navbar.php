@@ -1,4 +1,7 @@
 <!-- Navbar -->
+<style>
+.navbar {font-family: 'Ubuntu', sans-serif;}
+</style>
 <nav class="navbar sticky-top navbar-expand-md
 <?php
   if (!defined('NAVBAR_COLOR') || NAVBAR_COLOR=='lightdark') {
@@ -20,10 +23,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href= "<?php echo PATH; ?>/about">About</a>
+        <a class="nav-link" href= "<?php if ($_SERVER["SERVER_NAME"]=="localhost") {echo PATH,'/app';} else {echo 'https://app.skylerdong.com';} ?>">App</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href= "<?php if ($_SERVER["SERVER_NAME"]=="localhost") {echo PATH,'/app';} else {echo 'https://app.skylerdong.com';} ?>">App</a>
+        <a class="nav-link" href= "<?php echo PATH; ?>/about">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href= "<?php echo PATH; ?>/blog">Blog</a>
@@ -40,6 +43,3 @@
     </ul>
   </div>
 </nav>
-<style>
-.navbar {font-family: 'Ubuntu', sans-serif;}
-</style>

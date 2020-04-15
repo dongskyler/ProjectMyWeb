@@ -24,7 +24,7 @@ include_once '../common/htmlTag.php';
   <!-- Main Content -->
   <div class="container maincontent">
     <div class="row">
-      <div class="col-12 mb-3 col-md-10">
+      <div class="col-12 mb-3 mx-auto col-md-10">
         <div>
           <h2>About me</h1>
         </div>
@@ -68,7 +68,7 @@ include_once '../common/htmlTag.php';
       </div>
       <!--column-->
       <hr>
-      <div class="col-12 mb-3">
+      <div class="col-12 mb-3 mx-auto col-md-10">
         <div>
           <h2 id="copyright-notice" class="anchor">Copyright notice for images</h2>
         </div>

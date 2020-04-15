@@ -123,8 +123,8 @@
         <hr/>
       </div><!--POST-PREVIEW-->
     </div><!--COL-->
-    <div class="col-10 mx-auto col-md-8"><!-- Older Blogs button -->
-      <a class="btn btn-outline-info btn-block" href="older-blogs.php">Older Blogs &rarr;</a>
+    <div class="col-12 mx-auto col-md-10 col-lg-8"><!-- Older Blogs button -->
+      <a class="btn btn-outline-secondary btn-block" href="older-blogs.php">Older Blogs &rarr;</a>
     </div><!--Older Blogs button-->
   </div><!--ROW-->
 </div><!--maincontent-->
