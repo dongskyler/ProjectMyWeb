@@ -1,4 +1,5 @@
 <?php
+  include_once '../common/methods.php';
   // MySQL
   if ($_SERVER["SERVER_NAME"] == "localhost") {
     require_once '../../config/login_mysql_local.php';
@@ -39,34 +40,6 @@
   define("SITE_SUBTITLE",'<p><a href="https://www.instagram.com/skyler.dong.art/" target="_blank">Instagram: @skyler.dong.art</a></p>');
   define("FADE_IN",'yes');
   define("COPYRIGHT_NOTICE",'Images');
-  function modifyQueryStr_cat($str)
-{
-  $str = str_replace("_", " ", $str);
-  $str = htmlspecialchars($str);
-  if (!strcmp($str, 'bnw'))
-    $str = 'B&amp;W';
-  $str = ucfirst($str);
-  return $str;
-}
-
-function modifyQueryStr_title($str)
-{
-  $str = ucfirst($str);
-  $str = htmlspecialchars($str);
-  $str = str_replace(' - ', ' &ndash; ', $str);
-  $str = str_replace("\w'\w", '&apos;', $str);
-  return $str;
-}
-
-function modifyQueryStr_location($str)
-{
-  $str = ucfirst($str);
-  $str = htmlspecialchars($str);
-  $str = str_replace(' - ', ' &ndash; ', $str);
-  $str = str_replace("\w'\w", '&apos;', $str);
-  return $str;
-}
-include_once '../common/methods.php';
 ?>
 <!doctype html>
 <?php
@@ -84,7 +57,7 @@ include_once '../common/methods.php';
   include_once '../common/header.php';
 ?>
 <!-- Main Content -->
-<div class="container-xl maincontent fade-in">
+<div class="container-xl maincontent fade-in-slow">
   <div class="filter-button-bar col-12 mx-auto col-md-10 filter-bar-photo mb-3">
     <button type="button" class="filter-button btn btn-outline-light active" data-class="all">All</button>
     <?php // START: QUERY CATEGORY NAMES (catname)

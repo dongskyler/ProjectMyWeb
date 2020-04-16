@@ -24,16 +24,16 @@ include_once '../common/htmlTag.php';
   <!-- Main Content -->
   <div class="container maincontent">
     <div class="row">
-      <div class="col-12 mb-3 mx-auto col-md-10">
+      <div class="col-12 mb-3 mx-auto col-lg-10">
         <div>
           <h2 id="about-me" class="anchor">About me</h1>
-        </div>
-        <div class="col-12 float-none mb-3 photo-block text-center small col-sm-6 float-sm-right col-md-4">
-          <img class="img-fluid" src="../images/other/SD-IMG_4854-Edit-Web.jpg" alt="Photo of Skyler Dong. Photo courtesy of Alexey Portnov.">Photo courtesy of Alexey Portnov
         </div>
         <div>
           <p>I'm Tiannong "Skyler" Dong.</p>
           <p>I'm an aspiring web developer.</p>
+        </div>
+        <div class="col-12 float-none mb-3 photo-block text-center small col-sm-6 float-sm-right col-md-4">
+          <img class="img-fluid" src="../images/other/SD-IMG_4854-Edit-Web.jpg" alt="Photo of Skyler Dong. Photo courtesy of Alexey Portnov.">Photo courtesy of Alexey Portnov
         </div>
         <div>I have a degree in science and I like making things and helping people.
           <ul>
@@ -54,20 +54,10 @@ include_once '../common/htmlTag.php';
           </ul>
         </div>
         <div>
-          <p>I also believe technology and arts work hand in hand. I have longtime interests in design, music, calligraphy, and <a href="../photography/">photography</a>.</p>
+          <p>I also believe technology and arts work hand in hand. I have longtime interests in design, music, calligraphy, and <a href="<?php echo PATH;?>/photography">photography</a>.</p>
         </div>
       </div>
       <!--column-->
-      <hr>
-      <div class="col-12 mb-3 mx-auto col-md-10">
-        <div>
-          <h2 id="copyright-notice" class="anchor">Copyright notice for images</h2>
-        </div>
-        <div>
-          <p>It is always appreciated when you refer back to my website. However, all images appearing on this domain are not to be downloaded or reproduced in any way without permission. If you intend to use my images by any means or purchase prints, you are welcome to <a href="../contact/">contact me</a>. Thank you.
-          </p>
-        </div>
-      </div>
     </div>
     <!--row-->
   </div>

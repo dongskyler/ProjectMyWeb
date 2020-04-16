@@ -11,7 +11,7 @@ if (defined('MASTHEAD_SIZE')) {
 if (!(defined('FADE_IN')) || FADE_IN == 'no')
   echo ' fade-in-fast';
 elseif (FADE_IN == 'yes')
-  echo ' fade-in';
+  echo ' fade-in-slow';
 ?>
 ">
   <div class="overlay"></div>
