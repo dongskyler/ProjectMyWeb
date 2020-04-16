@@ -12,12 +12,10 @@ define("OG_IMAGE", 'https://skylerdong.com/images/other/SD-IMG_4854-Edit-Web.jpg
 include_once '../common/config.php';
 include_once '../common/htmlTag.php';
 ?>
-
 <head>
   <?php include '../common/head.php'; ?>
   <title>Contact - Skyler Dong</title>
 </head>
-
 <body>
   <?php
   include_once '../common/navbar.php';
