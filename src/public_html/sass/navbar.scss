@@ -1,0 +1,23 @@
+
+
+/* Inside nvarbar.php now:
+.navbar {font-family: 'Ubuntu', Helvetica, sans-serif;} */
+
+.navbar-brand {
+  padding-top: 1px;
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media screen and (min-width: $breakpoint-sm) and (min-height: $breakpoint-sm * 0.67) {
+  .navbar-brand {
+    font-size: 1.375rem;
+  }
+}
+
+.navbar-dark {
+  color: $color-deepdark-1;
+}
+
+
+
