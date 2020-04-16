@@ -498,28 +498,19 @@ header.masthead .post-heading .meta {
 
 /* ANIMATIONS */
 
-.fade-in {
-  animation-name: fade-in-animation;
-  animation-timing-function: ease;
-  animation-duration: 2.3s;
-  animation-iteration-count:1;
-  animation-fill-mode: forwards;
-}
 @keyframes fade-in-animation {
   0% {opacity: 0;}
   25% {opacity: 0.01;}
   50% {opacity: 0.05;}
   100% {opacity: 1;}
 }
-.slide-in-bottom {
-  animation-name: slideInBottom;
+
+.fade-in-slow {
+  animation-name: fade-in-animation;
   animation-timing-function: ease;
-  animation-duration: 1.8s;
-}
-@keyframes slideInBottom {
-  0% {margin-top:200%; opacity:0;}
-  50% {margin-top:70%; opacity:0;}
-  100% {margin-top:0%; opacity:1;}
+  animation-duration: 2.6s;
+  animation-iteration-count:1;
+  animation-fill-mode: forwards;
 }
 
 .fade-in-fast {
@@ -530,15 +521,22 @@ header.masthead .post-heading .meta {
   animation-fill-mode: forwards;
 }
 
+@keyframes slideInBottom {
+  0% {margin-top:200%; opacity:0;}
+  33% {margin-top:60%; opacity:0;}
+  100% {margin-top:0%; opacity:1;}
+}
+
+.slide-in-bottom {
+  animation-name: slideInBottom;
+  animation-timing-function: ease;
+  animation-duration: 1.8s;
+}
+
 .slide-in-bottom-fast {
   animation-name: slideInBottom;
   animation-timing-function: ease;
-  animation-duration: 1.2s;
-}
-@keyframes slideInBottom {
-  0% {margin-top:200%; opacity:0;}
-  33% {margin-top:70%; opacity:0;}
-  100% {margin-top:0%; opacity:1;}
+  animation-duration: 1.1s;
 }
 
 /* Footer */
