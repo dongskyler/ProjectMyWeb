@@ -1,0 +1,87 @@
+$font-primary: 'Ubuntu', Helvetica, sans-serif;
+$font-secondary: 'Noto Sans', sans-serif;
+
+$color-primary: #212529;
+$color-primary-icon: #303030;
+$color-primary-footnote: #585858;
+$color-deepdark: #F9F9F9;
+$color-deepdark-1: #E7E7E7;
+$color-lightdark: #F9F9F9;
+
+$background-color-primary: #FFFFFF;
+$background-color-lightdark: #303030;
+$background-color-deepdark: #050505;
+$background-color-block: #F5F2F0;
+$background-color-overlay: #080808;
+$background-color-footer: #D6D6D6;
+
+$color-a-primary: #0066CC;
+$color-a-deepdark: #2997FF;
+
+$color-btn-primary: #0071E3;
+$color-btn-secondary: #585858;
+$color-btn-light: #D6D6D6;
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+$header-height-percent: 75%;
+$header-height-vh: 75vh;
+$header-min-height: 400px;
+
+$header-height-percent-sm: 75%;
+$header-height-vh-sm: 75vh;
+$header-min-height-sm: 450px;
+
+$header-height-percent-lg: 85%;
+$header-height-vh-lg: 85vh;
+$header-min-height-lg: 480px;
+
+$navbar-height: 56px;
+
+$opacity: 0.45;
+
+h1, 
+h2 {
+  font: $font-primary;
+}
+
+a {
+  text-decoration: none;
+  color: $color-a-primary;
+}
+
+.bg-deepdark {
+  text-decoration: none;
+  color: $color-a-deepdark;
+  background-color: $background-color-deepdark;
+
+  .maincontent .gallery a {
+    color: $color-deepdark;
+  }
+}
+
+.bg-lightdark {
+  background-color: $background-color-lightdark;
+  color: $color-lightdark;
+}
+
+.anchor::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -200px; 
+  height: 200px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
+@import 'navbar';
+@import 'header';
+@import 'maincontent';
+@import 'button';
+@import 'photography';
+@import 'modal';
+@import 'footer';
+@import 'animation';
