@@ -36,8 +36,7 @@ include_once '../common/header.php';
         <button type="button" class="filter-button btn btn-outline-primary" data-class="php">PHP</button>
         <button type="button" class="filter-button btn btn-outline-primary" data-class="python">Python</button>
         <hr/>
-      </div>
-      <!--FILTER BUTTON-->
+      </div><!--FILTER BUTTON-->
       <div class='col-12 mx-auto col-md-10'>
         <div class="post-preview filterE" data-class="d3-js javascript python">
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="d3-js">D3.js</button>

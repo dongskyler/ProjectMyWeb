@@ -399,30 +399,6 @@ header.masthead .post-heading .meta {
   margin-right: 0.75rem;
 }
 
-#back-to-top-button {
-  display: none;
-  position: fixed;
-  bottom: 6rem;
-  right: 1rem;
-  cursor: pointer;
-  text-align: center;
-  z-index: 99;
-  margin: 0;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  font-size: 1.5rem;
-}
-
-#back-to-top-button > .fa-stack > i:first-child {
-  color: #212529;
-  opacity: 0.6;
-}
-
-#back-to-top-button > .fa-stack > i:last-child {
-  color: #F9F9F9;
-}
-
 .hanging-indent p {
   text-indent: -1.5rem;
   padding-left: 3rem;
@@ -499,6 +475,26 @@ header.masthead .post-heading .meta {
   font-weight: 600;
 }
 
+
+/* Content blocks */
+.content-block a {
+  color: #212529;
+}
+
+.content-block  a:focus, 
+.content-block a:hover {
+  text-decoration: none;
+  color: #0066CC;
+}
+
+.content-block .content-block-title {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.content-block .content-block-subtitle {
+  font-size: 1rem;
+}
 
 /* ANIMATIONS */
 
@@ -604,12 +600,12 @@ footer .pipe-footer {
 }
 @media screen and (min-width: 576px) and (min-height: 400px) {
   .maincontent .filter-button-bar .btn {
-    font-size: 0.95rem;
+    font-size: 0.83rem;
   }
 }
 @media screen and (min-width: 992px) and (min-height: 480px) {
   .maincontent .filter-button-bar .btn {
-    font-size: 1rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -665,7 +661,6 @@ footer .pipe-footer {
 .show > .btn-outline-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
-
 
 .btn-outline-light {
   color: #D6D6D6;
@@ -737,6 +732,30 @@ footer .pipe-footer {
 
 #imagemodal p.modal-photo-location {
   font-size: 0.95rem;
+}
+
+#back-to-top-button {
+  display: none;
+  position: fixed;
+  bottom: 6rem;
+  right: 1rem;
+  cursor: pointer;
+  text-align: center;
+  z-index: 99;
+  margin: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+
+#back-to-top-button > .fa-stack > i:first-child {
+  color: #212529;
+  opacity: 0.6;
+}
+
+#back-to-top-button > .fa-stack > i:last-child {
+  color: #F9F9F9;
 }
 
 /* CSS Animations */
