@@ -19,10 +19,10 @@ include_once '../common/htmlTag.php';
   <link rel="canonical" href="https://app.skylerdong.com" />
 </head>
 <body>
-  <?php
-  include_once '../common/navbar.php';
-  include_once '../common/header.php';
-  ?>
+<?php
+include_once '../common/navbar.php';
+include_once '../common/header.php';
+?>
   <!-- Main Content -->
   <div class="container maincontent">
     <div class="row">

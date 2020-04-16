@@ -46,8 +46,8 @@ a {
 .anchor::before { 
   display: block; 
   content: " "; 
-  margin-top: -100px; 
-  height: 100px; 
+  margin-top: -200px; 
+  height: 200px; 
   visibility: hidden; 
   pointer-events: none;
 }
@@ -86,6 +86,10 @@ body .maincontent h3 {
   display: table;
   font-size: 0.95rem;
   background-color: #F5F2F0;
+}
+
+ul.toc_list {
+  padding-left: 1rem;
 }
 
 .maincontent blockquote {
