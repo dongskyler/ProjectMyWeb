@@ -114,63 +114,72 @@ header.masthead.masthead-sm .overlay {
   }
 }
 
+header.masthead {
+  a {
+    color: $color-masthead;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: $color-a-masthead-hover;
+  }
+
+  .page-heading {
+    padding: 23% 0 0;
+    padding: 23vh 0 0;
+    color: $color-masthead;
+    text-align: center;
+
+    h1 {
+      font-family: $font-primary;
+      font-size: 2.9rem;
+      font-weight: 700;
+      padding-bottom: 1rem;
+    }
+
+    .subheading {
+      font-family: $font-secondary;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      display: block;
+      margin: 0.5rem 0 0;
+    }
+  }
+
+  @media screen and (min-width: 576px) and (min-height: 400px) {
+    .page-heading {
+      padding: 25% 0 0;
+      padding: 25vh 0 0;
+
+      h1 {
+        font-size: 4rem;
+      }
+
+      subheading {
+        font-size: 1.5rem;
+        margin: 0.5rem 0 0;
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) and (min-height: 480px) {
+    .page-heading {
+      padding: 30% 0 0;
+      padding: 30vh 0 0;
+
+      h1 {
+        font-size: 6rem;
+      }
+
+      .subheading {
+        font-size: 1.75rem;
+        margin: 0.5rem 0 0;
+      }
+    }
+  }
+}
 
 
-header.masthead a {
-  color: #F9F9F9;
-  text-decoration: underline;
-}
-
-header.masthead a:hover {
-  color: #BDDFFF;
-}
-
-/* page-heading */
-header.masthead .page-heading {
-  padding: 23% 0 0;
-  padding: 23vh 0 0;
-  color: #F9F9F9;
-  text-align: center;
-}
-header.masthead .page-heading h1 {
-  font-family: 'Ubuntu', Helvetica, sans-serif;
-  font-size: 2.9rem;
-  font-weight: 700;
-  padding-bottom: 1rem;
-}
-header.masthead .page-heading .subheading {
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  display: block;
-  margin: 0.5rem 0 0;
-}
-@media screen and (min-width: 576px) and (min-height: 400px) {
-  header.masthead .page-heading {
-    padding: 25% 0 0;
-    padding: 25vh 0 0;
-  }
-  header.masthead .page-heading h1 {
-    font-size: 4rem;
-  }
-  header.masthead .page-heading .subheading {
-    font-size: 1.5rem;
-    margin: 0.5rem 0 0;
-  }
-}
-@media screen and (min-width: 992px) and (min-height: 480px) {
-  header.masthead .page-heading {
-    padding: 30% 0 0;
-    padding: 30vh 0 0;
-  }
-  header.masthead .page-heading h1 {
-    font-size: 6rem;
-  }
-  header.masthead .page-heading .subheading {
-    font-size: 1.75rem;
-    margin: 0.5rem 0 0;
-  }
-}
 
 /* .masthead-sm .page-heading*/
 header.masthead.masthead-sm .page-heading {
@@ -204,7 +213,7 @@ header.masthead .post-heading .subheading,
 header.masthead .post-heading .meta {
   line-height: 1.25;
   display: block;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: $font-secondary;
   padding-bottom: 0.5rem;
 }
 header.masthead .post-heading .subheading {

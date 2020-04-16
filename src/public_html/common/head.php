@@ -5,10 +5,9 @@
 <link rel="preload" href="https://fonts.googleapis.com/css?family=Ubuntu&amp;display=swap" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="https://fonts.googleapis.com/css?family=Noto+Sans&amp;display=swap" as="style" onload="this.rel='stylesheet'">
 <link rel="stylesheet" type="text/css" href= "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href= "<?php echo PATH; ?>/css/styles.min.css">
 <script async src="https://kit.fontawesome.com/54c2c027a8.js" crossorigin="anonymous"></script>
 <link rel="preload" type="text/css" href= "<?php echo PATH; ?>/css/prism.min.css" as="style" onload="this.rel='stylesheet'">
-<link rel="stylesheet" type="text/css" href= "<?php echo PATH; ?>/css/<?php 
-  echo ($_SERVER["SERVER_NAME"] == "localhost") ? 'styles.css' : 'styles.min.css';?>">
 <style>
   #masthead-image {
     background-image: url('<?php echo PATH;?>/images/<?php echo BG_IMG_MD;?>');
