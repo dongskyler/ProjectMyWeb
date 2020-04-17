@@ -41,7 +41,7 @@ include_once '../common/htmlTag.php';
             <li>I graduated from <a href="https://www.beloit.edu" target="_blank">Beloit College</a>, Wisconsin with a Geology major and a Physics minor.</li>
             <li>I went to <a href="https://www.jsg.utexas.edu" target="_blank">geoscience graduate school</a> at <a href="https://www.utexas.edu" target="_blank">the University of Texas at Austin</a> to study <a href="https://www.jsg.utexas.edu/news/2017/10/fueling-the-future/" target="_blank">methane hydrate</a>.</li>
             <li>Now I'm pursuing a career in web development.</li>
-            <li>Read about <a href="./blog/this-website.php">how I'm building this website</a> with HTML, CSS, JavaScript, PHP and MySQL.</li>
+            <li>Read about <a href="https://skylerdong.com/blog/this-website.php">how I'm building this website</a> with HTML, CSS, JavaScript, PHP and MySQL.</li>
           </ul>
         </div>
         <div>I have a degree in science and I like making things and helping people.

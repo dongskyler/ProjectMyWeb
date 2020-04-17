@@ -29,9 +29,40 @@
       <button type="button" class="filter-button btn btn-outline-success" data-class="coding">Coding</button>
       <button type="button" class="filter-button btn btn-outline-success" data-class="photograhy">Photography</button>
       <button type="button" class="filter-button btn btn-outline-success" data-class="travel">Travel</button>
+      <button type="button" class="filter-button btn btn-outline-success" data-class="helpful-tips">Helpful&nbsp;Tips</button>
       <hr/>
     </div><!--FILTER BUTTON-->
     <div class="col-12 mx-auto col-md-10">
+      <div class="post-preview filterE" data-class="coding">
+        <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="coding">Coding</button>
+        <a href="filter-buttons-javascript.php">
+          <h2 class="post-title">
+            Interactive Filtering Buttons and Updating URL Parameters using JavaScript
+          </h2>
+          <h3 class="post-subtitle">
+            Apply filter when a filter button is clicked
+          </h3>
+          <p class="post-meta">
+            Posted on April 17, 2020
+          </p>
+        </a>
+        <hr/>
+      </div><!--post-preview-->
+      <div class="post-preview filterE" data-class="coding">
+        <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="coding">Coding</button>
+        <a href="why-i-use-scss.php">
+          <h2 class="post-title">
+            Why I Use SCSS as My Preferred CSS Preprocessor
+          </h2>
+          <h3 class="post-subtitle">
+            SCSS made my life so much easier
+          </h3>
+          <p class="post-meta">
+            Posted on April 16, 2020
+          </p>
+        </a>
+        <hr/>
+      </div><!--post-preview-->
       <div class="post-preview filterE" data-class="coding">
         <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="coding">Coding</button>
         <a href="this-website.php">
@@ -92,8 +123,9 @@
         </a>
         <hr/>
       </div><!--post-preview-->
-      <div class="post-preview filterE" data-class="travel">
+      <div class="post-preview filterE" data-class="travel helpful-tips">
         <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="travel">Travel</button>
+        <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="helpful-tips">Helpful&nbsp;Tips</button>
         <a href="navigate-to-regional-bus-stop-at-ohare-t5.php">
           <h2 class="post-title">
             How to Navigate to Regional Bus Stops at Terminal 5 of O&#39;Hare Airport of Chicago
@@ -107,8 +139,9 @@
         </a>
         <hr/>
       </div><!--POST-PREVIEW-->
-      <div class="post-preview filterE" data-class="travel">
+      <div class="post-preview filterE" data-class="travel helpful-tips">
         <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="travel">Travel</button>
+        <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="helpful-tips">Helpful&nbsp;Tips</button>
         <a href="navigate-to-ohare-shuttle-center-from-t123.php">
           <h2 class="post-title">
             How to Navigate to Shuttle Center from T1, T2 or T3 at O'Hare Airport of Chicago

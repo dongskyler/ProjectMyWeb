@@ -21,7 +21,6 @@
     <span></span>
     <span></span>
     <span></span>
-    <span></span>
   </button>
   <div class="collapse navbar-collapse fade-in-fast" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
