@@ -1,12 +1,15 @@
+// sass --watch ./src/public_html/sass/main.scss:./src/public_html/css/styles.min.css --style compressed
+
 $font-primary: 'Ubuntu', Helvetica, sans-serif;
 $font-secondary: 'Noto Sans', sans-serif;
 
 $color-primary: #212529;
 $color-primary-icon: #303030;
 $color-primary-footnote: #585858;
+$color-lightdark: #F9F9F9;
 $color-deepdark: #F9F9F9;
 $color-deepdark-1: #E7E7E7;
-$color-lightdark: #F9F9F9;
+
 $color-masthead: #F9F9F9;
 
 $color-a-primary: #0066CC;
@@ -16,6 +19,7 @@ $color-a-masthead-hover: #BDDFFF;
 $background-color-primary: #FFFFFF;
 $background-color-lightdark: #303030;
 $background-color-deepdark: #050505;
+$background-color-light: #F8F9FA;
 $background-color-block: #F5F2F0;
 $background-color-overlay: #080808;
 $background-color-footer: #D6D6D6;
@@ -29,20 +33,7 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
-$header-height-percent: 75%;
-$header-height-vh: 75vh;
-$header-min-height: 400px;
-
-$header-height-percent-sm: 75%;
-$header-height-vh-sm: 75vh;
-$header-min-height-sm: 450px;
-
-$header-height-percent-lg: 85%;
-$header-height-vh-lg: 85vh;
-$header-min-height-lg: 480px;
-
-$navbar-height: 54px;
-
+$navbar-height: 56px;
 $opacity: 0.45;
 
 h1,
@@ -61,8 +52,14 @@ a {
   color: $color-a-deepdark;
   background-color: $background-color-deepdark;
 
+  .maincontent a {
+    color: $color-a-deepdark;
+    cursor: pointer;
+  }
+
   .maincontent .gallery a {
     color: $color-deepdark;
+    cursor: pointer;
   }
 }
 
@@ -80,6 +77,7 @@ a {
   pointer-events: none;
 }
 
+@import 'animation';
 @import 'navbar';
 @import 'header';
 @import 'maincontent';
@@ -87,4 +85,3 @@ a {
 @import 'photography';
 @import 'modal';
 @import 'footer';
-@import 'animation';

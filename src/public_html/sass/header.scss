@@ -1,5 +1,29 @@
+$header-height-pct: 75%;
+$header-height-vh: 75vh;
+$header-min-height: 400px;
+
+$header-height-pct-sm: 75%;
+$header-height-vh-sm: 75vh;
+$header-min-height-sm: 450px;
+
+$header-height-pct-lg: 85%;
+$header-height-vh-lg: 85vh;
+$header-min-height-lg: 480px;
+
+$header-sm-height-pct: 50%;
+$header-sm-height-vh: 50vh;
+$header-sm-min-height: 300px;
+
+$header-sm-height-pct-sm: 50%;
+$header-sm-height-vh-sm: 50vh;
+$header-sm-min-height-sm: 300px;
+
+$header-sm-height-pct-lg: 50%;
+$header-sm-height-vh-lg: 50vh;
+$header-sm-min-height-lg: 300px;
+
 header.masthead {
-  height: $header-height-percent;
+  height: $header-height-pct;
   height: $header-height-vh;
   height: calc($header-height - $navbar-height);
   height: calc($header-height-vh - $navbar-height);
@@ -15,9 +39,9 @@ header.masthead {
     position: absolute;
     top: 0;
     left: 0;
-    height: $header-height-percent;
+    height: $header-height-pct;
     height: $header-height-vh;
-    height: calc($header-height-percent - $navbar-height);
+    height: calc($header-height-pct - $navbar-height);
     height: calc($header-height-vh - $navbar-height);
     min-height: $header-min-height;
     width: 100%;
@@ -28,16 +52,16 @@ header.masthead {
 
 @media screen and (min-width: $breakpoint-sm) and (min-height: $breakpoint-sm * 0.5) {
   header.masthead {
-    height: $header-height-percent-sm;
+    height: $header-height-pct-sm;
     height: $header-height-vh-sm;
-    height: calc($header-height-percent-sm - $navbar-height);
+    height: calc($header-height-pct-sm - $navbar-height);
     height: calc($header-height-vh-sm - $navbar-height);
     min-height: $header-min-height-sm;
 
     .overlay {
-      height: $header-height-percent;
+      height: $header-height-pct;
       height: $header-height-vh;
-      height: calc($header-height-percent - $navbar-height);
+      height: calc($header-height-pct - $navbar-height);
       height: calc($header-height-vh - $navbar-height);
       min-height: $header-min-height-sm;
     }
@@ -46,16 +70,16 @@ header.masthead {
 
 @media screen and (min-width: $breakpoint-lg) and (min-height: $breakpoint-lg * 0.5) {
   header.masthead {
-    height: $header-height-percent-lg;
+    height: $header-height-pct-lg;
     height: $header-height-vh-lg;
-    height: calc($header-height-percent-lg - $navbar-height);
+    height: calc($header-height-pct-lg - $navbar-height);
     height: calc($header-height-vh-lg - $navbar-height);
     min-height: $header-min-height-lg;
   }
   header.masthead .overlay {
-    height: $header-height-percent-lg;
+    height: $header-height-pct-lg;
     height: $header-height-vh-lg;
-    height: calc($header-height-percent-lg - $navbar-height);
+    height: calc($header-height-pct-lg - $navbar-height);
     height: calc($header-height-vh-lg - $navbar-height);
     min-height: $header-min-height-lg;
   }
@@ -64,53 +88,53 @@ header.masthead {
 
 /* .masthead.masthead-sm */
 header.masthead.masthead-sm {
-  height: 50%;
-  height: 50vh;
-  height: calc(50% - 56px);
-  height: calc(50vh - 56px);
-  min-height: 300px;
+  height: $header-sm-height-pct;
+  height: $header-sm-height-vh;
+  height: calc($header-sm-height-pct - $navbar-height);
+  height: calc($header-sm-height-vh - $navbar-height);
+  min-height: $header-sm-min-height;
   margin-bottom: 2rem;
 }
 header.masthead.masthead-sm .overlay {
-  height: 50%;
-  height: 50vh;
-  height: calc(50% - 56px);
-  height: calc(50vh - 56px);
-  min-height: 300px;
+  height: $header-sm-height-pct;
+  height: $header-sm-height-vh;
+  height: calc($header-sm-height-pct - $navbar-height);
+  height: calc($header-sm-height-vh - $navbar-height);
+  min-height: $header-sm-min-height;
 }
-@media screen and (min-width: 576px) and (min-height: 400px) {
+@media screen and (min-width: $breakpoint-sm) and (min-height: $breakpoint-sm * 0.67) {
   header.masthead.masthead-sm {
-    height: 50%;
-    height: 50vh;
-    height: calc(50% - 56px);
-    height: calc(50vh - 56px);
-    min-height: 300px;
+    height: $header-sm-height-pct-sm;
+    height: $header-sm-height-vh-sm;
+    height: calc($header-sm-height-pct-sm - $navbar-height);
+    height: calc($header-sm-height-vh-sm - $navbar-height);
+    min-height: $header-sm-min-height-sm;
     margin-bottom: 2rem;
   }
   header.masthead.masthead-sm .overlay {
-    height: 50%;
-    height: 50vh;
-    height: calc(50% - 56px);
-    height: calc(50vh - 56px);
-    min-height: 300px;
+    height: $header-sm-height-pct-sm;
+    height: $header-sm-height-vh-sm;
+    height: calc($header-sm-height-pct-sm - $navbar-height);
+    height: calc($header-sm-height-vh-sm - $navbar-height);
+    min-height: $header-sm-min-height-sm;
   }
 }
-@media screen and (min-width: 992px) and (min-height: 480px) {
+@media screen and (min-width: $breakpoint-lg) and (min-height: $breakpoint-lg * 0.5) {
   header.masthead.masthead-sm {
-    height: 50%;
-    height: 50vh;
-    height: calc(50% - 56px);
-    height: calc(50vh - 56px);
-    min-height: 300px;
+    height: $header-sm-height-pct-lg;
+    height: $header-sm-height-vh-lg;
+    height: calc($header-sm-height-pct-lg - $navbar-height);
+    height: calc($header-sm-height-vh-lg - $navbar-height);
+    min-height: $header-sm-min-height-lg;
     margin-bottom: 2rem;
   }
   header.masthead.masthead-sm .overlay {
     position: absolute;
-    height: 50%;
-    height: 50vh;
-    height: calc(50% - 56px);
-    height: calc(50vh - 56px);
-    min-height: 300px;
+    height: $header-sm-height-pct-lg;
+    height: $header-sm-height-vh-lg;
+    height: calc($header-sm-height-pct-lg - $navbar-height);
+    height: calc($header-sm-height-vh-lg - $navbar-height);
+    min-height: $header-sm-min-height-lg;
   }
 }
 
@@ -146,7 +170,7 @@ header.masthead {
     }
   }
 
-  @media screen and (min-width: 576px) and (min-height: 400px) {
+  @media screen and (min-width: $breakpoint-sm) and (min-height: $breakpoint-sm * 0.67) {
     .page-heading {
       padding: 25% 0 0;
       padding: 25vh 0 0;
@@ -162,7 +186,7 @@ header.masthead {
     }
   }
 
-  @media screen and (min-width: 992px) and (min-height: 480px) {
+  @media screen and (min-width: $breakpoint-lg) and (min-height: $breakpoint-lg * 0.5) {
     .page-heading {
       padding: 30% 0 0;
       padding: 30vh 0 0;
@@ -186,13 +210,13 @@ header.masthead.masthead-sm .page-heading {
   padding: 14% 0 0;
   padding: 14vh 0 0;
 }
-@media screen and (min-width: 576px) and (min-height: 400px) {
+@media screen and (min-width: $breakpoint-sm) and (min-height: $breakpoint-sm * 0.67) {
   header.masthead.masthead-sm .page-heading {
     padding: 10% 0 0;
     padding: 10vh 0 0;
   }
 }
-@media screen and (min-width: 992px) and (min-height: 480px) {
+@media screen and (min-width: $breakpoint-lg) and (min-height: $breakpoint-lg * 0.5) {
   header.masthead.masthead-sm .page-heading {
     padding: 8% 0 0;
     padding: 8vh 0 0;
@@ -224,7 +248,7 @@ header.masthead .post-heading .meta {
   font-size: 1rem;
   font-style: italic;
 }
-@media screen and (min-width: 576px) and (min-height: 400px) {
+@media screen and (min-width: $breakpoint-sm) and (min-height: $breakpoint-sm * 0.67) {
   header.masthead .post-heading {
     padding: 15% 0 0;
     padding: 15vh 0 0;
@@ -243,7 +267,7 @@ header.masthead .post-heading .meta {
     font-size: 1rem;
   }
 }
-@media screen and (min-width: 992px) and (min-height: 480px) {
+@media screen and (min-width: $breakpoint-lg) and (min-height: $breakpoint-lg * 0.5) {
   header.masthead .post-heading {
     padding: 15% 0 0;
     padding: 15vh 0 0;
@@ -262,4 +286,3 @@ header.masthead .post-heading .meta {
     font-size: 1.25rem;
   }
 }
-

@@ -13,9 +13,21 @@
   }
 }
 
-.navbar-dark {
-  color: $color-deepdark-1;
+.navbar.bg-lightdark {
+  color: $color-lightdark;
+  background-color: $background-color-lightdark;
 }
+
+.navbar.bg-deepdark {
+  color: $color-deepdark-1;
+  background-color: $background-color-deepdark;
+}
+
+.navbar.bg-light {
+  color: $color-primary;
+  background-color: $background-color-light;
+}
+
 
 .navbar-toggler {
   border: none;
@@ -30,7 +42,7 @@
   height: 23px;
   position: relative;
   margin: 6px 3px;
-  background-color: transparent;
+  // background-color: transparent;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -60,16 +72,28 @@
   transition: .25s ease-in-out;
 }
 
-.navbar-lightdark span {
-  background-color: $color-deepdark;
+.bg-lightdark #nav-icon {
+  background-color: $background-color-lightdark;
+  
+  span {
+    background-color: $color-deepdark;
+  }
 }
 
-.navbar-dark span {
-  background-color: $color-deepdark;
+.bg-deepdark #nav-icon {
+  background-color: $background-color-deepdark;
+  
+  span {
+    background-color: $color-deepdark-1;
+  }
 }
 
-.navbar-light span {
-  background-color: $color-primary;
+.bg-light #nav-icon{
+  background-color: $background-color-light;
+  
+  span {
+    background-color: $color-primary;
+  }
 }
 
 #nav-icon span:nth-child(1) {
@@ -110,5 +134,3 @@
   width: 0%;
   left: 50%;
 }
-
-
