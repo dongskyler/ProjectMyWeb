@@ -236,13 +236,117 @@ Records: 91  Deleted: 0  Skipped: 0  Warnings: 0</code>
 
     <div class="mb-5"><h3 id="photo-filtering-javascript" class="anchor">Photo filtering by criteria and updating URL parameters using JavaScript</h3>
       <p>I use JavaScript to create an interactive photo filtering system on <a href="../photography/">my photography page</a>. For example, when you click on "landscape" button, only the photos in the landscape category will be shown. It is worthy to to mention that many photos are in multiple categories and my filtering system supports filtering photos that are in several categories.</p>
-      <p>Please read my other blog <a href="https://skylerdong.com/blog/filter-buttons-javascript.php">Interactive Filtering Buttons and Updating URL Parameters using JavaScript</a> for details.</p>
+      <p>When a category is chosen, we will append URL parameters to the URL. This will be convinient and useful, when a user wants to share the link of the photography portfolio with a chosen category filter.</p>
+      <pre><code class="language-javascript">const filterCat = document.querySelectorAll('.maincontent .filter-button');
+// Get all category filter buttons from HTML
+// In my case, they are under .maincontent .filter-button
+
+const filterE = document.querySelectorAll('.maincontent .filterE');
+// Get all elements to be filtered from HTML
+// In my case, they are under .maincontent .filterE
+
+filterCat.forEach(cat => {
+  cat.addEventListener('click', () => {
+  // Trigger this function if the user clicks on category buttons
+        
+    toggleFilterCat(cat);
+    // Call toggleFilterCat to change "active" states of category buttons
+
+    toggleFilterE(cat.dataset.class);
+    // Call toggleFilterE to display or hide elements depending on their categories
+
+    let param = ("?category=").concat(cat.dataset.class);
+    // Construct the URL parameter
+
+    if (cat.dataset.class === 'all')
+      param = window.location.pathname;
+      // If category "all" is chosen, just remove the URL parameter and return the page URL
+
+    window.history.replaceState(null, null, param);
+    // Update URL with URL parameters
+  });
+}
+
+function toggleFilterCat(activeCat) {
+  filterCat.forEach(cat => {
+  // Loop through all category buttons
+
+    if (activeCat.dataset.class === cat.dataset.class)
+      cat.classList.add('active');
+      // Add "active" state of buttons
+    
+    else
+      cat.classList.remove('active');
+    // Remove "active" state of buttons
+  })
+}
+
+function toggleFilterE(dataClass) {
+  if (dataClass === 'all'){
+  // All elements are displayed if category "all" is chosen
+    
+    filterE.forEach(e => {
+      e.style.display = 'block';
+    })
+    // Loop through all elements and display all elements
+  }
+    
+  else{
+  // Filter images if any category other than "all" is chosen
+
+    filterE.forEach(e => {
+    // Loop through all elements
+
+      if (e.dataset.class.includes(dataClass))
+        e.style.display = 'block';
+        // Display the photo if it is in the chosen category
+          
+      else
+        e.style.display = 'none';
+        // Hide the photo if it is not in the chosen category
+    }
+  }
+}</code></pre>
+      <p>If an category URL parameter is present when the user initially visit the webpage, we can parse the URL and activate the filter:</p>
+      <pre><code class="language-javascript">const queryURLString = window.location.search;
+// Get URL strings from the URL
+// For example, if the URL is:
+// https://skylerdong.com/photography/?category=landscape
+// queryURLString = '?category=landscape'
+
+const urlParams = new URLSearchParams(queryURLString);
+// Create an object called urlParams using constructor URLSearchParams
+// More on URLSearchParams:
+// https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
+
+const category = urlParams.get('category');
+// Get the string after "category" variable name
+// Continue with the example above. Here, category = 'landscape'
+// It is coincidental that the "category" in urlParams.get('category')
+// is the same as variable name category = 'landscape'
+// You can use other variable names, such as 
+// const photo_category = urlParams.get('category');
+
+if (category != null) {
+// If the "category" parameter isn't null,
+// i.e., when a URL parameter is specified
+
+  filterCat.forEach(cat => {
+  // Loop through all categories
+
+    if (cat.dataset.class === category_url)
+      toggleFilterCat(cat);
+      // Call toggleFilterCat to make the chosen category button(s) "active"
+  }
+  toggleFilterE(category_url);
+  // Call toggleFilterE to display the or hide elements depending on the chosen category
+}</code></pre>
       <p>I'm currently working on filtering by other attributes, such as locations and capture dates.</p>
     </div><!--photo-filtering-javascript-->
 
     <div class="mb-5"><h3 id="photo-multi-column-layout" class="anchor">Responsive multi-column layout with CSS media queries</h3>
-      <p>If I were to use the Bootstrap grid system, there would be a lot of white spaces in between photos because my photos have different aspect ratios. Therefore, I'm using a multi-column layout inside <code class="language-css">&lt;div class="gallery"&gt;...&lt;/div&gt;</code> ) to display photos, so all photos have the same width but various heights to maintain their native aspect ratios with my <code class="language-css">.img-fluid</code> class.</p>
-      <p>I used CSS media queries with 2 breakpoints to ensure user experience on different devices with the following CSS code:</p>
+          <p>If I were to use the Bootstrap grid system, there would be a lot of white spaces in between photos because my photos have different aspect ratios. Therefore, I'm using a multi-column layout inside <code class="language-css">&lt;div class="gallery"&gt;...&lt;/div&gt;</code> ) to display photos, so all photos have the same width but various heights to maintain their native aspect ratios with my <code class="language-css">.img-fluid</code> class.</p>
+          <p>I used CSS media queries with 2 breakpoints to ensure user experience on different devices with the following CSS code:</p>
 <pre><code class="language-css">.gallery {
   column-count: 1;
   column-width: 100%;
@@ -489,57 +593,6 @@ setTimeout(function(){
     </div><!--LAZY LOADING-->
 
     </div><!--PHOTO PORTFOLIO-->
-
-    <div class="mb-5"><h2 id="server-config" class="anchor">Configuring .htaccess on Apache servers</h2>
-      I'm not an expert, but I have learned things that I'd like to share. 
-      <ul>
-        <li><p>Disable directory listing:</p>
-          <pre><code class="language-html">Options -Indexes</code></pre></li>
-        <li><p>Force server to redirect all http to https</p>
-          <pre><code class="language-html">RewriteEngine On 
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-# Use R=301 for regular use, but use R=302 until finished testing,
-# as the browser will aggressively cache R=301.</code></pre>
-      </li>
-        <li><p>Configuring expires headers:</p>
-          <pre><code class="language-html"># Expires headers
-# Set correct content-type for fonts
-  AddType application/vnd.ms-fontobject .eot 
-  AddType application/x-font-ttf .ttf
-  AddType application/x-font-opentype .otf
-  AddType application/x-font-woff .woff
-  AddType image/svg+xml .svg
-
-# Set up expire times 
-# BEGIN Expire headers
-&lt;ifModule mod_expires.c&gt;
-  ExpiresActive On
-# Following part covers typical images, etc. 
-  ExpiresDefault "access plus 1 day"
-  ExpiresByType image/x-icon "access plus 1 day"
-  ExpiresByType image/jpeg "access plus 7 days"
-  ExpiresByType image/png "access plus 7 days"
-  ExpiresByType image/gif "access plus 7 days"
-  ExpiresByType application/x-shockwave-flash "access plus 7 days"
-  ExpiresByType text/css "access plus 1 day"
-  ExpiresByType text/javascript "access plus 1 day"
-  ExpiresByType application/javascript "access plus 1 day"
-  ExpiresByType application/x-javascript "access plus 1 day"
-  ExpiresByType text/html "access plus 1 day"
-  ExpiresByType application/xhtml+xml "access plus 1 day"
-# Following part sets the expires for the fonts
-  ExpiresByType application/vnd.ms-fontobject "access plus 7 days"
-  ExpiresByType application/x-font-ttf "access plus 7 days"
-  ExpiresByType application/x-font-opentype "access plus 7 days"
-  ExpiresByType application/x-font-woff "access plus 7 days"
-  ExpiresByType image/svg+xml "access plus 7 days"
-&lt;/ifModule&gt;
-# END Expire headers</code></pre>
-      </li>
-      </ul>  
-    </div><!--htacess-->
-    <hr/>
     <p>I hope you find this article helpful. You can find the source code on <a href="https://github.com/dongskyler/personal_website" target="_blank">GitHub</a>. I periodically update this article and the source code. Please check back. Thank you for reading. <i class="fas fa-ankh"></i></p>
     </div><!--COL-->  
   </div><!--ROW-->
