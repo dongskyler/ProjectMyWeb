@@ -3,12 +3,12 @@
   font-size: 0.95rem;
   margin-bottom: 0.25rem;
 }
-@media screen and (min-width: 576px) and (min-height: 400px) {
+@media screen and (min-width: $breakpoint-sm) and (min-height: $breakpoint-sm * 0.67) {
   .maincontent .filter-button-bar .btn {
     font-size: 1rem;
   }
 }
-@media screen and (min-width: 992px) and (min-height: 480px) {
+@media screen and (min-width: $breakpoint-lg) and (min-height: $breakpoint-lg * 0.5) {
   .maincontent .filter-button-bar .btn {
     font-size: 1.25rem;
   }
@@ -17,12 +17,12 @@
 .btn.filter-button.btn-sm {
   font-size: 0.8rem;
 }
-@media screen and (min-width: 576px) and (min-height: 400px) {
+@media screen and (min-width: $breakpoint-sm) and (min-height: $breakpoint-sm * 0.67) {
   .maincontent .filter-button-bar .btn {
     font-size: 0.83rem;
   }
 }
-@media screen and (min-width: 992px) and (min-height: 480px) {
+@media screen and (min-width: $breakpoint-lg) and (min-height: $breakpoint-lg * 0.5) {
   .maincontent .filter-button-bar .btn {
     font-size: 0.85rem;
   }
