@@ -26,6 +26,7 @@ include_once '../common/htmlTag.php';
   <!-- Main Content -->
   <div class="container maincontent">
     <div class="row">
+    <div class="footnote col-10 mx-auto mb-3">(This is a work in progress...)</div>
       <div class="filter-button-bar col-12 mx-auto col-md-10">
         <button type="button" class="filter-button btn btn-outline-primary active" data-class="all">All</button>
         <button type="button" class="filter-button btn btn-outline-primary" data-class="general">General</button>

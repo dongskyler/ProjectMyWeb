@@ -150,7 +150,7 @@ $(function () {
     $('#meta_og_url').attr('content', window.location.href);
   })
 
-    // Back to top button
+  // Back to top button
   var backToTopButton = document.getElementById("back-to-top-button");
 
   window.onscroll = () => {
@@ -165,4 +165,13 @@ $(function () {
     $('html,body').animate({scrollTop: 0}, 'slow');
     return false;
   })
+
+  $('#nav-icon').on('click', function () {
+    $(this).toggleClass('open');
+  });
+
+  //$('.navbar-toggler').on('click', function () {
+  //  $('#nav-icon').toggleClass('open');
+  //});
+
 });

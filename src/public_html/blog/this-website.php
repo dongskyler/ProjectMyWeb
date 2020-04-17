@@ -48,7 +48,7 @@
       
       <div class="mb-5"><h2 id="key-points" class="anchor">Key points</h2>
         <ul>
-          <li><p>I have been building my website using HTML, CSS, JavaScript (including JQuery), PHP and MySQL, with version control powered by <a href="https://gitlab.com/dongskyler" target="_blank">GitLab</a>.</p></li>
+          <li><p>I have been building my website using HTML, CSS, JavaScript (including JQuery), PHP and MySQL, with version control powered by <a href="https://github.com/dongskyler" target="_blank">GitHub</a>.</p></li>
           <li><p>For back-end, I use PHP to query data from MySQL database and dynamically generate contents in HTML.</p></li>
           <li><p>I use JavaScript and JQuery library to implement front-end features, such as filtering photos by category, parsing and updating URL parameters and lazy loading images.</p></li>
           <li><p>For styling, I adopted <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> framework and write additional customized CSS with Sass and JavaScript to achieve a mobile-first, responsive and interactive design that is functional and sleek on all kinds of devices.</p></li>
