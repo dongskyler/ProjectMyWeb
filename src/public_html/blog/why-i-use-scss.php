@@ -4,7 +4,7 @@
   define("BG_IMG_MD",'medium/SD__A7T3305_Web.jpg');
   define("BG_IMG_LG",'large/SD__A7T3305_Web_LG.jpg');
   define("SITE_TITLE",'Why I Use SCSS as My Preferred CSS Preprocessor');
-  define("SITE_SUBTITLE",'With HTML, CSS, JavaScript, PHP and MySQL');
+  define("SITE_SUBTITLE",'SCSS made my life so much easier');
   define("SITE_SUBSUBTITLE",'<p>Posted on April 16, 2020</p>');
 ?>
 <!doctype html>
@@ -40,11 +40,14 @@
           <li><p><a href="https://sass-lang.com/" target="_blank">SCSS</a> is my choice for preprocessing CSS.</p></li>
           <li><p>Directly writing CSS can be unorganized and tedious to update.</p></li>
           <li><p>SCSS takes advantages of variables, mixins and nestings to drastically simplify coding CSS rules.</p></li>
-          <li><p>Every CSS is also valid SCSS syntax. However, CSS cannot be directly included into SASS, but possible with extra steps.</p></li>
+          <li><p>Every CSS is also syntactically valid SCSS. However, CSS cannot be directly included into SASS, but possible with extra steps.</p></li>
         </ul>
       </div><!--KEY POINTS-->
       
-      <div class="mb-5"><h2 id="downside-css" class="anchor">Downside of CSS</h2>
+      <div class="mb-5"><h2 id="what-css-preprocessors" class="anchor">What are CSS preprocessors?</h2>
+        <p>CSS preprocessors are programs that can generate CSS from their own syntaxes. CSS preprocessors address the <a href="#downside-css">downsides of plain CSS</a>, such as poor variable and nesting capabilities. Popular CSS preprocessrs include <a href="https://sass-lang.com" target="_blank">SASS (including SCSS)</a>, <a href="http://lesscss.org" target="_blank">LESS</a> and <a href="https://the-echoplex.net/csscrush/" target="_blank">CSS-Crush</a>.</p>
+      </div>
+      <div class="mb-5"><h2 id="downside-css" class="anchor">Downsides of CSS</h2>
         <p>Hardcoding media query breakpoints throughout my CSS is a nightmare. Breakpoints change over time. Although replacing them can be accomplished by "find and replace," it is not an ideal solution.</p>
         <p>Hardcoding font families and colors is another nightmare.</p>
         <p>Writing plain CSS can be unnecessarily repetitive and tedious because plain CSS does not have a good nesting support.</p>
