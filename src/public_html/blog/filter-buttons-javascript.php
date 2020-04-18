@@ -4,8 +4,8 @@
   define("BG_IMG_MD",'medium/SD__A7T3305_Web.jpg');
   define("BG_IMG_LG",'large/SD__A7T3305_Web_LG.jpg');
   define("SITE_TITLE",'Interactive Filtering Buttons and Updating URL Parameters using JavaScript');
-  define("SITE_SUBTITLE",'Apply filter when a filter button is clicked');
-  define("SITE_SUBSUBTITLE",'<p>Posted on April 17, 2020</p>');
+  define("SITE_SUBTITLE",'Apply filter and update URL parameters when a filter button is clicked');
+  define("SITE_SUBSUBTITLE",'<p>Posted on April 13, 2020</p>');
 ?>
 <!doctype html>
 <?php
@@ -14,7 +14,7 @@
 ?>
 <head>
   <?php include_once '../common/head.php'; ?>
-  <title>Interactive Filtering Buttons and Updating URL Parameters using JavaScript | Coding - Skyler Dong</title>
+  <title>Interactive Filtering Buttons and Updating URL Parameters using JavaScript | Blog - Skyler Dong</title>
   <meta name="keywords" content="web development,developer,software,HTML,CSS,JavaScript,PHP,MySQL">
 </head>
 <body>

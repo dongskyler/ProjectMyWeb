@@ -14,7 +14,7 @@
 ?>
 <head>
   <?php include_once '../common/head.php'; ?>
-  <title>Coding This Website | Coding - Skyler Dong</title>
+  <title>Coding This Website | Blog - Skyler Dong</title>
   <meta name="keywords" content="web development,developer,software,HTML,CSS,JavaScript,PHP,MySQL">
 </head>
 <body>

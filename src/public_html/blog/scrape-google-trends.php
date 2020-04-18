@@ -14,7 +14,7 @@
 ?>
 <head>
   <?php include_once '../common/head.php'; ?>
-  <title>How to Scrape Google Trends with Object-Oriented Python | Coding - Skyler Dong</title>
+  <title>How to Scrape Google Trends with Object-Oriented Python | Blog - Skyler Dong</title>
 </head>
 <body>
 <?php
