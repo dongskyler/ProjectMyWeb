@@ -166,12 +166,8 @@ $(function () {
     return false;
   })
 
-  $('#nav-icon').on('click', function () {
+  $('#nav-icon, #nav-icon-demo').click(function () {
     $(this).toggleClass('open');
   });
-
-  //$('.navbar-toggler').on('click', function () {
-  //  $('#nav-icon').toggleClass('open');
-  //});
 
 });

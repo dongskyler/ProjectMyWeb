@@ -14,7 +14,7 @@
 ?>
 <head>
   <?php include_once '../common/head.php'; ?>
-  <title>Why I Use SCSS as My Preferred CSS Preprocessor | Coding - Skyler Dong</title>
+  <title>Why I Use SCSS as My Preferred CSS Preprocessor | Blog - Skyler Dong</title>
   <meta name="keywords" content="web development,developer,software,SCSS,SASS,CSS,HTML">
 </head>
 <body>

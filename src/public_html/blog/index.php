@@ -4,7 +4,7 @@
   define("BG_IMG_MD",'photography/SD_N18_5431_2_Web.jpg');
   define("BG_IMG_LG",'large/SD_N18_5431_2_Web_Large.jpg');
   define("SITE_TITLE",'Blog');
-  define("SITE_SUBTITLE",'A mix of things I learned, helpful tips and random thoughts');
+  define("SITE_SUBTITLE",'<p>A mix of things I learned, helpful tips and random thoughts</p><p>Check out <a href="https://app.skylerdong.com/">my web apps</a> and <a href="https://skylerdong.com/photography/">photos</a></p>');
 ?>
 <!doctype html>
 <?php
@@ -35,12 +35,12 @@
     <div class="col-12 mx-auto col-md-10">
       <div class="post-preview filterE" data-class="coding">
         <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="coding">Coding</button>
-        <a href="filter-buttons-javascript.php">
+        <a href="css-animated-hamburger.php">
           <h2 class="post-title">
-            Interactive Filtering Buttons and Updating URL Parameters using JavaScript
+            CSS-Animated Hamburger Icon
           </h2>
           <h3 class="post-subtitle">
-            Apply filter when a filter button is clicked
+            With HTML, CSS and JavaScript (JQuery) code snippets
           </h3>
           <p class="post-meta">
             Posted on April 17, 2020
@@ -59,6 +59,21 @@
           </h3>
           <p class="post-meta">
             Posted on April 16, 2020
+          </p>
+        </a>
+        <hr/>
+      </div><!--post-preview-->
+      <div class="post-preview filterE" data-class="coding">
+        <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="coding">Coding</button>
+        <a href="filter-buttons-javascript.php">
+          <h2 class="post-title">
+            Interactive Filtering Buttons and Updating URL Parameters using JavaScript
+          </h2>
+          <h3 class="post-subtitle">
+            Apply filter and update URL parameters when a filter button is clicked
+          </h3>
+          <p class="post-meta">
+            Posted on April 13, 2020
           </p>
         </a>
         <hr/>

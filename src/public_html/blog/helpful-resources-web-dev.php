@@ -15,7 +15,7 @@ include_once '../common/htmlTag.php';
 
 <head>
   <?php include_once '../common/head.php'; ?>
-  <title>Helpful Resources for Web Development | Coding - Skyler Dong</title>
+  <title>Helpful Resources for Web Development | Blog - Skyler Dong</title>
 </head>
 
 <body>
