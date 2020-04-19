@@ -5,8 +5,8 @@
 <link rel="preload" href="https://fonts.googleapis.com/css?family=Ubuntu&amp;display=swap" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="https://fonts.googleapis.com/css?family=Noto+Sans&amp;display=swap" as="style" onload="this.rel='stylesheet'">
 <link rel="stylesheet" type="text/css" href= "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href= "<?php echo PATH; ?>/css/styles.min.css">
 <link rel="preload" type="text/css" href= "<?php echo PATH; ?>/css/prism.min.css" as="style" onload="this.rel='stylesheet'">
+<link rel="stylesheet" type="text/css" href= "<?php echo PATH; ?>/css/styles.min.css">
 <script async type="text/javascript" src="https://kit.fontawesome.com/54c2c027a8.js" crossorigin="anonymous"></script>
 <style>
   #masthead-image {

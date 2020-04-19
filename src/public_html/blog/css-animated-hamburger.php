@@ -3,7 +3,7 @@
   define("NAVBAR_COLOR",'light');
   define("BG_IMG_MD",'medium/SD__A7T3305_Web.jpg');
   define("BG_IMG_LG",'large/SD__A7T3305_Web_LG.jpg');
-  define("SITE_TITLE",'CSS-Animated Hamburger Icon');
+  define("SITE_TITLE",'CSS-Animated Hamburger Menu Icon');
   define("SITE_SUBTITLE",'With HTML, CSS and JavaScript (JQuery) code snippets');
   define("SITE_SUBSUBTITLE",'<p>Posted on April 17, 2020</p>');
 ?>
@@ -14,7 +14,7 @@
 ?>
 <head>
   <?php include_once '../common/head.php'; ?>
-  <title>CSS-Animated Hamburger Icon | Blog - Skyler Dong</title>
+  <title>CSS-Animated Hamburger Menu Icon | Blog - Skyler Dong</title>
   <meta name="keywords" content="web development,developer,software,SCSS,SASS,CSS,HTML">
 </head>
 <body>
@@ -37,13 +37,14 @@
       
       <div class="mb-5"><h2 id="key-points" class="anchor">Key points</h2>
         <ul>
-          <li><p>I made an animated hamburger icon with HTML, CSS and JavaScript (JQuery)</p></li>
+          <li><p>I made an animated hamburger menu icon with HTML, CSS and JavaScript (JQuery)</p></li>
         </ul>
       </div><!--KEY POINTS-->
       
       <div class="mb-5"><h2 id="html-css" class="anchor">HTML and CSS</h2>
+      <p>Hamburger is a nickname for the toggle button that is made of three horizontal lines, resembling two buns and a patty.</p>
       <p>First, let me show you the final product. The following navigation bar is the one I use on this website with hyperlinks removed.</p>
-      <p>Click on the hamburger icon &#x1F354; on the right and see the animation. Hamburger is a nickname for the toggle button that is made of three horizontal lines, resembling two buns and a patty.</p>
+      <p>Click on the hamburger menu icon &#x1F354; below and see the animation.</p>
       <div class="col-12 mx-auto col-sm-10 col-md-8 col-lg-6 mb-3">
         <nav class="navbar sticky-top navbar-expand* navbar-light bg-light">
           <a class="navbar-brand" href="#html-css">Skyler Dong</a>
@@ -80,7 +81,7 @@
 </nav>
       </div>
         <p>My hamburger has three lines. When toggled, the middle line rotates 45 degrees, and the other two lines translate, rotate and eventually overlap, forming a cross.</p>
-        <p>I use Boostrap framework, but you can apply this icon to any other frameworks. My animated CSS hamburger icon uses 3 span elements inside the Bootstrap's <code class="language-html">button.navbar-toggler</code>. I gave it an id selector <code class="language-html">id="nav-icon-demo"</code> for future reference.</p>
+        <p>I use Boostrap framework, but you can apply this icon to any other frameworks. My animated CSS hamburger menu icon uses 3 span elements inside the Bootstrap's <code class="language-html">button.navbar-toggler</code>. I gave it an id selector <code class="language-html">id="nav-icon-demo"</code> for future reference.</p>
         <pre><code class="language-html">&lt;button id="nav-icon-demo" class="navbar-toggler" 
           type="button" data-toggle="collapse" 
           data-target="#navbarSupportedContent-demo" 

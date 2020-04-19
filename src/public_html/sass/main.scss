@@ -3,8 +3,21 @@
 $font-primary: 'Ubuntu', Helvetica, sans-serif;
 $font-secondary: 'Noto Sans', sans-serif;
 
+/*
+Sand Tan: #e1b382
+Sand Tan Shadow: #c89666
+Night Blue: #2d545e
+Night Blue Shadow: #12343b
+
+Barely Green: #acb7ae
+The Brown-shirts: #82716e
+Tan Blonde: #e4decd
+Blondey: #c2b490
+*/
+
 $color-primary: #212529;
 $color-primary-icon: #303030;
+$color-primary-blockquote: #585858;
 $color-primary-footnote: #585858;
 $color-lightdark: #F9F9F9;
 $color-deepdark: #F9F9F9;
@@ -19,13 +32,16 @@ $color-a-masthead-hover: #BDDFFF;
 $background-color-primary: #FFFFFF;
 $background-color-lightdark: #303030;
 $background-color-deepdark: #050505;
-$background-color-light: #F8F9FA;
-$background-color-block: #F5F2F0;
+$background-color-light: #F2EFED;
+$background-color-primary-blockquote: #f2f1f0;
+$background-color-primary-toc: #f2f1f0;
 $background-color-overlay: #080808;
 $background-color-footer: #D6D6D6;
+$background-color-primary-pre: #f2f1f0;
 
-$color-btn-primary: #0071E3;
+$color-btn-primary: #0072E3;
 $color-btn-secondary: #585858;
+$color-btn-success: #0b9649;
 $color-btn-light: #D6D6D6;
 
 $breakpoint-sm: 576px;

@@ -1,32 +1,33 @@
-.maincontent .filter-button-bar .btn {
-  font-size: 0.95rem;
-  margin-bottom: 0.25rem;
-
-  @media screen and (min-width: $breakpoint-sm) and (min-height: $breakpoint-sm * 0.67) {
-    font-size: 1rem;
-  }
-
-  @media screen and (min-width: $breakpoint-lg) and (min-height: $breakpoint-lg * 0.5) {
-    font-size: 1.25rem;
-  }
-}
-
-
-.btn.filter-button.btn-sm {
-  font-size: 0.8rem;
-
-  @media screen and (min-width: $breakpoint-sm) and (min-height: $breakpoint-sm * 0.67) {
-    font-size: 0.83rem;
-  }
+.maincontent {
+  .filter-button-bar .btn {
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+    border-radius: 1.35rem;
   
-  @media screen and (min-width: $breakpoint-lg) and (min-height: $breakpoint-lg * 0.5) {
-    font-size: 0.85rem;
+    @media screen and (min-width: $breakpoint-sm) and (min-height: $breakpoint-sm * 0.67) {
+      font-size: 1rem;
+    }
+  
+    @media screen and (min-width: $breakpoint-lg) and (min-height: $breakpoint-lg * 0.5) {
+      font-size: 1.25rem;
+    }
   }
+
+  .btn.filter-button.btn-sm {
+    font-size: 0.8rem;
+    border-radius: 1.35rem;
+  
+    @media screen and (min-width: $breakpoint-sm) and (min-height: $breakpoint-sm * 0.67) {
+      font-size: 0.83rem;
+    }
+    
+    @media screen and (min-width: $breakpoint-lg) and (min-height: $breakpoint-lg * 0.5) {
+      font-size: 0.85rem;
+    }
+  }
+
 }
 
-.maincontent .btn {
-	border-radius: 18px;
-}
 
 .btn-outline-primary {
   color: $color-btn-primary;
@@ -106,3 +107,36 @@
   background-color: $color-btn-light;
   border-color: $color-btn-light;
 }
+
+.btn-outline-success {
+  color: $color-btn-success;
+  border-color: $color-btn-success;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: $color-btn-success;
+  border-color: $color-btn-success;
+}
+
+.btn-outline-success:focus, .btn-outline-success.focus {
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+.btn-outline-success.disabled, .btn-outline-success:disabled {
+  color: $color-btn-success;
+  background-color: transparent;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
+.show > .btn-outline-success.dropdown-toggle {
+  color: #fff;
+  background-color: $color-btn-success;
+  border-color: $color-btn-success;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+

@@ -37,7 +37,7 @@
         <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="coding">Coding</button>
         <a href="css-animated-hamburger.php">
           <h2 class="post-title">
-            CSS-Animated Hamburger Icon
+            CSS-Animated Hamburger Menu Icon
           </h2>
           <h3 class="post-subtitle">
             With HTML, CSS and JavaScript (JQuery) code snippets
