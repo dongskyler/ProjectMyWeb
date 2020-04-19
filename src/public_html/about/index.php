@@ -48,7 +48,7 @@ include_once '../common/htmlTag.php';
           <ul>
             <li>I have built 2 websites in the past:
               <ul>
-                <li><a href="https://sites.google.com/site/tiannongsdong/" target="_blank">My old personal website</a>, which have been online since I was an undergrad student.
+                <li><a href="https://sites.google.com/site/tiannongsdong/" target="_blank">My old personal website</a>, which has been online since I was an undergrad student.
                 </li>
                 <li><a href="https://sites.google.com/site/dongskyler/nav-ohare/shuttle-center" target="_blank">How to nagivate to the shuttle center</a> at <a href="https://www.flychicago.com/ohare/home/pages/default.aspx" target="_blank">O'Hare Airport of Chicago</a>. I made the website for new incoming students to my alma mater (Beloit College) and the general public. Many students fly to O'Hare and take an inter-state shuttle to the college. Reportedly, some people have trouble navigating to the shuttle center from terminals.</li>
                 <li>In the past, I used templates and modified their HTML codes, but now I'm building this website from scratch.</li>
@@ -63,7 +63,7 @@ include_once '../common/htmlTag.php';
           </ul>
         </div>
         <div>
-          <p>I also believe technology and arts work hand in hand. I have longtime interests in design, music, calligraphy, and <a href="<?php echo PATH;?>/photography">photography</a>.</p>
+          <p>I also believe technology and art work hand in hand. I have longtime interests in design, music, calligraphy, and <a href="<?php echo PATH;?>/photography">photography</a>.</p>
         </div>
       </div>
       <!--column-->

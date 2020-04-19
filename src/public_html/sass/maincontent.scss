@@ -36,12 +36,14 @@
   }
 
   blockquote {
-    margin: 0 1rem 1rem;
+    color: $color-primary-blockquote;
+    font-size: 1.5rem;
+    font-family: $font-secondary;
+    font-weight: 600;
+    background-color: $background-color-primary-blockquote;
+    margin: 1rem 1rem;
     padding: 1rem 2rem;
     display: block;
-    font-size: 1.1rem;
-    font-style: italic;
-    background-color: $background-color-block;
   }
 
   .footnote {
@@ -50,13 +52,18 @@
     font-style: italic;
   }
 
+  pre {
+    margin: 1rem 0;
+    background-color: $background-color-primary-pre;
+  }
+
 }
 
 .toc_container {
   padding: 1rem 2rem;
   display: table;
   font-size: 0.95rem;
-  background-color: $background-color-block;
+  background-color: $background-color-primary-toc;
 }
 
 ul.toc_list {
@@ -129,10 +136,6 @@ ul.toc_list {
 .post-preview > a:hover {
   text-decoration: none;
   color: $color-a-primary;
-}
-
-pre {
-  margin-bottom: 1rem;
 }
 
 /* Site Map */
