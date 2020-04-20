@@ -25,7 +25,7 @@
 
 .navbar.bg-light {
   color: $color-primary;
-  background-color: $background-color-light;
+  background-color: $background-color-light !important;
 }
 
 
@@ -132,5 +132,3 @@
     }
   }
 }
-
-
