@@ -51,10 +51,10 @@
 <meta name="keywords" content="photography,photo,gallery,portfolio,picture">
 <title>Photography - Skyler Dong</title>
 </head>
-<body class="bg-deepdark">
+<body id="photography" class="bg-deepdark">
 <?php
   include_once '../common/navbar.php';
-  include_once '../common/header.php';
+  include_once '../common/header_photography.php';
 ?>
 <!-- Main Content -->
 <div class="container-xl maincontent fade-in-slow">
@@ -83,7 +83,18 @@
     foreach ($images as $image) {
       list($width,$height)=getimagesize($image);
       $aspect=round($height/$width*10000)/100;      
-      echo '<div class="photo-block filterE mb-3" data-class="';
+      echo '<a class="pop" id="photoid_';
+      
+      // START: QUERY PHOTO IDS
+      $query_id = "SELECT id FROM photos WHERE filename = '$image'";
+      $result_id = $conn->query($query_id);
+      if (!$result_id) die("Fatal Error");
+      $result_id->data_seek(0);
+      echo modifyQueryStr_title($result_id->fetch_assoc()['id']);
+      $result_id->close();
+      // END: QUERY PHOTO IDS
+      
+      echo '"><div class="photo-block filterE mb-3" data-class="';
 
       // START: QUERY FILTER CATEGORIES OF EACH PHOTO
       $query_cat = "SELECT categories.name FROM photos_in_categories INNER JOIN photos ON photos.id = photos_in_categories.id INNER JOIN categories ON categories.category_id = photos_in_categories.category_id WHERE filename = '$image'";
@@ -99,17 +110,6 @@
       $result_cat->close();
       // END: QUERY FILTER CATEGORIES OF EACH PHOTO
 
-      echo '"><a class="pop" id="photoid_';
-      
-      // START: QUERY PHOTO IDS
-      $query_id = "SELECT id FROM photos WHERE filename = '$image'";
-      $result_id = $conn->query($query_id);
-      if (!$result_id) die("Fatal Error");
-      $result_id->data_seek(0);
-      echo modifyQueryStr_title($result_id->fetch_assoc()['id']);
-      $result_id->close();
-      // END: QUERY PHOTO IDS
-      
       echo '"><div class="responsive-container';
       if ($aspect >= 100) {
         echo ' photo-portrait';
@@ -149,7 +149,7 @@
         echo modifyQueryStr_location($result_location->fetch_assoc()['name']);
       $result_location->close();
       // END: QUERY PHOTO PLACE
-      echo '.</p></div></a></div>';
+      echo '.</p></div></div></a>';
     }
     chdir('../../photography');
   ?>
@@ -163,6 +163,7 @@
         <img src="" class="modal-img">
         <p class="modal-photo-title text-center">Title</p>
         <p class="modal-photo-location">Location</p>
+        <p class="modal-photo-category">Category</p>
       </div>
     </div>
   </div>

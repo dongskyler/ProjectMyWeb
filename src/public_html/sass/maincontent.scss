@@ -29,6 +29,30 @@
     font-size: 2rem;
   }
 
+  /* Content blocks */
+  .content-block {
+    a {
+    color: $color-primary;
+    }
+
+    a:focus, 
+    a:hover {
+      text-decoration: none;
+      color: $color-a-primary;
+    }
+
+    .content-block-title {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+      color: $color-primary;
+    }
+
+    .content-block-subtitle {
+      font-size: 1rem;
+      color: $color-primary;
+    }
+  }
+
   i.fa-icon {
     color: $color-primary-icon;
     font-size: 1.85rem;
@@ -109,26 +133,6 @@ ul.toc_list {
   font-style: italic;
   margin-top: 0;
   color: $color-primary-footnote;
-  }
-
-  /* Content blocks */
-  .content-block a {
-    color: $color-primary;
-
-    a:focus, 
-    a:hover {
-      text-decoration: none;
-      color: $color-a-primary;
-    }
-
-    .content-block-title {
-      font-size: 1.5rem;
-      margin: 0.5rem 0;
-    }
-
-    .content-block-subtitle {
-      font-size: 1rem;
-    }
   }
 }
 
