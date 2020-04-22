@@ -1,9 +1,9 @@
 <?php
   if ($_SERVER["SERVER_NAME"] == "localhost") {
-    require_once '../../../config/API_KEY_GOOG_route-optimization_dev.php';
+    require_once '../../../login/API_KEY_GOOG_route-optimization_dev.php';
   }
   else {
-    require_once '../../../config/API_KEY_GOOG_route-optimization_public.php';
+    require_once '../../../login/API_KEY_GOOG_route-optimization_public.php';
   }
   define("SITE_TITLE",'App: Route Optimization');
   define("SITE_SUBTITLE",'Find the fastest route with multiple stops using JavaScript and Google Map API.');
