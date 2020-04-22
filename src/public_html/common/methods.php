@@ -28,6 +28,7 @@ function modifyQueryStr_title($str) {
   $str = htmlspecialchars($str);
   $str = str_replace(' - ', ' &ndash; ', $str);
   $str = str_replace("\w'\w", '&apos;', $str);
+  $str = str_replace("\w’\w", '&apos;', $str);
   return $str;
 }
 

@@ -1,0 +1,44 @@
+.modal .modal-title {
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: $color-primary;
+}
+
+.modal-content {
+  background-color: $background-color-primary;
+  font-family: $font-secondary;
+}
+
+.modal-backdrop {
+  opacity: $opacity !important;
+}
+
+#imagemodal {
+  .modal-backdrop {
+    opacity:0.8 !important;
+  }
+
+  .modal-body{
+    padding: 0;
+  }
+
+  .modal-content {
+    background-color: $background-color-lightdark;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  p {
+    padding: 0.5rem;
+    color: $color-deepdark;
+    font-size: 0.95rem;
+  }
+
+  p.modal-photo-title {
+    font-weight: 600;
+    font-size: 1.15rem;
+  }
+}

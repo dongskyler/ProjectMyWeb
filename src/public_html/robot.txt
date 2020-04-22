@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /.git/
+Disallow: /.well-known/
+
+Sitemap: https://skylerdong.com/sitemap.xml

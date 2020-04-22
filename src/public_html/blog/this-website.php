@@ -14,7 +14,7 @@
 ?>
 <head>
   <?php include_once '../common/head.php'; ?>
-  <title>Coding This Website | Coding - Skyler Dong</title>
+  <title>Coding This Website | Blog - Skyler Dong</title>
   <meta name="keywords" content="web development,developer,software,HTML,CSS,JavaScript,PHP,MySQL">
 </head>
 <body>
@@ -48,7 +48,7 @@
       
       <div class="mb-5"><h2 id="key-points" class="anchor">Key points</h2>
         <ul>
-          <li><p>I have been building my website using HTML, CSS, JavaScript (including JQuery), PHP and MySQL, with version control powered by <a href="https://gitlab.com/dongskyler" target="_blank">GitLab</a>.</p></li>
+          <li><p>I have been building my website using HTML, CSS, JavaScript (including JQuery), PHP and MySQL, with version control powered by <a href="https://github.com/dongskyler" target="_blank">GitHub</a>.</p></li>
           <li><p>For back-end, I use PHP to query data from MySQL database and dynamically generate contents in HTML.</p></li>
           <li><p>I use JavaScript and JQuery library to implement front-end features, such as filtering photos by category, parsing and updating URL parameters and lazy loading images.</p></li>
           <li><p>For styling, I adopted <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> framework and write additional customized CSS with Sass and JavaScript to achieve a mobile-first, responsive and interactive design that is functional and sleek on all kinds of devices.</p></li>
@@ -236,117 +236,13 @@ Records: 91  Deleted: 0  Skipped: 0  Warnings: 0</code>
 
     <div class="mb-5"><h3 id="photo-filtering-javascript" class="anchor">Photo filtering by criteria and updating URL parameters using JavaScript</h3>
       <p>I use JavaScript to create an interactive photo filtering system on <a href="../photography/">my photography page</a>. For example, when you click on "landscape" button, only the photos in the landscape category will be shown. It is worthy to to mention that many photos are in multiple categories and my filtering system supports filtering photos that are in several categories.</p>
-      <p>When a category is chosen, we will append URL parameters to the URL. This will be convinient and useful, when a user wants to share the link of the photography portfolio with a chosen category filter.</p>
-      <pre><code class="language-javascript">const filterCat = document.querySelectorAll('.maincontent .filter-button');
-// Get all category filter buttons from HTML
-// In my case, they are under .maincontent .filter-button
-
-const filterE = document.querySelectorAll('.maincontent .filterE');
-// Get all elements to be filtered from HTML
-// In my case, they are under .maincontent .filterE
-
-filterCat.forEach(cat => {
-  cat.addEventListener('click', () => {
-  // Trigger this function if the user clicks on category buttons
-        
-    toggleFilterCat(cat);
-    // Call toggleFilterCat to change "active" states of category buttons
-
-    toggleFilterE(cat.dataset.class);
-    // Call toggleFilterE to display or hide elements depending on their categories
-
-    let param = ("?category=").concat(cat.dataset.class);
-    // Construct the URL parameter
-
-    if (cat.dataset.class === 'all')
-      param = window.location.pathname;
-      // If category "all" is chosen, just remove the URL parameter and return the page URL
-
-    window.history.replaceState(null, null, param);
-    // Update URL with URL parameters
-  });
-}
-
-function toggleFilterCat(activeCat) {
-  filterCat.forEach(cat => {
-  // Loop through all category buttons
-
-    if (activeCat.dataset.class === cat.dataset.class)
-      cat.classList.add('active');
-      // Add "active" state of buttons
-    
-    else
-      cat.classList.remove('active');
-    // Remove "active" state of buttons
-  })
-}
-
-function toggleFilterE(dataClass) {
-  if (dataClass === 'all'){
-  // All elements are displayed if category "all" is chosen
-    
-    filterE.forEach(e => {
-      e.style.display = 'block';
-    })
-    // Loop through all elements and display all elements
-  }
-    
-  else{
-  // Filter images if any category other than "all" is chosen
-
-    filterE.forEach(e => {
-    // Loop through all elements
-
-      if (e.dataset.class.includes(dataClass))
-        e.style.display = 'block';
-        // Display the photo if it is in the chosen category
-          
-      else
-        e.style.display = 'none';
-        // Hide the photo if it is not in the chosen category
-    }
-  }
-}</code></pre>
-      <p>If an category URL parameter is present when the user initially visit the webpage, we can parse the URL and activate the filter:</p>
-      <pre><code class="language-javascript">const queryURLString = window.location.search;
-// Get URL strings from the URL
-// For example, if the URL is:
-// https://skylerdong.com/photography/?category=landscape
-// queryURLString = '?category=landscape'
-
-const urlParams = new URLSearchParams(queryURLString);
-// Create an object called urlParams using constructor URLSearchParams
-// More on URLSearchParams:
-// https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
-
-const category = urlParams.get('category');
-// Get the string after "category" variable name
-// Continue with the example above. Here, category = 'landscape'
-// It is coincidental that the "category" in urlParams.get('category')
-// is the same as variable name category = 'landscape'
-// You can use other variable names, such as 
-// const photo_category = urlParams.get('category');
-
-if (category != null) {
-// If the "category" parameter isn't null,
-// i.e., when a URL parameter is specified
-
-  filterCat.forEach(cat => {
-  // Loop through all categories
-
-    if (cat.dataset.class === category_url)
-      toggleFilterCat(cat);
-      // Call toggleFilterCat to make the chosen category button(s) "active"
-  }
-  toggleFilterE(category_url);
-  // Call toggleFilterE to display the or hide elements depending on the chosen category
-}</code></pre>
+      <p>Please read my other blog <a href="https://skylerdong.com/blog/filter-buttons-javascript.php">Interactive Filtering Buttons and Updating URL Parameters using JavaScript</a> for details.</p>
       <p>I'm currently working on filtering by other attributes, such as locations and capture dates.</p>
     </div><!--photo-filtering-javascript-->
 
     <div class="mb-5"><h3 id="photo-multi-column-layout" class="anchor">Responsive multi-column layout with CSS media queries</h3>
-          <p>If I were to use the Bootstrap grid system, there would be a lot of white spaces in between photos because my photos have different aspect ratios. Therefore, I'm using a multi-column layout inside <code class="language-css">&lt;div class="gallery"&gt;...&lt;/div&gt;</code> ) to display photos, so all photos have the same width but various heights to maintain their native aspect ratios with my <code class="language-css">.img-fluid</code> class.</p>
-          <p>I used CSS media queries with 2 breakpoints to ensure user experience on different devices with the following CSS code:</p>
+      <p>If I were to use the Bootstrap grid system, there would be a lot of white spaces in between photos because my photos have different aspect ratios. Therefore, I'm using a multi-column layout inside <code class="language-css">&lt;div class="gallery"&gt;...&lt;/div&gt;</code> ) to display photos, so all photos have the same width but various heights to maintain their native aspect ratios with my <code class="language-css">.img-fluid</code> class.</p>
+      <p>I used CSS media queries with 2 breakpoints to ensure user experience on different devices with the following CSS code:</p>
 <pre><code class="language-css">.gallery {
   column-count: 1;
   column-width: 100%;

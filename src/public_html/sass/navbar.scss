@@ -1,0 +1,134 @@
+/* Inside nvarbar.php now:
+.navbar {font-family: 'Ubuntu', Helvetica, sans-serif;} */
+
+.navbar-brand {
+  color: $color-deepdark-1;
+  padding-top: 1px;
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media screen and (min-width: $breakpoint-sm) and (min-height: $breakpoint-sm * 0.67) {
+    font-size: 1.375rem;
+  }
+}
+
+.navbar.bg-lightdark {
+  color: $color-lightdark;
+  background-color: $background-color-lightdark;
+}
+
+.navbar.bg-deepdark {
+  color: $color-deepdark-1;
+  background-color: $background-color-deepdark;
+}
+
+.navbar.bg-light {
+  color: $color-primary;
+  background-color: $background-color-light !important;
+}
+
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  color: transparent;
+}
+
+.bg-lightdark #nav-icon {
+  background-color: $background-color-lightdark;
+  
+  span {
+    background-color: $color-deepdark;
+  }
+}
+
+.bg-deepdark #nav-icon {
+  background-color: $background-color-deepdark;
+  
+  span {
+    background-color: $color-deepdark-1;
+  }
+}
+
+.bg-light {
+  #nav-icon, #nav-icon-demo {
+    background-color: $background-color-light;
+    
+    span {
+      background-color: $color-primary;
+    }
+  }
+}
+
+/* HAMBURGER ANIMATION */
+
+#nav-icon, 
+#nav-icon-demo {
+  width: 30px;
+  height: 23px;
+  position: relative;
+  margin: 6px 3px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  cursor: pointer;
+
+  span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.35s ease-in-out;
+    -moz-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out;
+
+    &:nth-child(1) {
+      top: 0px;
+    }
+
+    &:nth-child(2) {
+      top: 10px;
+    }
+
+    &:nth-child(3) {
+      top: 20px;
+    }
+  }
+
+  &.open span {
+    &:nth-child(1) {
+      -webkit-transform: translateY(10px) rotate(135deg);
+      -moz-transform: translateY(10px) rotate(135deg);
+      -o-transform: translateY(10px) rotate(135deg);
+      transform: translateY(10px) rotate(135deg);
+    }
+  
+    &:nth-child(2) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  
+    &:nth-child(3) {
+      -webkit-transform: translateY(-10px) rotate(135deg);
+      -moz-transform: translateY(-10px) rotate(135deg);
+      -o-transform: translateY(-10px) rotate(135deg);
+      transform: translateY(-10px) rotate(135deg);
+    }
+  }
+}

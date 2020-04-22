@@ -1,0 +1,219 @@
+.maincontent {
+  .filter-button-bar .btn {
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+  
+    @media screen and (min-width: $breakpoint-sm) and (min-height: $breakpoint-sm * 0.67) {
+      font-size: 1rem;
+    }
+  
+    @media screen and (min-width: $breakpoint-lg) and (min-height: $breakpoint-lg * 0.5) {
+      font-size: 1.25rem;
+    }
+  }
+
+  .btn {
+    border-radius: 1.35rem;
+  }
+
+  .btn.btn-sm {
+    font-size: 0.8rem;
+    border-radius: 1.35rem;
+  
+    @media screen and (min-width: $breakpoint-sm) and (min-height: $breakpoint-sm * 0.67) {
+      font-size: 0.83rem;
+    }
+    
+    @media screen and (min-width: $breakpoint-lg) and (min-height: $breakpoint-lg * 0.5) {
+      font-size: 0.85rem;
+    }
+  }
+
+  .btn-outline-primary {
+    color: $color-btn-primary;
+    background-color: transparent;
+    border-color: $color-btn-primary;
+  
+    @media (hover: hover) {
+      &:hover {
+        color: $background-color-primary;
+        background-color: $color-btn-primary-hover;
+        border-color: $color-btn-primary-hover;
+      }
+    }
+    @media (hover: none) {
+      &:hover {
+        color: $color-btn-primary;
+        background-color: transparent;
+        border-color: $color-btn-primary;
+      }
+    }
+    
+    &:focus, 
+    &.focus {
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    }
+    
+    &.disabled, 
+    &:disabled {
+      color: $color-btn-primary;
+      background-color: transparent;
+    }
+    
+    &:not(:disabled):not(.disabled):active, 
+    &:not(:disabled):not(.disabled).active,
+    .show > &.dropdown-toggle {
+      color: $background-color-primary;
+      background-color: $color-btn-primary;
+      border-color: $color-btn-primary;
+    }
+    
+    &:not(:disabled):not(.disabled):active:focus, 
+    &:not(:disabled):not(.disabled).active:focus,
+    .show > &.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    }
+  }
+  
+  .btn-outline-secondary {
+    color: $color-btn-secondary;
+    background-color: transparent;
+    border-color: $color-btn-secondary;
+  
+    @media (hover: hover) {
+      &:hover {
+        color: $background-color-primary;
+        background-color: $color-btn-secondary-hover;
+        border-color: $color-btn-secondary-hover;
+      }
+    }
+    @media (hover: none) {
+      &:hover {
+        color: $color-btn-secondary;
+        background-color: transparent;
+        border-color: $color-btn-secondary;
+      }
+    }
+    
+    &:focus, &.focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+    }
+    
+    &.disabled, 
+    &:disabled {
+      color: $color-btn-secondary;
+      background-color: transparent;
+    }
+    
+    &:not(:disabled):not(.disabled):active, 
+    &:not(:disabled):not(.disabled).active,
+    .show > &.dropdown-toggle {
+      color: $background-color-primary;
+      background-color: $color-btn-secondary;
+      border-color: $color-btn-secondary;
+    }
+    
+    &:not(:disabled):not(.disabled):active:focus, 
+    &:not(:disabled):not(.disabled).active:focus,
+    .show > &.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+    }
+  }
+  
+  
+  .btn-outline-light {
+    color: $color-btn-light;
+    background-color: transparent;
+    border-color: $color-btn-light;
+  
+    @media (hover: hover) {
+      &:hover {
+        color: $background-color-deepdark;
+        background-color: $color-btn-light-hover;
+        border-color: $color-btn-light-hover;
+      }
+    }
+
+    @media (hover: none) {
+      &:hover {
+        color: $color-btn-light;
+        background-color: transparent;
+        border-color: $color-btn-light;
+      }
+    }
+    
+    &:focus, 
+    &.focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+    }
+    
+    &.disabled, 
+    &:disabled {
+      color: $color-btn-light;
+      background-color: transparent;
+    }
+    
+    &:not(:disabled):not(.disabled):active, 
+    &:not(:disabled):not(.disabled).active,
+    .show > &.dropdown-toggle {
+      color: $background-color-deepdark;
+      background-color: $color-btn-light;
+      border-color: $color-btn-light;
+    }
+  
+    &:not(:disabled):not(.disabled):active:focus, 
+    &:not(:disabled):not(.disabled).active:focus,
+    .show > &.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+    }
+  }
+  
+  .btn-outline-success {
+    color: $color-btn-success;
+    background-color: transparent;
+    border-color: $color-btn-success;
+  
+    @media (hover: hover) {
+      &:hover {
+        color: $background-color-primary;
+        background-color: $color-btn-success-hover;
+        border-color: $color-btn-success-hover;
+      }
+    }
+
+    @media (hover: none) {
+      &:hover {
+        color: $color-btn-success;
+        background-color: transparent;
+        border-color: $color-btn-success;
+      }
+    }
+    
+    &:focus, &.focus {
+      box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+    }
+    
+    &.disabled, 
+    &:disabled {
+      color: $color-btn-success;
+      background-color: transparent;
+    }
+    
+    &:not(:disabled):not(.disabled):active, 
+    &:not(:disabled):not(.disabled).active,
+    .show > &.dropdown-toggle {
+      color: $background-color-primary;
+      background-color: $color-btn-success;
+      border-color: $color-btn-success;
+    }
+    
+    &:not(:disabled):not(.disabled):active:focus, 
+    &:not(:disabled):not(.disabled).active:focus,
+    .show > &.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+    }
+  }
+}

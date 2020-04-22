@@ -3,7 +3,7 @@ define("MASTHEAD_SIZE", 'SM');
 define("BG_IMG_MD", 'photography/SD__A6T0512_Edit_Web.jpg');
 define("BG_IMG_LG", 'large/SD__A6T0512_Edit_Web_Large.jpg');
 define("SITE_TITLE", 'About');
-define("SITE_SUBTITLE", '<p><a href="https://skylerdong.com/blog/this-website.php">Read about how I&apos;m building this website</a></p>');
+define("SITE_SUBTITLE", '<p>I&#39;m an aspiring&nbsp;<a href="https://app.skylerdong.com/">web developer</a> and&nbsp;an&nbsp;<a href="https://skylerdong.com/photography/">amateur photographer</a></p><p>Read <a href="https://skylerdong.com/blog/">my blogs here</a></p>');
 define("FADE_IN", 'no');
 define("OG_IMAGE", 'https://skylerdong.com/images/other/SD-IMG_4854-Edit-Web.jpg');
 ?>
@@ -41,14 +41,14 @@ include_once '../common/htmlTag.php';
             <li>I graduated from <a href="https://www.beloit.edu" target="_blank">Beloit College</a>, Wisconsin with a Geology major and a Physics minor.</li>
             <li>I went to <a href="https://www.jsg.utexas.edu" target="_blank">geoscience graduate school</a> at <a href="https://www.utexas.edu" target="_blank">the University of Texas at Austin</a> to study <a href="https://www.jsg.utexas.edu/news/2017/10/fueling-the-future/" target="_blank">methane hydrate</a>.</li>
             <li>Now I'm pursuing a career in web development.</li>
-            <li>Read about <a href="./blog/this-website.php">how I'm building this website</a> with HTML, CSS, JavaScript (including JQuery), PHP and MySQL.</li>
+            <li>Read about <a href="https://skylerdong.com/blog/this-website.php">how I'm building this website</a> with HTML, CSS, JavaScript, PHP and MySQL.</li>
           </ul>
         </div>
         <div>I have a degree in science and I like making things and helping people.
           <ul>
             <li>I have built 2 websites in the past:
               <ul>
-                <li><a href="https://sites.google.com/site/tiannongsdong/" target="_blank">My old personal website</a>, which have been online since I was an undergrad student.
+                <li><a href="https://sites.google.com/site/tiannongsdong/" target="_blank">My old personal website</a>, which has been online since I was an undergrad student.
                 </li>
                 <li><a href="https://sites.google.com/site/dongskyler/nav-ohare/shuttle-center" target="_blank">How to nagivate to the shuttle center</a> at <a href="https://www.flychicago.com/ohare/home/pages/default.aspx" target="_blank">O'Hare Airport of Chicago</a>. I made the website for new incoming students to my alma mater (Beloit College) and the general public. Many students fly to O'Hare and take an inter-state shuttle to the college. Reportedly, some people have trouble navigating to the shuttle center from terminals.</li>
                 <li>In the past, I used templates and modified their HTML codes, but now I'm building this website from scratch.</li>
@@ -63,7 +63,7 @@ include_once '../common/htmlTag.php';
           </ul>
         </div>
         <div>
-          <p>I also believe technology and arts work hand in hand. I have longtime interests in design, music, calligraphy, and <a href="<?php echo PATH;?>/photography">photography</a>.</p>
+          <p>I also believe technology and art work hand in hand. I have longtime interests in design, music, calligraphy, and <a href="<?php echo PATH;?>/photography">photography</a>.</p>
         </div>
       </div>
       <!--column-->

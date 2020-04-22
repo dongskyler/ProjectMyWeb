@@ -3,7 +3,7 @@ define("MASTHEAD_SIZE", 'SM');
 define("BG_IMG_MD", 'photography/SD__A6T0512_Edit_Web.jpg');
 define("BG_IMG_LG", 'large/SD__A6T0512_Edit_Web_Large.jpg');
 define("SITE_TITLE", 'Contact');
-define("SITE_SUBTITLE", 'I&#39;m an aspiring&nbsp;<a href="https://app.skylerdong.com/">web developer</a> and&nbsp;an&nbsp;<a href="https://skylerdong.com/photography/">photographer</a>');
+define("SITE_SUBTITLE", '<p>I&#39;m an aspiring&nbsp;<a href="https://app.skylerdong.com/">web developer</a> and&nbsp;an&nbsp;<a href="https://skylerdong.com/photography/">amateur photographer</a></p><p>Read <a href="https://skylerdong.com/blog/">my blogs here</a></p>');
 define("FADE_IN", 'no');
 define("OG_IMAGE", 'https://skylerdong.com/images/other/SD-IMG_4854-Edit-Web.jpg');
 ?>
