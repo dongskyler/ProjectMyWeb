@@ -1,6 +1,6 @@
 # Directories #
 ###############
-login/
+**/login
 
 # Compiled source #
 ###################
