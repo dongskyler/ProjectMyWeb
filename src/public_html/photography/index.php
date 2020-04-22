@@ -2,10 +2,10 @@
   include_once '../common/methods.php';
   // MySQL
   if ($_SERVER["SERVER_NAME"] == "localhost") {
-    require_once '../../config/login_mysql_local.php';
+    require_once '../../login/login_mysql_local.php';
   }
   else {
-    require_once '../../config/login_mysql_bluehost.php';
+    require_once '../../login/login_mysql_bluehost.php';
   }
   $conn = new mysqli($hn, $un, $pw, $db);
   if ($conn->connect_error) die("Fatal Error");
