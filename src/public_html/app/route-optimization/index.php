@@ -1,9 +1,9 @@
 <?php
   if ($_SERVER["SERVER_NAME"] == "localhost") {
-    require_once '../../../config/API_KEY_GOOG_route-optimization_dev.php';
+    require_once '../../../login/API_KEY_GOOG_route-optimization_dev.php';
   }
   else {
-    require_once '../../../config/API_KEY_GOOG_route-optimization_public.php';
+    require_once '../../../login/API_KEY_GOOG_route-optimization_public.php';
   }
   define("SITE_TITLE",'App: Route Optimization');
   define("SITE_SUBTITLE",'Find the fastest route with multiple stops using JavaScript and Google Map API.');
@@ -52,7 +52,7 @@ include_once '../../common/htmlTag.php';
   </div><!--row-->
 </div><!--maincontent-->
 <?php include_once '../../common/footer.php'; ?>
-<script defer src="<?php echo PATH; ?>/app/route-optimization/js/app.js"></script>
+<script defer src="<?php echo PATH; ?>/app/route-optimization/app.js"></script>
 <script type="text/javascript" defer src="https://maps.googleapis.com/maps/api/js?key=<?php echo API_KEY_GOOGLE; ?>&callback=initMap"></script>
 </script>
 </body>

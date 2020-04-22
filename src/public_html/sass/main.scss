@@ -1,0 +1,107 @@
+// sass --watch ./src/public_html/sass/main.scss:./src/public_html/css/styles.min.css --style compressed
+
+$font-primary: 'Ubuntu', Helvetica, sans-serif;
+$font-secondary: 'Noto Sans', sans-serif;
+$font-neon: "Sacramento", cursive;
+
+/*
+Sand Tan: #e1b382
+Sand Tan Shadow: #c89666
+Night Blue: #2d545e
+Night Blue Shadow: #12343b
+
+Barely Green: #acb7ae
+The Brown-shirts: #82716e
+Tan Blonde: #e4decd
+Blondey: #c2b490
+*/
+
+$color-primary: #212529;
+$color-primary-icon: #303030;
+$color-primary-blockquote: #585858;
+$color-primary-footnote: #585858;
+$color-lightdark: #F9F9F9;
+$color-deepdark: #F9F9F9;
+$color-deepdark-1: #E7E7E7;
+$color-masthead: #F9F9F9;
+$color-neon: #fff6a9;
+
+$color-a-primary: #0066CC;
+$color-a-deepdark: #2997FF;
+$color-a-masthead-hover: #BDDFFF;
+$background-color-primary: #FFFFFF;
+$background-color-lightdark: #303030;
+$background-color-deepdark: #050505;
+$background-color-light: #F0F0F1;
+$background-color-primary-blockquote: #f2f1f0;
+$background-color-primary-toc: #f2f1f0;
+$background-color-overlay: #080808;
+$background-color-footer: #D6D6D6;
+$background-color-primary-pre: #f2f1f0;
+
+$color-btn-primary: #0072E3;
+$color-btn-primary-hover: #4494e3;
+$color-btn-secondary: #585858;
+$color-btn-secondary-hover: #7f7f7f;
+$color-btn-success: #0b9649;
+$color-btn-success-hover: #51b87f;
+$color-btn-light: #D6D6D6;
+$color-btn-light-hover: #a0a0a0;
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+$navbar-height: 56px;
+$opacity: 0.45;
+
+h1,
+h2 {
+  font-family: $font-primary;
+}
+
+
+a {
+  text-decoration: none;
+  color: $color-a-primary;
+}
+
+.bg-deepdark {
+  text-decoration: none;
+  color: $color-a-deepdark;
+  background-color: $background-color-deepdark;
+
+  .maincontent a {
+    color: $color-a-deepdark;
+    cursor: pointer;
+  }
+
+  .maincontent .gallery a {
+    color: $color-deepdark;
+    cursor: pointer;
+  }
+}
+
+.bg-lightdark {
+  background-color: $background-color-lightdark;
+  color: $color-lightdark;
+}
+
+.anchor::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -200px; 
+  height: 200px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
+@import 'animation';
+@import 'navbar';
+@import 'header';
+@import 'maincontent';
+@import 'button';
+@import 'photography';
+@import 'modal';
+@import 'footer';
