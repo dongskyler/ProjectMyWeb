@@ -52,7 +52,7 @@ include_once '../../common/htmlTag.php';
   </div><!--row-->
 </div><!--maincontent-->
 <?php include_once '../../common/footer.php'; ?>
-<script defer src="<?php echo PATH; ?>/app/route-optimization/js/app.js"></script>
+<script defer src="<?php echo PATH; ?>/app/route-optimization/app.js"></script>
 <script type="text/javascript" defer src="https://maps.googleapis.com/maps/api/js?key=<?php echo API_KEY_GOOGLE; ?>&callback=initMap"></script>
 </script>
 </body>

@@ -93,10 +93,10 @@ $(function () {
       let param = window.location.href.split('?')[0];
       // This might cause problems in corner cases
       if (activeCatList.length === 1) {
-        param = param.concat('?category=',activeCatList[0]);
+        param = param.concat('?category=', activeCatList[0]);
       }
       if (activeCatList.length > 1) {
-        param = param.concat('?category=',activeCatList.join(','));
+        param = param.concat('?category=', activeCatList.join(','));
       }
 
       window.history.replaceState(null, null, param);
@@ -145,12 +145,11 @@ $(function () {
 
   // Open modal
   $('.gallery .pop').click(function () {
-    
+
     // Use large modal if photo is landscape
     if ($(this).children('div').children('div').attr('class').indexOf('photo-landscape') > -1) {
       $('#imagemodal>div').attr('class', $('#imagemodal>div').attr('class') + ' modal-lg');
     }
-    // console.log($('#imagemodal>div').attr('class') + ' modal-lg');
 
     let $image_src = $(this).find('img').attr('data-src');
     $('.modal-img').attr('src', $image_src);
@@ -162,7 +161,7 @@ $(function () {
       .attr('data-class')
       .split(' ');
 
-    categoryInfoArr.forEach(function(e, i) {
+    categoryInfoArr.forEach(function (e, i) {
       if (e === 'bnw') {
         this[i] = 'B&W';
       }
@@ -181,7 +180,7 @@ $(function () {
     else {
       categoryInfoStr = 'Categories: '.concat(categoryInfoArr.join(', '));
     }
-    
+
     $('p.modal-photo-category').text(categoryInfoStr);
     $('#imagemodal').modal('show');
 
@@ -210,8 +209,8 @@ $(function () {
     }
 
     let url_modalClosed = urlParams();
-    let url ='';
-    if (url_modalClosed.category.length === 0 ) {
+    let url = '';
+    if (url_modalClosed.category.length === 0) {
       url = url_modalClosed.path;
     }
     else {
@@ -235,7 +234,7 @@ $(function () {
   };
 
   $('#back-to-top-button').click(function () {
-    $('html,body').animate({scrollTop: 0}, 'slow');
+    $('html,body').animate({ scrollTop: 0 }, 'slow');
     return false;
   })
 
