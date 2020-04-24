@@ -63,7 +63,7 @@ include_once '../common/htmlTag.php';
           </ul>
         </div>
         <div>
-          <p>I also believe technology and art work hand in hand. I have longtime interests in design, music, calligraphy, and <a href="<?php echo PATH;?>/photography">photography</a>.</p>
+          <p>I believe technology and art work hand in hand. I have longtime interests in design, calligraphy and <a href="<?php echo PATH;?>/photography">photography</a>. Check out my <a href="<?php echo PATH;?>/photography">photography gallery</a>.</p>
         </div>
       </div>
       <!--column-->
