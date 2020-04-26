@@ -5,7 +5,7 @@
 *[https://github.com/dongskyler/my-web](https://github.com/dongskyler/my-web)*
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/56894a47d4784eca82a90c2545a0def0)](https://www.codacy.com/manual/dongskyler/my-web?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dongskyler/my-web&amp;utm_campaign=Badge_Grade)
-[![CodeFactor](https://www.codefactor.io/repository/github/dongskyler/my-web/badge)](https://www.codefactor.io/repository/github/dongskyler/my-web)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
