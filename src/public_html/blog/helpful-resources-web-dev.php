@@ -26,7 +26,6 @@ include_once '../common/htmlTag.php';
   <!-- Main Content -->
   <div class="container maincontent">
     <div class="row">
-    <div class="footnote col-10 mx-auto mb-3">(This is a work in progress...)</div>
       <div class="filter-button-bar col-12 mx-auto col-md-10">
         <button type="button" class="filter-button btn btn-outline-primary active" data-class="all">All</button>
         <button type="button" class="filter-button btn btn-outline-primary" data-class="general">General</button>
@@ -47,8 +46,8 @@ include_once '../common/htmlTag.php';
         <div class="content-block filterE" data-class="general book">
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="general">General</button>
           <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="book">Book</button>
-          <a href="#" target="_blank">
-            <h3 class="content-block-title">Cracking the Coding Interview by Gayle Laakmann</h3>
+          <a href="http://www.crackingthecodinginterview.com" target="_blank">
+            <h3 class="content-block-title">Cracking the Coding Interview by Gayle Laakmann McDowell</h3>
             <h4 class="content-block-subtitle">A helpful book on how to prepare for interviews and a broad range of basic coding skills</h4>
           </a>
           <hr />
@@ -57,8 +56,8 @@ include_once '../common/htmlTag.php';
         <div class="content-block filterE" data-class="general book">
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="general">General</button>
           <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="book">Book</button>
-          <a href="#" target="_blank">
-            <h3 class="content-block-title">Soft Skills: The software developer's life manual</h3>
+          <a href="https://www.goodreads.com/book/show/23232941-soft-skills" target="_blank">
+            <h3 class="content-block-title">Soft Skills: The software developer's life manual by John Z. Sonmez</h3>
             <h4 class="content-block-subtitle"></h4>
           </a>
           <hr />
@@ -81,7 +80,7 @@ include_once '../common/htmlTag.php';
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="mysql">MySQL</button>
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="php">PHP</button>
           <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="book">Book</button>
-          <a href="#" target="_blank">
+          <a href="http://lpmj.net/5thedition/" target="_blank">
             <h3 class="content-block-title">Learning PHP, MySQL & JavaScript by Robin Nixon</h3>
             <h4 class="content-block-subtitle"></h4>
           </a>
@@ -104,6 +103,18 @@ include_once '../common/htmlTag.php';
           <a href="https://gorails.com/" target="_blank">
             <h3 class="content-block-title">Go Rails</h3>
             <h4 class="content-block-subtitle"></h4>
+          </a>
+          <hr />
+        </div>
+        <!--div.content-block-->
+        <div class="content-block filterE" data-class="css html javascript website">
+          <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="css">CSS</button>
+          <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="html">HTML</button>
+          <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="javascript">JavaScript</button>
+          <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="website">Website</button>
+          <a href="https://caniuse.com" target="_blank">
+            <h3 class="content-block-title">Can I Use</h3>
+            <h4 class="content-block-subtitle">Can I Use provides browser support tables for support of front-end web technologies on browsers.</h4>
           </a>
           <hr />
         </div>
