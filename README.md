@@ -1,5 +1,8 @@
 # Personal Website of Skyler Dong
-## https://skylerdong.com
+
+*https://skylerdong.com*
+
+*https://github.com/dongskyler/my-web*
 
 [![Code Inspector Rating Badge](https://www.code-inspector.com/project/7047/status/svg)](https://frontend.code-inspector.com/public/project/7047/my-web/dashboard)
 [![Code Inspector Score Badge](https://www.code-inspector.com/project/7047/score/svg)](https://frontend.code-inspector.com/public/project/7047/my-web/dashboard)
