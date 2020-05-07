@@ -37,7 +37,7 @@
   define("BG_IMG_MD",'photography/SD_N18_5890_2_Web.jpg');
   define("BG_IMG_LG",'large/SD_N18_5890_2_Web_LG.jpg');
   define("SITE_TITLE",'Photography');
-  define("SITE_SUBTITLE",'<p><a href="https://www.instagram.com/skyler.dong.art/" target="_blank">Instagram: @skyler.dong.art</a></p><p>Read <a href="https://skylerdong.com/blog/?category=photograhy">my blogs on photography</a></p>');
+  define("SITE_SUBTITLE",'<p><a href="https://www.instagram.com/skyler.dong.art/" target="_blank">Instagram: @skyler.dong.art</a></p><p>Read <a href="https://skylerdong.com/blog/?category=photograhy">my blogs on photography</a> and <a href="https://skylerdong.com/blog/this-website.php">how I&apos;building this website</a></p>');
   define("FADE_IN",'yes');
   define("COPYRIGHT_NOTICE",'Images');
 ?>

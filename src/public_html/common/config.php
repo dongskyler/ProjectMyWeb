@@ -6,5 +6,4 @@ if ($_SERVER['HTTP_HOST'] === 'localhost') {
   }
 } else
     define("PATH", 'https://skylerdong.com');
-    // define("PATH", $_SERVER['HTTP_HOST']);
 ?>
