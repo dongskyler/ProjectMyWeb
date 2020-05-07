@@ -3,7 +3,7 @@ define("MASTHEAD_SIZE", 'SM');
 define("BG_IMG_MD", 'medium/SD__A7T3305_Web.jpg');
 define("BG_IMG_LG", 'large/SD__A7T3305_Web_LG.jpg');
 define("SITE_TITLE", 'App');
-define("SITE_SUBTITLE", '<p>I&apos;m an aspiring web developer</p><p>Read <a href="https://skylerdong.com/blog/?category=coding">my blogs on coding</a></p>');
+define("SITE_SUBTITLE", '<p>I&apos;m an aspiring web developer</p><p>Read <a href="https://skylerdong.com/blog/?category=coding">my blogs on coding</a> and <a href="https://skylerdong.com/blog/this-website.php">how I&apos;building this website</a></p>');
 define("FADE_IN", 'no');
 define("FOOTER_COLOR", 'dark');
 define("OG_IMAGE", 'https://skylerdong.com/images/other/SD-IMG_4854-Edit-Web.jpg');
