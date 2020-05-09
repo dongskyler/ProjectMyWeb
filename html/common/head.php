@@ -31,21 +31,21 @@
 <meta property="og:url" id="meta_og_url" content="<?php echo PATH,$_SERVER['REQUEST_URI'];?>" />
 <meta property="og:image" id="meta_og_image" content="<?php 
   if (!isset($og_image))
-    echo 'https://skylerdong.com/images/other/SD-IMG_4854-Edit-Web.jpg';
+    echo '<?php echo PATH;?>/images/other/SD-IMG_4854-Edit-Web.jpg';
   else 
     echo $og_image;
 ?>" />
 <script>
 $meta_og_image_0 = '<?php echo isset($og_image_default) ? $og_image_default : $og_image;?>';
 </script>
-<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="https://skylerdong.com/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://skylerdong.com/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://skylerdong.com/favicon/favicon-16x16.png">
-<link rel="manifest" href="https://skylerdong.com/favicon/site.webmanifest">
-<link rel="mask-icon" href="https://skylerdong.com/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="https://skylerdong.com/favicon/favicon.ico">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="<?php echo PATH;?>/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo PATH;?>/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?php echo PATH;?>/favicon/favicon-16x16.png">
+<link rel="manifest" href="<?php echo PATH;?>/favicon/site.webmanifest">
+<link rel="mask-icon" href="<?php echo PATH;?>/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="<?php echo PATH;?>/favicon/favicon.ico">
 <meta name="msapplication-TileColor" content="#f9f9f9">
-<meta name="msapplication-config" content="https://skylerdong.com/favicon/browserconfig.xml">
+<meta name="msapplication-config" content="<?php echo PATH;?>/favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106597051-4"></script>
 <script async>
