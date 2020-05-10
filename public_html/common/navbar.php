@@ -34,7 +34,7 @@
         <a class="nav-link" href="<?php echo PATH; ?>/blog">Blog</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?php if ($_SERVER['SERVER_NAME']==='localhost') {echo PATH,'/photography';} else {echo 'https://photography.skylerdong.com';} ?>">Photography</a>
+        <a class="nav-link" href="<?php echo PATH; ?>/photography">Photography</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?php echo PATH; ?>/contact">Contact</a>
