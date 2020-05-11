@@ -1,17 +1,12 @@
 # Personal Website of Skyler Dong
 
-[https://skylerdong.com](https://skylerdong.com)
-
-[https://github.com/dongskyler/my-web](https://github.com/dongskyler/my-web)
-
-[![CodeFactor](https://www.codefactor.io/repository/github/dongskyler/my-web/badge)](https://www.codefactor.io/repository/github/dongskyler/my-web)
+[https://gen2.skylerdong.com](https://gen2.skylerdong.com)
 
 ## Description
 
-This repository is my active working repository for my own purposes.
+This repository is the working repository for my soon-to-be-retired 2nd-generation personal website. It was established in early 2020 and built with HTML, Sass, Bootstrap 4, JQuery, vanilla PHP and MySQL.
 
-To use my website as a template (under MIT license), please visit:
-https://github.com/dongskyler/PerosnalWebsiteTemplate_Public
+I&apos;m currently building the [3rd generation of my personal website](https://skylerdong.com), with React, Sass, Node, Express, MongoDB and TypeScript. Its working repository is [also on GitHub](https://github.com/dongskyler/skylerdong.com-gen3).
 
 ## Copyright notice for photographs on my website
 
