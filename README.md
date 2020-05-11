@@ -1,4 +1,4 @@
-# Personal Website of Skyler Dong
+# Soon-To-Be-Retired Working Repository for My 2nd-Generation Personal Website
 
 [https://gen2.skylerdong.com](https://gen2.skylerdong.com)
 
@@ -8,7 +8,7 @@ This repository is the working repository for my soon-to-be-retired 2nd-generati
 
 I&apos;m currently building the [3rd generation of my personal website](https://skylerdong.com), with React, Sass, Node, Express, MongoDB and TypeScript. Its working repository is [also on GitHub](https://github.com/dongskyler/skylerdong.com-gen3).
 
-## Copyright notice for photographs on my website
+## Copyright Notice
 
 The software is under MIT license. You are welcome to use it. 
 
