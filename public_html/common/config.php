@@ -5,5 +5,5 @@ if ($_SERVER['HTTP_HOST'] === 'localhost') {
     define('PATH', 'http://localhost/my-web-gen2/public_html');
   }
 } else
-    define("PATH", 'https://skylerdong.com');
+    define("PATH", $_SERVER['HTTP_HOST']);
 ?>
