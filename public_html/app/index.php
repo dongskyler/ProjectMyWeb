@@ -38,6 +38,15 @@ include_once '../common/header.php';
         <hr/>
       </div><!--FILTER BUTTON-->
       <div class='col-12 mx-auto col-md-10'>
+        <div class="post-preview filterE" data-class="javascript">
+          <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="javascript">JavaScript</button>
+          <a href="<?php echo ($_SERVER["SERVER_NAME"] == "localhost") ? 'drum-machine/' : PATH.'/app/drum-machine' ?>">
+            <h2 class="post-title">Drum machine</h2>
+            <h3 class="post-subtitle">Drum machine web app</h3>
+          </a>
+          <hr/>
+        </div>
+        <!--post-preview-->
         <div class="post-preview filterE" data-class="d3-js javascript python">
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="d3-js">D3.js</button>
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="javascript">JavaScript</button>
