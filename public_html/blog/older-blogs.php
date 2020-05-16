@@ -1,4 +1,5 @@
 <?php
+  include_once '../common/config.php';
   define("MASTHEAD_SIZE",'SM');
   define("NAVBAR_COLOR",'light');
   define("BG_IMG_MD",'photography/SD_N18_5431_2_Web.jpg');
@@ -9,7 +10,6 @@
 ?>
 <!doctype html>
 <?php
-  include_once '../common/config.php';
   include_once '../common/htmlTag.php';
 ?>
 <head>

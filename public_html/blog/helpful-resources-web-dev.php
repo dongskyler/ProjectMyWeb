@@ -1,4 +1,5 @@
 <?php
+include_once '../common/config.php';
 define("HEADER_TYPE", 'blogpost');
 define("NAVBAR_COLOR", 'light');
 define("BG_IMG_MD", 'medium/SD__A7T3305_Web.jpg');
@@ -9,10 +10,8 @@ define("SITE_SUBSUBTITLE", '<p>Updated on April 16, 2020</p><p>Posted on March 2
 ?>
 <!doctype html>
 <?php
-include_once '../common/config.php';
 include_once '../common/htmlTag.php';
 ?>
-
 <head>
   <?php include_once '../common/head.php'; ?>
   <title>Helpful Resources for Web Development | Blog - Skyler Dong</title>

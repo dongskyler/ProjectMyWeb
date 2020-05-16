@@ -1,4 +1,5 @@
 <?php
+  include_once '../common/config.php';
   include_once '../common/methods.php';
   define("NAVBAR_COLOR",'light');
   define("HEADER_TYPE",'blogpost');
@@ -10,7 +11,6 @@
 ?>
 <!doctype html>
 <?php
-  include_once '../common/config.php';
   include_once '../common/htmlTag.php';
 ?>
 <head>

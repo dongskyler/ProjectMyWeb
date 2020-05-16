@@ -1,4 +1,5 @@
 <?php
+  include_once '../common/config.php';
   define("HEADER_TYPE",'blogpost');
   define("NAVBAR_COLOR",'light');
   define("BG_IMG_MD",'medium/SD__A7T3305_Web.jpg');
@@ -9,7 +10,6 @@
 ?>
 <!doctype html>
 <?php
-  include_once '../common/config.php';
   include_once '../common/htmlTag.php';
 ?>
 <head>

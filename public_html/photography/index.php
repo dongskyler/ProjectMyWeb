@@ -1,4 +1,5 @@
 <?php
+  include_once '../common/config.php';
   include_once '../common/methods.php';
   // MySQL
   if ($_SERVER["SERVER_NAME"] == "localhost") {
@@ -43,7 +44,6 @@
 ?>
 <!doctype html>
 <?php
-  include_once '../common/config.php';
   include_once '../common/htmlTag.php';
 ?>
 <head>
