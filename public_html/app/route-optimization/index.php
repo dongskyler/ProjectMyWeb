@@ -1,4 +1,5 @@
 <?php
+  include_once '../../common/config.php';
   if ($_SERVER["SERVER_NAME"] == "localhost") {
     require_once '../../../login/API_KEY_GOOG_route-optimization_dev.php';
   }
@@ -9,17 +10,15 @@
   define("SITE_SUBTITLE",'Find the fastest route with multiple stops using JavaScript and Google Map API.');
   define("FADE_IN",'no');
   define("FOOTER_COLOR",'dark');
-  define("OG_IMAGE",'https://skylerdong.com/images/other/SD-IMG_4854-Edit-Web.jpg');
+  define("OG_IMAGE", PATH.'/images/other/SD-IMG_4854-Edit-Web.jpg');
 ?>
 <!doctype html>
 <?php
-include_once '../../common/config.php';
 include_once '../../common/htmlTag.php';
 ?>
 <head>
 <?php include_once '../../common/head.php';?>
 <title>Route Optimization | App - Skyler Dong</title>
-<link rel="canonical" href="https://route-optimization.app.skylerdong.com" />
 </head>
 <body>
 <?php include_once '../../common/navbar.php'; ?>
