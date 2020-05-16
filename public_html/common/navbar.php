@@ -25,7 +25,7 @@
   <div class="collapse navbar-collapse fade-in-fast" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="<?php echo PATH; ?>/app>">App</a>
+        <a class="nav-link" href="<?php echo PATH; ?>/app">App</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="<?php echo PATH; ?>/about">About</a>

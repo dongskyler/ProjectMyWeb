@@ -1,14 +1,14 @@
 <?php
+  include_once '../../common/config.php';
   define("HEADER_TYPE",'blogpost');
   // define("BG_IMG_MD",'medium/SD__A7T3305_Web.jpg');
   // define("BG_IMG_LG",'large/SD__A7T3305_Web_LG.jpg');
-  define("SITE_TITLE",'Camera Brand Search Trends of Canon, Nikon and Sony');
-  define("SITE_SUBTITLE",'Comparing Google keyword search trends of camera, DSLR and mirrorless across Canon, Nikon and Sony');
-  define("SITE_SUBSUBTITLE",'Posted on April 11, 2020');
+  define("SITE_TITLE",'Drum Machine');
+  define("SITE_SUBTITLE",'Drum machine web app');
+  define("SITE_SUBSUBTITLE",'Posted on April 30, 2020');
 ?>
 <!DOCTYPE html>
 <?php
-  include_once '../../common/config.php';
   include_once '../../common/htmlTag.php';
 ?>
 <head>
