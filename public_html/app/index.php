@@ -1,4 +1,5 @@
 <?php
+include_once '../common/config.php';
 define("MASTHEAD_SIZE", 'SM');
 define("BG_IMG_MD", 'medium/SD__A7T3305_Web.jpg');
 define("BG_IMG_LG", 'large/SD__A7T3305_Web_LG.jpg');
@@ -10,7 +11,6 @@ define("OG_IMAGE", PATH.'/images/other/SD-IMG_4854-Edit-Web.jpg');
 ?>
 <!doctype html>
 <?php
-include_once '../common/config.php';
 include_once '../common/htmlTag.php';
 ?>
 <head>
