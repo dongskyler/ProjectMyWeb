@@ -6,7 +6,7 @@
     require_once '../../login/login_mysql_local.php';
   }
   else {
-    require_once '../../login/login_mysql_bluehost.php';
+    require_once '../../login/login_mysql_remote.php';
   }
   $conn = new mysqli($hn, $un, $pw, $db);
   if ($conn->connect_error) die("Fatal Error");
