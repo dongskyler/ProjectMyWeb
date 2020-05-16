@@ -190,7 +190,7 @@ def main():
 
 if __name__ == "__main__"
   main()</code></pre>
-        <p>You can also find this piece of code on <a href="https://github.com/dongskyler/ProjectNextGen" target="_blank">GitHub</a>. <i class="fas fa-ankh"></i></p>
+        <p>You can also find this piece of code on <a href="https://github.com/Badwater-Apps/camera-trends" target="_blank">GitHub</a>. <i class="fas fa-ankh"></i></p>
       </div>
     </div>
   </div><!--row-->

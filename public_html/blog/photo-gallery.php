@@ -311,7 +311,7 @@ function toggleFilterE(dataClass) {
       <pre><code class="language-javascript">const queryURLString = window.location.search;
 // Get URL strings from the URL
 // For example, if the URL is:
-// https://skylerdong.com/photography/?category=landscape
+// <?php echo PATH; ?>/photography/?category=landscape
 // queryURLString = '?category=landscape'
 
 const urlParams = new URLSearchParams(queryURLString);
@@ -449,7 +449,7 @@ $(function() {
       <p>In the following JavaScript code snippet, some parameters have been defined in <a href="#photo-filtering-javascript">Photo filtering by criteria and updating URL parameters using JavaScript</a>, but for the sake of clarity, I am going to include them here, too.</p>
       <pre><code class="language-javascript">// Get URL strings from the URL
 // For example, if the URL is:
-// https://skylerdong.com/photography/?category=landscape
+// <?php echo PATH; ?>/photography/?category=landscape
 // queryURLString = '?photoid=photoid_7'
 
 const urlParams = new URLSearchParams(queryURLString);
@@ -500,7 +500,7 @@ $(function() {
         <p>This is a work in progress. I'm currently writing this section. But for now, let me just show my code snippets.</p>
         <pre><code class="language-php">&lt;?php
 
-  $og_image = 'https://skylerdong.com/images/photography/SD_N18_5890_2_Web.jpg';
+  $og_image = '<?php echo PATH; ?>/images/photography/SD_N18_5890_2_Web.jpg';
   // Default og image of the webpage
 
   $url_query_string = $_SERVER['QUERY_STRING'];
@@ -521,8 +521,8 @@ $(function() {
       $result_filename->close();
       // END: QUERY PHOTO FILENAMES
 
-      $og_image = 'https://skylerdong.com/images/photography/'.$filename_url;
-      $og_image_default = 'https://skylerdong.com/images/photography/SD_N18_5890_2_Web.jpg';
+      $og_image = '<?php echo PATH; ?>/images/photography/'.$filename_url;
+      $og_image_default = '<?php echo PATH; ?>/images/photography/SD_N18_5890_2_Web.jpg';
     }
   }
 ?&gt;
@@ -530,7 +530,7 @@ $(function() {
 &lt;meta property="og:url" id="meta_og_url" content="&lt;?php echo PATH,$_SERVER['REQUEST_URI'];?&gt;" /&gt;
 &lt;meta property="og:image" id="meta_og_image" content="&lt;?php 
   if (!isset($og_image))
-    echo 'https://skylerdong.com/images/other/SD-IMG_4854-Edit-Web.jpg';
+    echo '<?php echo PATH; ?>/images/other/SD-IMG_4854-Edit-Web.jpg';
   else 
     echo $og_image;
 ?&gt;" /&gt;
@@ -593,7 +593,7 @@ setTimeout(function(){
     </div><!--LAZY LOADING-->
 
     </div><!--PHOTO PORTFOLIO-->
-    <p>I hope you find this article helpful. You can find the source code on <a href="https://github.com/dongskyler/personal_website" target="_blank">GitHub</a>. I periodically update this article and the source code. Please check back. Thank you for reading. <i class="fas fa-ankh"></i></p>
+    <p>I hope you find this article helpful. You can find the source code on <a href="https://github.com/dongskyler/skylerdong.com-gen2" target="_blank">GitHub</a>. I periodically update this article and the source code. Please check back. Thank you for reading. <i class="fas fa-ankh"></i></p>
     </div><!--COL-->  
   </div><!--ROW-->
 </div><!--MAINCONTENT-->

@@ -39,7 +39,7 @@
       
       <div class="mb-5"><h2 id="key-points" class="anchor">Key points</h2>
         <ul>
-          <li><p>I use JavaScript to create an interactive photo filtering system throughout my website, such as my <a href="https://skylerdong.com/photography/">photography gallery</a>, <a href="https://skylerdong.com/blog/">blogs</a> and <a href="https://app.skylerdong.com/">web apps</a>.</p></li>
+          <li><p>I use JavaScript to create an interactive photo filtering system throughout my website, such as my <a href="<?php echo PATH; ?>/photography/">photography gallery</a>, <a href="<?php echo PATH; ?>/blog/">blogs</a> and <a href="<?php echo PATH; ?>/app">web apps</a>.</p></li>
           <li><p>URL parameters are dynamically appended to the URL when a filter button is selected.</p></li>
         </ul>
       </div><!--KEY POINTS-->
@@ -113,7 +113,7 @@ function toggleFilterE(dataClass) {
         <pre><code class="language-javascript">const queryURLString = window.location.search;
 // Get URL strings from the URL
 // For example, if the URL is:
-// https://skylerdong.com/photography/?category=landscape
+// <?php echo PATH; ?>/photography/?category=landscape
 // queryURLString = '?category=landscape'
 
 const urlParams = new URLSearchParams(queryURLString);
@@ -169,7 +169,7 @@ if (category != null) {
     </div><!--update-url-->
 
     <div class="mb-5"><h2 id="styling-filter" class="anchor">Responsive design of filter buttons with SCSS</h2>
-      <p>I use <a href="https://skylerdong.com/blog/why-i-use-scss.php">SCSS as my preferred CSS preprocessor</a>. I applied a round edge to the filter button to achieve a modern look. I use media queries to display slightly different font sizes on different screens.</p>
+      <p>I use <a href="<?php echo PATH; ?>/blog/why-i-use-scss.php">SCSS as my preferred CSS preprocessor</a>. I applied a round edge to the filter button to achieve a modern look. I use media queries to display slightly different font sizes on different screens.</p>
       <pre><code class="language-css">.maincontent .btn {
 	border-radius: 18px;
 }
@@ -193,7 +193,7 @@ if (category != null) {
     </div>
 
     <div class="mb-5"><h2 id="final-words" class="anchor">Final words</h2>
-      <p>I hope you find this article helpful. You can find the source code on <a href="https://github.com/dongskyler/personal_website" target="_blank">GitHub</a>. I periodically update this article and the source code. Please check back. Thank you for reading. <i class="fas fa-ankh"></i></p>
+      <p>I hope you find this article helpful. You can find the source code on <a href="https://github.com/dongskyler/skylerdong.com-gen2" target="_blank">GitHub</a>. I periodically update this article and the source code. Please check back. Thank you for reading. <i class="fas fa-ankh"></i></p>
     </div>
     </div><!--COL-->  
   </div><!--ROW-->

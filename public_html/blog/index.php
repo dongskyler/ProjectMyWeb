@@ -4,7 +4,7 @@
   define("BG_IMG_MD",'photography/SD_N18_5431_2_Web.jpg');
   define("BG_IMG_LG",'large/SD_N18_5431_2_Web_Large.jpg');
   define("SITE_TITLE",'Blog');
-  define("SITE_SUBTITLE",'<p>A mix of things I learned, helpful tips and random thoughts</p><p>Check out <a href="https://app.skylerdong.com/">my web apps</a> and <a href="https://skylerdong.com/photography/">photos</a></p>');
+  define("SITE_SUBTITLE",'<p>A mix of things I learned, helpful tips and random thoughts</p><p>Check out <a href="'.PATH.'/app">my web apps</a> and <a href="'.PATH.'/photography/">photos</a></p>');
 ?>
 <!doctype html>
 <?php

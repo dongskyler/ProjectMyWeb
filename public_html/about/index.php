@@ -3,9 +3,9 @@ define("MASTHEAD_SIZE", 'SM');
 define("BG_IMG_MD", 'photography/SD__A6T0512_Edit_Web.jpg');
 define("BG_IMG_LG", 'large/SD__A6T0512_Edit_Web_Large.jpg');
 define("SITE_TITLE", 'About');
-define("SITE_SUBTITLE", '<p>I&#39;m an aspiring&nbsp;<a href="https://app.skylerdong.com/">web developer</a> and&nbsp;an&nbsp;<a href="https://skylerdong.com/photography/">amateur photographer</a></p><p>Read <a href="https://skylerdong.com/blog/">my blogs here</a> and <a href="https://skylerdong.com/blog/this-website.php">how I&apos;building this website</a></p>');
+define("SITE_SUBTITLE", '<p>I&#39;m an aspiring&nbsp;<a href="'.PATH.'/app">web developer</a> and&nbsp;an&nbsp;<a href="'.PATH.'/photography/">amateur photographer</a></p><p>Read <a href="'.PATH.'/blog">my blogs here</a> and <a href="'.PATH.'/blog/this-website.php">how I&apos;building this website</a></p>');
 define("FADE_IN", 'no');
-define("OG_IMAGE", 'https://skylerdong.com/images/other/SD-IMG_4854-Edit-Web.jpg');
+define("OG_IMAGE", PATH.'/images/other/SD-IMG_4854-Edit-Web.jpg');
 ?>
 <!doctype html>
 <?php
@@ -41,7 +41,7 @@ include_once '../common/htmlTag.php';
             <li>I graduated from <a href="https://www.beloit.edu" target="_blank">Beloit College</a>, Wisconsin with a Geology major and a Physics minor.</li>
             <li>I went to <a href="https://www.jsg.utexas.edu" target="_blank">geoscience graduate school</a> at <a href="https://www.utexas.edu" target="_blank">the University of Texas at Austin</a> to study <a href="https://www.jsg.utexas.edu/news/2017/10/fueling-the-future/" target="_blank">methane hydrate</a>.</li>
             <li>Now I'm pursuing a career in web development.</li>
-            <li>Read about <a href="https://skylerdong.com/blog/this-website.php">how I'm building this website</a> with HTML, CSS, JavaScript, PHP and MySQL.</li>
+            <li>Read about <a href="<?php echo PATH; ?>/blog/this-website.php">how I'm building this website</a> with HTML, CSS, JavaScript, PHP and MySQL.</li>
           </ul>
         </div>
         <div>I have a degree in science and I like making things and helping people.
@@ -63,7 +63,7 @@ include_once '../common/htmlTag.php';
           </ul>
         </div>
         <div>
-          <p>I believe technology and art work hand in hand. I have longtime interests in design, calligraphy and <a href="https://photography.skylerdong.com/">photography</a>. Check out my <a href="https://photography.skylerdong.com/">photography gallery</a>.</p>
+          <p>I believe technology and art work hand in hand. I have longtime interests in design, calligraphy and <a href="<?php echo PATH; ?>/photography">photography</a>. Check out my <a href="<?php echo PATH; ?>/photography">photography gallery</a>.</p>
         </div>
       </div>
       <!--column-->

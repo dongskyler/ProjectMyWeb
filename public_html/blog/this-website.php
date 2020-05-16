@@ -236,7 +236,7 @@ Records: 91  Deleted: 0  Skipped: 0  Warnings: 0</code>
 
     <div class="mb-5"><h3 id="photo-filtering-javascript" class="anchor">Photo filtering by criteria and updating URL parameters using JavaScript</h3>
       <p>I use JavaScript to create an interactive photo filtering system on <a href="../photography/">my photography page</a>. For example, when you click on "landscape" button, only the photos in the landscape category will be shown. It is worthy to to mention that many photos are in multiple categories and my filtering system supports filtering photos that are in several categories.</p>
-      <p>Please read my other blog <a href="https://skylerdong.com/blog/filter-buttons-javascript.php">Interactive Filtering Buttons and Updating URL Parameters using JavaScript</a> for details.</p>
+      <p>Please read my other blog <a href="<?php echo PATH; ?>/blog/filter-buttons-javascript.php">Interactive Filtering Buttons and Updating URL Parameters using JavaScript</a> for details.</p>
       <p>I'm currently working on filtering by other attributes, such as locations and capture dates.</p>
     </div><!--photo-filtering-javascript-->
 
@@ -345,7 +345,7 @@ $(function() {
       <p>In the following JavaScript code snippet, some parameters have been defined in <a href="#photo-filtering-javascript">Photo filtering by criteria and updating URL parameters using JavaScript</a>, but for the sake of clarity, I am going to include them here, too.</p>
       <pre><code class="language-javascript">// Get URL strings from the URL
 // For example, if the URL is:
-// https://skylerdong.com/photography/?category=landscape
+// https://gen2.skylerdong.com/photography/?category=landscape
 // queryURLString = '?photoid=photoid_7'
 
 const urlParams = new URLSearchParams(queryURLString);
@@ -396,7 +396,7 @@ $(function() {
         <p>This is a work in progress. I'm currently writing this section. But for now, let me just show my code snippets.</p>
         <pre><code class="language-php">&lt;?php
 
-  $og_image = 'https://skylerdong.com/images/photography/SD_N18_5890_2_Web.jpg';
+  $og_image = '<?php echo PATH; ?>/images/photography/SD_N18_5890_2_Web.jpg';
   // Default og image of the webpage
 
   $url_query_string = $_SERVER['QUERY_STRING'];
@@ -417,8 +417,8 @@ $(function() {
       $result_filename->close();
       // END: QUERY PHOTO FILENAMES
 
-      $og_image = 'https://skylerdong.com/images/photography/'.$filename_url;
-      $og_image_default = 'https://skylerdong.com/images/photography/SD_N18_5890_2_Web.jpg';
+      $og_image = '<?php echo PATH; ?>/images/photography/'.$filename_url;
+      $og_image_default = '<?php echo PATH; ?>/images/photography/SD_N18_5890_2_Web.jpg';
     }
   }
 ?&gt;
@@ -426,7 +426,7 @@ $(function() {
 &lt;meta property="og:url" id="meta_og_url" content="&lt;?php echo PATH,$_SERVER['REQUEST_URI'];?&gt;" /&gt;
 &lt;meta property="og:image" id="meta_og_image" content="&lt;?php 
   if (!isset($og_image))
-    echo 'https://skylerdong.com/images/other/SD-IMG_4854-Edit-Web.jpg';
+    echo '<?php echo PATH; ?>/images/other/SD-IMG_4854-Edit-Web.jpg';
   else 
     echo $og_image;
 ?&gt;" /&gt;

@@ -5,7 +5,7 @@ define("BG_IMG_LG", 'large/SD__A6T0512_Edit_Web_Large.jpg');
 define("SITE_TITLE", 'Copyright Notice');
 define("SITE_SUBTITLE", '');
 define("FADE_IN", 'no');
-define("OG_IMAGE", 'https://skylerdong.com/images/other/SD-IMG_4854-Edit-Web.jpg');
+define("OG_IMAGE", PATH.'/images/other/SD-IMG_4854-Edit-Web.jpg');
 ?>
 <!doctype html>
 <?php
@@ -29,7 +29,7 @@ include_once '../common/htmlTag.php';
           <h2 id="copyright-notice" class="anchor">Copyright notice for images</h2>
         </div>
         <div>
-          <p>It is always appreciated when you refer back to my website. However, all images appearing on this domain and all subdomains are not to be downloaded or reproduced in any way without permission. If you intend to use my images by any means or purchase prints, you are welcome to <a href="https://skylerdong.com/contact/">contact me</a>. Thank you.
+          <p>It is always appreciated when you refer back to my website. However, all images appearing on this domain and all subdomains are not to be downloaded or reproduced in any way without permission. If you intend to use my images by any means or purchase prints, you are welcome to <a href="<?php echo PATH; ?>/contact/">contact me</a>. Thank you.
           </p>
         </div>
       </div>
