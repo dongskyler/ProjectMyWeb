@@ -31,7 +31,7 @@
 <meta property="og:url" id="meta_og_url" content="<?php echo PATH,$_SERVER['REQUEST_URI'];?>" />
 <meta property="og:image" id="meta_og_image" content="<?php 
   if (!isset($og_image))
-    echo '<?php echo PATH;?>/images/other/SD-IMG_4854-Edit-Web.jpg';
+    echo PATH.'/images/other/SD-IMG_4854-Edit-Web.jpg';
   else 
     echo $og_image;
 ?>" />
