@@ -53,13 +53,13 @@
         <p>A picture is worth a thousand words, so let me show you four thousand words first.</p>
         <div class="row photo-block">
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_100" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_100" target="_blank">
             <?php loadImage_blog('SD_N18_5767_2_Web_raw.jpg');?>
             </a>
             <div class="text-center"><p>Before: The Wave, Arizona. Raw photo from camera without any post-processing or cropping.</p></div>
           </div>
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_100" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_100" target="_blank">
             <?php loadImage_photography('SD_N18_5767_2_Web.jpg');?>
             </a>
             <div class="text-center"><p>After: The Wave, Arizona.</p></div>
@@ -67,13 +67,13 @@
         </div><!--ROW-->
         <div class="row photo-block">
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_83" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_83" target="_blank">
             <?php loadImage_blog('SD__A7T2560_Web_raw.jpg');?>
             </a>
             <div class="text-center"><p>Before: Vintage Chevy.</p></div>
           </div>
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_83" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_83" target="_blank">
             <?php loadImage_photography('SD__A7T2560_Edit_2_Web.jpg');?>
             </a>
             <div class="text-center"><p>After: Vintage Chevy.</p></div>
@@ -84,22 +84,22 @@
         <p>Which one do you like better?</p>
         <div class="row photo-block">
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_61" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_61" target="_blank">
             <?php loadImage_blog('SD_N18_7039_2_Web_raw.jpg');?>
             </a>
             <div class="text-center"><p>Photo 1. Before: Big Bend National Park, Texas. As-is condition from camera without any post-processing or cropping.</p></div>
           </div>
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_61" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_61" target="_blank">
             <?php loadImage_photography('SD_N18_7039_2_Web.jpg');?>
             </a>
-            <div class="text-center"><p>Photo 2. After: Big Bend National Park, Texas. Although this photo might seem to be a little too much, it is because it's right next to its before photo (Photo 1), which is simply too raw, so our brain started to overcompensate. If you look at this photo in <a href="https://skylerdong.com/photography/?photo=photoid_61" target="_blank">my photo gallery</a>, it's quite coherent.</p></div>
+            <div class="text-center"><p>Photo 2. After: Big Bend National Park, Texas. Although this photo might seem to be a little too much, it is because it's right next to its before photo (Photo 1), which is simply too raw, so our brain started to overcompensate. If you look at this photo in <a href="<?php echo PATH; ?>/photography/?photo=photoid_61" target="_blank">my photo gallery</a>, it's quite coherent.</p></div>
           </div>
         </a>
         </div><!--ROW-->
         <p>Well, it is subjective. Personally, I like Photo 2 &mdash; because I was purposely going for that way.</p>
         <blockquote>I wanted to create a slightly surrealistic Wild West feel in Photo 2, like the tone you see in <a href="https://en.wikipedia.org/wiki/Western_(genre)" target="_blank">Western films</a>, such as <a href="https://en.wikipedia.org/wiki/The_Good,_the_Bad_and_the_Ugly" target="_blank">The Good, the Bad and the Ugly</a> and <a href="https://en.wikipedia.org/wiki/No_Country_for_Old_Men_(film)" target="_blank">No Country for Old Men</a>.</blockquote>
-        <p>The after photo (Photo 2) might seem to be enhanced too much, but it is because the before photo (Photo 1) &mdash; right next to it &mdash; is too raw and too flat. As a result, our brains kick in and start to overcompensate. If you look at Photo 2 as part of <a href="https://skylerdong.com/photography/?photo=photoid_61" target="_blank">my photo gallery</a> or on its own, it is quite coherent.</p>
+        <p>The after photo (Photo 2) might seem to be enhanced too much, but it is because the before photo (Photo 1) &mdash; right next to it &mdash; is too raw and too flat. As a result, our brains kick in and start to overcompensate. If you look at Photo 2 as part of <a href="<?php echo PATH; ?>/photography/?photo=photoid_61" target="_blank">my photo gallery</a> or on its own, it is quite coherent.</p>
         <p>On a side note, all color grading settings for all photos in this blog are tailored to small photo previews on screens (maximum 800 pixels on the long edge) for applications like <a href="https://www.instagram.com/skyler.dong.art/" target="_blank">Instagram</a> and <a href="../photography" target="_blank">my photo gallery</a> on this website. Small photo previews tend to be flat and lackluster, so I add a little more zing to them in post-processing. For larger sizes (such as for computer wallpapers) and prints, I'd tone it down and do a slightly different set of color grading.</p>
         <p>If you are reading this webpage at night with screen-warming functions turned on, such as Night Shift on Mac and iOS and Night Light on Windows, the colors of the photos would be distorted.</p>
         <p>I'm sure some people might prefer the as-is condition of Photo 1 from my camera without any processing or cropping (actually, from my smartphone camera).</p>
@@ -127,13 +127,13 @@
         <p>Let me start with a more "normal" example. Let's consider the following two photos first. Stay with me here. I'll discuss the <a href="#blog-color-grading-technical">software requirement in a later section</a> &mdash; spoiler alert &mdash; free software available.</p>
         <div class="row photo-block">
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_100" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_100" target="_blank">
             <?php loadImage_blog('SD_N18_5767_2_Web_raw.jpg');?>
             </a>
             <div class="text-center"><p>Photo 3. The Wave, Arizona. Raw photo from camera without any post-processing or cropping.</p></div>
           </div>
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_100" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_100" target="_blank">
             <?php loadImage_photography('SD_N18_5767_2_Web.jpg');?>
             </a>
             <div class="text-center"><p>Photo 4. Same photo after post processing.</p></div>
@@ -166,16 +166,16 @@
         <p>Now let's go back to the dramatic Wild West example. The raw photo isn't bad, but I want to present what I imagined in my head.</p>
         <div class="row photo-block">
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_61" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_61" target="_blank">
             <?php loadImage_blog('SD_N18_7039_2_Web_raw.jpg');?>
             </a>
             <div class="text-center"><p>Photo 1. Raw photo before post-processing.</p></div>
           </div>
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_61" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_61" target="_blank">
             <?php loadImage_photography('SD_N18_7039_2_Web.jpg');?>
             </a>
-            <div class="text-center"><p>Photo 2. After post-processing. As I mentioned, although this photo might seem to be a little too much, it is because it's right next to its before photo (Photo 1), which is simply too raw, so our brain started to overcompensate. If you look at this photo as part of <a href="https://skylerdong.com/photography/?photo=photoid_61" target="_blank">my photo gallery</a>, it's quite coherent.</p></div>
+            <div class="text-center"><p>Photo 2. After post-processing. As I mentioned, although this photo might seem to be a little too much, it is because it's right next to its before photo (Photo 1), which is simply too raw, so our brain started to overcompensate. If you look at this photo as part of <a href="<?php echo PATH; ?>/photography/?photo=photoid_61" target="_blank">my photo gallery</a>, it's quite coherent.</p></div>
           </div>
         </a>
         </div><!--ROW-->
@@ -207,13 +207,13 @@
         <p>The following photo was taken at <a href="https://en.wikipedia.org/wiki/Prada_Marfa" target="_blank">Prada Marfa</a>, which isn't a Prada store, but a sculpture just off highway (U.S. Route 90 in Texas). The closest town is tens of miles away. It's bizarre to have a Prada store in the middle of nowhere.</p>
         <div class="row photo-block">
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_12" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_12" target="_blank">
             <?php loadImage_blog('SD_IMG_0803_Web_2_raw.jpg');?>
             </a>
             <div class="text-center"><p>Photo 5. <a href="https://en.wikipedia.org/wiki/Prada_Marfa" target="_blank">Prada Marfa</a>. Raw photo before post-processing. It's flat and boring and has distorted perspectives that impair the delivery of the photo.</p></div>
           </div>
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_12" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_12" target="_blank">
             <?php loadImage_photography('SD_IMG_0803_Web.jpg');?>
             </a>
             <div class="text-center"><p>Photo 6. <a href="https://en.wikipedia.org/wiki/Prada_Marfa" target="_blank">Prada Marfa</a> after post-processing. I wanted the photo to be as surrealistic — or as realistic — as having a real Prada store in the middle of nowhere.</p></div>
@@ -235,13 +235,13 @@
         <p>Let me give you a few more examples.</p>
         <div class="row photo-block">
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_29" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_29" target="_blank">
             <?php loadImage_blog('SD_N18_3292_2_Web_raw.jpg');?>
             </a>
             <div class="text-center"><p>Before: Sunset at Lake Pflugerville 1.</p></div>
           </div>
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_29" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_29" target="_blank">
             <?php loadImage_photography('SD_N18_3292_Web.jpg');?>
             </a>
             <div class="text-center"><p>After: Sunset at Lake Pflugerville 1.</p></div>
@@ -250,13 +250,13 @@
         </div><!--ROW-->
         <div class="row photo-block">
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_13" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_13" target="_blank">
             <?php loadImage_blog('SD_IMG_1033_Web_raw.jpg');?>
             </a>
             <div class="text-center"><p>Before: Serenity at Bear Lake – Rocky Mountain National Park.</p></div>
           </div>
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_13" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_13" target="_blank">
             <?php loadImage_photography('SD_IMG_1033_Web.jpg');?>
             </a>
             <div class="text-center"><p>After: Serenity at Bear Lake – Rocky Mountain National Park.</p></div>
@@ -265,13 +265,13 @@
         </div><!--ROW-->
         <div class="row photo-block">
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_8" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_8" target="_blank">
             <?php loadImage_blog('SD_A7T00550_Web_raw.jpg');?>
             </a>
             <div class="text-center"><p>Before: The Milky Way on US Route 290.</p></div>
           </div>
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_8" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_8" target="_blank">
             <?php loadImage_photography('SD_A7T00550_Edit_Web.jpg');?>
             </a>
             <div class="text-center"><p>After: The Milky Way on US Route 290.</p></div>
@@ -280,13 +280,13 @@
         </div><!--ROW-->
         <div class="row photo-block">
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_72" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_72" target="_blank">
             <?php loadImage_blog('SD__A6T0234_Web_2_raw.jpg');?>
             </a>
             <div class="text-center"><p>Before: Pelicans 1 – Padre Island National Seashore.</p></div>
           </div>
           <div class="col-md-6 mx-auto">
-            <a href="https://skylerdong.com/photography/?photo=photoid_72" target="_blank">
+            <a href="<?php echo PATH; ?>/photography/?photo=photoid_72" target="_blank">
             <?php loadImage_photography('SD__A6T0234_Web.jpg');?>
             </a>
             <div class="text-center"><p>After: Pelicans 1 – Padre Island National Seashore.</p></div>

@@ -10,7 +10,7 @@
   $conn = new mysqli($hn, $un, $pw, $db);
   if ($conn->connect_error) die("Fatal Error");
 
-  $og_image = 'https://skylerdong.com/images/photography/SD_N18_5890_2_Web.jpg';
+  $og_image = '<?php echo PATH; ?>/images/photography/SD_N18_5890_2_Web.jpg';
 
   // Query URL String
   $url_query_string = $_SERVER['QUERY_STRING'];
@@ -29,15 +29,15 @@
       $result_filename->close();
       // END: QUERY PHOTO FILENAMES
 
-      $og_image = 'https://skylerdong.com/images/photography/'.$filename_url;
-      $og_image_default = 'https://skylerdong.com/images/photography/SD_N18_5890_2_Web.jpg';
+      $og_image = '<?php echo PATH; ?>/images/photography/'.$filename_url;
+      $og_image_default = '<?php echo PATH; ?>/images/photography/SD_N18_5890_2_Web.jpg';
     }
   }
   define("NAVBAR_COLOR",'dark');
   define("BG_IMG_MD",'photography/SD_N18_5890_2_Web.jpg');
   define("BG_IMG_LG",'large/SD_N18_5890_2_Web_LG.jpg');
   define("SITE_TITLE",'Photography');
-  define("SITE_SUBTITLE",'<p><a href="https://www.instagram.com/skyler.dong.art/" target="_blank">Instagram: @skyler.dong.art</a></p><p>Read <a href="https://skylerdong.com/blog/?category=photograhy">my blogs on photography</a> and <a href="https://skylerdong.com/blog/this-website.php">how I&apos;building this website</a></p>');
+  define("SITE_SUBTITLE",'<p><a href="https://www.instagram.com/skyler.dong.art/" target="_blank">Instagram: @skyler.dong.art</a></p><p>Read <a href="'.PATH.'/blog/?category=photograhy">my blogs on photography</a> and <a href="'.PATH.'/blog/this-website.php">how I&apos;building this website</a></p>');
   define("FADE_IN",'yes');
   define("COPYRIGHT_NOTICE",'Images');
 ?>

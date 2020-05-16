@@ -29,8 +29,8 @@ include_once '../common/htmlTag.php';
         <div class="sitemap-section">
           <h2>App</h2>
           <ul>
-            <li><a href="https://app.skylerdong.com/route-optimization">Route Optimization</a></li>
-            <li><a href="https://app.skylerdong.com/camera-search-trends">Camera Brand Trends of Canon, Nikon and Sony</a></li>
+            <li><a href="<?php echo PATH; ?>/app/route-optimization">Route Optimization</a></li>
+            <li><a href="<?php echo PATH; ?>/app/camera-search-trends">Camera Brand Trends of Canon, Nikon and Sony</a></li>
           </ul>
         </div>
         <div class="sitemap-section">

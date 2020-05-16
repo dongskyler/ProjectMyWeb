@@ -1,6 +1,7 @@
-# Soon-To-Be-Retired Working Repository for My 2nd-Generation Personal Website
+# Working Repository for My Soon-To-Be-Retired 2nd-Generation Personal Website
 
 [https://gen2.skylerdong.com](https://gen2.skylerdong.com)
+GitHub: [https://github.com/dongskyler/skylerdong.com-gen2](https://github.com/dongskyler/skylerdong.com-gen2)
 
 ## Description
 
@@ -10,7 +11,7 @@ I&apos;m currently building the [3rd generation of my personal website](https://
 
 ## Copyright Notice
 
-The software is under MIT license. You are welcome to use it. 
+The software is under MIT license. You are welcome to use it.
 
 However, my photographs are not. It is always appreciated when you
 refer back to my website. However, all images appearing on this

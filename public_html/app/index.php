@@ -3,10 +3,10 @@ define("MASTHEAD_SIZE", 'SM');
 define("BG_IMG_MD", 'medium/SD__A7T3305_Web.jpg');
 define("BG_IMG_LG", 'large/SD__A7T3305_Web_LG.jpg');
 define("SITE_TITLE", 'App');
-define("SITE_SUBTITLE", '<p>I&apos;m an aspiring web developer</p><p>Read <a href="https://skylerdong.com/blog/?category=coding">my blogs on coding</a> and <a href="https://skylerdong.com/blog/this-website.php">how I&apos;building this website</a>p</p>');
+define("SITE_SUBTITLE", '<p>I&apos;m an aspiring web developer</p><p>Read <a href="'.PATH.'/blog/?category=coding">my blogs on coding</a> and <a href="'.PATH.'/blog/this-website.php">how I&apos;building this website</a>p</p>');
 define("FADE_IN", 'no');
 define("FOOTER_COLOR", 'dark');
-define("OG_IMAGE", 'https://skylerdong.com/images/other/SD-IMG_4854-Edit-Web.jpg');
+define("OG_IMAGE", PATH.'/images/other/SD-IMG_4854-Edit-Web.jpg');
 ?>
 <!doctype html>
 <?php
@@ -16,7 +16,7 @@ include_once '../common/htmlTag.php';
 <head>
   <?php include_once '../common/head.php'; ?>
   <title>App - Skyler Dong</title>
-  <link rel="canonical" href="https://app.skylerdong.com" />
+  <link rel="canonical" href="<?php echo PATH; ?>/app" />
 </head>
 <body>
 <?php
@@ -42,7 +42,7 @@ include_once '../common/header.php';
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="d3-js">D3.js</button>
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="javascript">JavaScript</button>
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="python">Python</button>
-          <a href="<?php echo ($_SERVER["SERVER_NAME"] == "localhost") ? 'camera-search-trends/' : 'https://app.skylerdong.com/camera-search-trends' ?>">
+          <a href="<?php echo ($_SERVER["SERVER_NAME"] == "localhost") ? 'camera-search-trends/' : PATH.'/app/camera-search-trends' ?>">
             <h2 class="post-title">Camera Brand Trends of Canon, Nikon and Sony</h2>
             <h3 class="post-subtitle">Comparing Google keyword search trends of camera, DSLR and mirrorless across Canon, Nikon and Sony</h3>
           </a>
@@ -52,7 +52,7 @@ include_once '../common/header.php';
         <div class="post-preview filterE" data-class="google-maps-api javascript">
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="google-maps-api">Google&nbsp;Maps&nbsp;API</button>
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="javascript">JavaScript</button>
-          <a href="<?php echo ($_SERVER["SERVER_NAME"] == "localhost") ? 'route-optimization/' : 'https://app.skylerdong.com/route-optimization' ?>">
+          <a href="<?php echo ($_SERVER["SERVER_NAME"] == "localhost") ? 'route-optimization/' : PATH.'/app/route-optimization' ?>">
             <h2 class="post-title">Route Optimization</h2>
             <h3 class="post-subtitle">Find the fastest route with multiple stops using JavaScript and Google Map API</h3>
           </a>
@@ -64,7 +64,7 @@ include_once '../common/header.php';
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="javascript">JavaScript</button>
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="mysql">MySQL</button>
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="php">PHP</button>
-          <a href="https://skylerdong.com/blog/this-website.php">
+          <a href="<?php echo PATH; ?>/blog/this-website.php">
             <h2 class="post-title">
               How I'm Building This Website
             </h2>

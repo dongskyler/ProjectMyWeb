@@ -5,7 +5,7 @@ define("BG_IMG_LG", 'large/SD__A6T0512_Edit_Web_Large.jpg');
 define("SITE_TITLE", 'Privacy Policy');
 define("SITE_SUBTITLE", '');
 define("FADE_IN", 'no');
-define("OG_IMAGE", 'https://skylerdong.com/images/other/SD-IMG_4854-Edit-Web.jpg');
+define("OG_IMAGE", PATH.'/images/other/SD-IMG_4854-Edit-Web.jpg');
 ?>
 <!doctype html>
 <?php
@@ -40,7 +40,7 @@ include_once '../common/htmlTag.php';
             <li>Advertising Reporting Features</li>
             <li>User-ID feature</li>
           </ul>-->
-          <p>If you have any further questions about how I collect your data, you are welcome to <a href="https://skylerdong.com/contact/">contact me</a>. Thank you.
+          <p>If you have any further questions about how I collect your data, you are welcome to <a href="<?php echo PATH; ?>/contact/">contact me</a>. Thank you.
           </p>
         </div>
       </div>

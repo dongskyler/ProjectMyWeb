@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /.git/
 Disallow: /.well-known/
 
-Sitemap: https://skylerdong.com/sitemap.xml
+Sitemap: https://gen2.skylerdong.com/sitemap.xml
