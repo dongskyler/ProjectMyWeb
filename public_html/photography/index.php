@@ -2,7 +2,7 @@
   include_once '../common/config.php';
   include_once '../common/methods.php';
   // MySQL
-  if ($_SERVER["SERVER_NAME"] == "localhost") {
+  if ($_SERVER["SERVER_NAME"] === "localhost") {
     require_once '../../login/login_mysql_local.php';
   }
   else {
@@ -11,7 +11,7 @@
   $conn = new mysqli($hn, $un, $pw, $db);
   if ($conn->connect_error) die("Fatal Error");
 
-  $og_image = '<?php echo PATH; ?>/images/photography/SD_N18_5890_2_Web.jpg';
+  $og_image = PATH.'/images/photography/SD_N18_5890_2_Web.jpg';
 
   // Query URL String
   $url_query_string = $_SERVER['QUERY_STRING'];
@@ -30,8 +30,8 @@
       $result_filename->close();
       // END: QUERY PHOTO FILENAMES
 
-      $og_image = '<?php echo PATH; ?>/images/photography/'.$filename_url;
-      $og_image_default = '<?php echo PATH; ?>/images/photography/SD_N18_5890_2_Web.jpg';
+      $og_image = PATH.'/images/photography/'.$filename_url;
+      $og_image_default = PATH.'/images/photography/SD_N18_5890_2_Web.jpg';
     }
   }
   define("NAVBAR_COLOR",'dark');
