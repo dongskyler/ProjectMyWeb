@@ -28,13 +28,12 @@
   <div class="row">
     <div class="d-flex col-10 justify-content-start">
       <ul class="footer-icon">
-        <li class="pr-2 pr-sm-3 hvr-float"><a href="mailto:skyler@skylerdong.com"><i class="far fa-envelope"></i></a>
+        <li class="pr-2 pr-sm-3 hvr-float"><a href="mailto:dongskyler@gmail.com"><i class="far fa-envelope"></i></a>
         </li>
-        <li class="pr-2 pr-sm-3 hvr-float"><a href="https://www.linkedin.com/in/dongt/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <li class="pr-2 pr-sm-3 hvr-float"><a href="https://www.linkedin.com/in/skylerdong/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         </li>
         <li class="pr-2 pr-sm-3 hvr-float"><a href="https://github.com/dongskyler" target="_blank"><i class="fab fa-github"></i></a>
         </li>
-        <!--<li class="pr-2 pr-sm-3 hvr-float"><a href="https://gitlab.com/dongskyler" target="_blank"><i class="fab fa-gitlab"></i></a>
         </li>-->
         <li class="pr-2 pr-sm-3 hvr-float"><a href="https://www.instagram.com/skyler.dong.art/" target="_blank"><i class="fab fa-instagram"></i></a>
         </li>
@@ -55,9 +54,9 @@
         echo 'All&nbsp;images&nbsp;&copy; 2013&#8211;',date("Y"),' Skyler&nbsp;Dong. All&nbsp;rights&nbsp;reserved.';
       }
       else echo 'Copyright&nbsp;&copy; ',date("Y"),' Skyler&nbsp;Dong.';
+      echo PATH;
       ?>
     </div>
-    <div><?php echo PATH; ?></div>
   </div><!--row-->
 </div><!--container-->
 </footer>
