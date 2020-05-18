@@ -30,8 +30,8 @@ include_once '../common/htmlTag.php';
           <p>Thank you for your interest in contacting me.</p>
         </div>
         <div class="hanging-indent">
-          <p><a href="mailto:skyler@skylerdong.com"><i class="far fa-envelope fa-icon hvr-buzz-out"></i></a>Emails: <a href="mailto:skyler@skylerdong.com">skyler@skylerdong.com</a>, <a href="mailto:dongskyler@gmail.com">dongskyler@gmail.com</a></p>
-          <p><a href="mailto:photo@skylerdong.com"><i class="fas fa-camera fa-icon hvr-buzz-out"></i></a>Photography&nbsp;inquiries: <a href="mailto:photo@skylerdong.com">photo@skylerdong.com</a></p>
+          <p><a href="mailto:skyler@skylerdong.com"><i class="far fa-envelope fa-icon hvr-buzz-out"></i></a>Email: <a href="mailto:dongskyler@gmail.com">dongskyler@gmail.com</a></p>
+          <p><a href="mailto:skyler.dong.art@gmail.com"><i class="fas fa-camera fa-icon hvr-buzz-out"></i></a>Photography&nbsp;inquiries: <a href="mailto:skyler.dong.art@gmail.com">skyler.dong.art@gmail.com</a></p>
           <p><a href="https://www.linkedin.com/in/dongt/" target="_blank"><i class="fab fa-linkedin-in fa-icon hvr-buzz-out"></i></a>LinkedIn: <a href="https://www.linkedin.com/in/dongt/" target="_blank">Tiannong&nbsp;"Skyler"&nbsp;Dong</a></p>
           <p><a href="https://github.com/dongskyler" target="_blank"><i class="fab fa-github fa-icon hvr-buzz-out"></i></a>GitHub: <a href="https://github.com/dongskyler" target="_blank">Skyler&nbsp;Dong</a></p>
           <!--<p><a href="https://gitlab.com/dongskyler" target="_blank"><i class="fab fa-gitlab fa-icon hvr-buzz-out"></i></a>GitLab: <a href="https://gitlab.com/dongskyler" target="_blank">Skyler&nbsp;Dong</a></p>-->
