@@ -34,7 +34,7 @@
         </li>
         <li class="pr-2 pr-sm-3 hvr-float"><a href="https://github.com/dongskyler" target="_blank"><i class="fab fa-github"></i></a>
         </li>
-        </li>-->
+        </li>
         <li class="pr-2 pr-sm-3 hvr-float"><a href="https://www.instagram.com/skyler.dong.art/" target="_blank"><i class="fab fa-instagram"></i></a>
         </li>
       </ul>
