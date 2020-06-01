@@ -53,9 +53,11 @@
       elseif (COPYRIGHT_NOTICE=='Images') {
         echo 'All&nbsp;images&nbsp;&copy; 2013&#8211;',date("Y"),' Skyler&nbsp;Dong. All&nbsp;rights&nbsp;reserved.';
       }
-      else echo 'Copyright&nbsp;&copy; ',date("Y"),' Skyler&nbsp;Dong.<br />';
-      echo PATH;
+      else echo 'Copyright&nbsp;&copy; ',date("Y"),' Skyler&nbsp;Dong.';
       ?>
+    </div>
+    <div>
+      <?php echo PATH; ?>
     </div>
   </div><!--row-->
 </div><!--container-->
