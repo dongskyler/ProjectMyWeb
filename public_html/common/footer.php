@@ -56,7 +56,7 @@
       else echo 'Copyright&nbsp;&copy; ',date("Y"),' Skyler&nbsp;Dong.';
       ?>
     </div>
-    <div>
+    <div class="col-10 text-left mb-2">
       <?php echo PATH; ?>
     </div>
   </div><!--row-->
