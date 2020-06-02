@@ -92,7 +92,7 @@
   &lt;span&gt;&lt;/span&gt;
   &lt;span&gt;&lt;/span&gt;
 &lt;/button&gt;</code></pre>
-  <p>The following CSS code is written in SCSS. Read about <a href="<?php echo PATH; ?>/blog/why-i-use-scss.php">why SCSS is my favorite CSS preprocessor</a>. For clarity, I removed vendor prefixes for transforms and transitions. You can generate them using a CSS post-processor such as <a href="https://autoprefixer.github.io" target="_blank">Autoprefixer</a>.</p>
+  <p>The following CSS code is written in SCSS. Read about <a href="<?php echo PATH; ?>/blog/why-i-use-scss.php">why SCSS is my favorite CSS preprocessor</a>. For clarity, I removed vendor prefixes for transforms and transitions. You can generate them using a CSS post-processor such as <a href="https://autoprefixer.github.io" target="_blank" rel=”noreferrer”>Autoprefixer</a>.</p>
   <pre><code class="language-css">#nav-icon-demo {
   width: 30px;
   height: 23px;
@@ -149,7 +149,7 @@
     
     <div class="mb-5"><h2 id="final-words" class="anchor">Final words</h2>
     <p>Although many people have designed similar hamburger animations, I hope you like my design.</p>
-    <p>I hope you find this article helpful. You can find the source code on <a href="https://github.com/dongskyler/skylerdong.com-gen2" target="_blank">GitHub</a>. I periodically update this article and the source code. Please check back. Thank you for reading. <i class="fas fa-ankh"></i></p>
+    <p>I hope you find this article helpful. You can find the source code on <a href="https://github.com/dongskyler/skylerdong.com-gen2" target="_blank" rel=”noreferrer”>GitHub</a>. I periodically update this article and the source code. Please check back. Thank you for reading. <i class="fas fa-ankh"></i></p>
     </div><!--final-words-->
     </div><!--COL-->  
   </div><!--ROW-->

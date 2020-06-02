@@ -32,7 +32,7 @@
         </ul>
       </div><!--TOC CONTAINER-->
       <div class="mb-3"><h2 id="code-scrape" class="anchor">Scraping Google trends data</h2>
-        <p><a href="https://github.com/tangaw" target="_blank">Aaron Tang</a> and I wrote a piece of code in Python to scrape Google trends data in object-oriented style with exception handling.</p>
+        <p><a href="https://github.com/tangaw" target="_blank" rel=”noreferrer”>Aaron Tang</a> and I wrote a piece of code in Python to scrape Google trends data in object-oriented style with exception handling.</p>
         <p>In the example below, we are interested in scraping Google trends data from January 2006 to March 2020 at a monthly resolution about Canon, Nikon and Sony cameras globally.</p>
         <p>We used the Pytrends module and our contribution is to construct a class object called Trend and introduced exception handling during data scraping, as Google may limit frequent data scraping in a short timeframe and throw an error. The exception handles the error and retries the data scraping after a short pause.</p>
         <pre><code class="language-python"># Import modules:
@@ -190,7 +190,7 @@ def main():
 
 if __name__ == "__main__"
   main()</code></pre>
-        <p>You can also find this piece of code on <a href="https://github.com/Badwater-Apps/camera-trends" target="_blank">GitHub</a>. <i class="fas fa-ankh"></i></p>
+        <p>You can also find this piece of code on <a href="https://github.com/Badwater-Apps/camera-trends" target="_blank" rel=”noreferrer”>GitHub</a>. <i class="fas fa-ankh"></i></p>
       </div>
     </div>
   </div><!--row-->

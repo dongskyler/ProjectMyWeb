@@ -69,10 +69,10 @@
       </div><!--ROW-->
       <p>Let me explain. You are currently at the Terminal (T) level and you want to reach the 1st level, so press the button next to "P1," which is also in the same row with "1" and "Chicago Cubs."</p>
       <p>Walk out of the elevator. Look around. You will see a big sign saying "Bus/Shuttle Center." Walk through these doors, turn left, and walk through another set of doors. You are almost there.</p>
-      <p>Well done! Now you are at the Shuttle Center! Several shuttles will pick passengers up right outside the lobby. For example, the bus stop of <a href="https://web.coachusa.com/vangalder/" target="_blank">Van Galder Bus</a> is outside Door 3.</p>
+      <p>Well done! Now you are at the Shuttle Center! Several shuttles will pick passengers up right outside the lobby. For example, the bus stop of <a href="https://web.coachusa.com/vangalder/" target="_blank" rel=”noreferrer”>Van Galder Bus</a> is outside Door 3.</p>
       <p>Have a safe trip!</p>
       <hr/>
-      <p>This blog was originally posted on <a href="https://sites.google.com/site/dongskyler/nav-ohare/" target="_blank">my old website</a>. If you have any suggestion or question, please feel free to <a href="../contact/">contact me</a>. <i class="fas fa-ankh"></i></p>
+      <p>This blog was originally posted on <a href="https://sites.google.com/site/dongskyler/nav-ohare/" target="_blank" rel=”noreferrer”>my old website</a>. If you have any suggestion or question, please feel free to <a href="../contact/">contact me</a>. <i class="fas fa-ankh"></i></p>
     </div><!--COL-->
   </div><!--ROW-->
 </div><!--maincontent-->

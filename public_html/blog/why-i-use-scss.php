@@ -37,7 +37,7 @@
       
       <div class="mb-5"><h2 id="key-points" class="anchor">Key points</h2>
         <ul>
-          <li><p><a href="https://sass-lang.com/" target="_blank">SCSS</a> is my choice for preprocessing CSS.</p></li>
+          <li><p><a href="https://sass-lang.com/" target="_blank" rel=”noreferrer”>SCSS</a> is my choice for preprocessing CSS.</p></li>
           <li><p>Directly writing CSS can be unorganized and tedious to update.</p></li>
           <li><p>SCSS takes advantages of variables, mixins and nestings to drastically simplify coding CSS rules.</p></li>
           <li><p>Every CSS is also syntactically valid SCSS. However, CSS cannot be directly included into SASS, but possible with extra steps.</p></li>
@@ -45,13 +45,13 @@
       </div><!--KEY POINTS-->
       
       <div class="mb-5"><h2 id="what-css-preprocessors" class="anchor">What are CSS preprocessors?</h2>
-        <p>CSS preprocessors are programs that can generate CSS from their own syntaxes. CSS preprocessors address the <a href="#downside-css">downsides of plain CSS</a>, such as poor variable and nesting capabilities. Popular CSS preprocessrs include <a href="https://sass-lang.com" target="_blank">SASS (including SCSS)</a>, <a href="http://lesscss.org" target="_blank">LESS</a> and <a href="https://the-echoplex.net/csscrush/" target="_blank">CSS-Crush</a>.</p>
+        <p>CSS preprocessors are programs that can generate CSS from their own syntaxes. CSS preprocessors address the <a href="#downside-css">downsides of plain CSS</a>, such as poor variable and nesting capabilities. Popular CSS preprocessrs include <a href="https://sass-lang.com" target="_blank" rel=”noreferrer”>SASS (including SCSS)</a>, <a href="http://lesscss.org" target="_blank" rel=”noreferrer”>LESS</a> and <a href="https://the-echoplex.net/csscrush/" target="_blank" rel=”noreferrer”>CSS-Crush</a>.</p>
       </div>
       <div class="mb-5"><h2 id="downside-css" class="anchor">Downsides of CSS</h2>
         <p>Hardcoding media query breakpoints throughout my CSS is a nightmare. Breakpoints change over time. Although replacing them can be accomplished by "find and replace," it is not an ideal solution.</p>
         <p>Hardcoding font families and colors is another nightmare.</p>
         <p>Writing plain CSS can be unnecessarily repetitive and tedious because plain CSS does not have a good nesting support.</p>
-        <p>Hence, CSS preprocessors came to the rescue, such as <a href="https://sass-lang.com/" target="_blank">SCSS</a>, <a href="https://sass-lang.com/" target="_blank">SASS</a> and <a href="http://lesscss.org" target="_blank">LESS</a>.</p>
+        <p>Hence, CSS preprocessors came to the rescue, such as <a href="https://sass-lang.com/" target="_blank" rel=”noreferrer”>SCSS</a>, <a href="https://sass-lang.com/" target="_blank" rel=”noreferrer”>SASS</a> and <a href="http://lesscss.org" target="_blank" rel=”noreferrer”>LESS</a>.</p>
         <p>Consider the following example of CSS and SCSS:</p>
         <div class="row"><div class="col-12 col-md-6">
         <pre><code class="language-css">// CSS
@@ -180,7 +180,7 @@ body
     
     <div class="mb-5"><h2 id="final-words" class="anchor">Final words</h2>
     <p>SCSS over SASS (and other CSS preprocessors) is a personal preference, but I strongly recommend using a CSS preprocessor. It will substantially increase your productivity and your code's maintainability.</p>
-    <p>I hope you find this article helpful. You can find the source code on <a href="https://github.com/dongskyler/personal_website" target="_blank">GitHub</a>. I periodically update this article and the source code. Please check back. Thank you for reading. <i class="fas fa-ankh"></i></p>
+    <p>I hope you find this article helpful. You can find the source code on <a href="https://github.com/dongskyler/personal_website" target="_blank" rel=”noreferrer”>GitHub</a>. I periodically update this article and the source code. Please check back. Thank you for reading. <i class="fas fa-ankh"></i></p>
     </div><!--sfinal-words-->
     </div><!--COL-->  
   </div><!--ROW-->
