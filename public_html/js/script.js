@@ -1,32 +1,34 @@
 $(function () {
   // START: Do things when URL parameters present during page loading
 
-  // Lozad
-  const observer_1 = lozad('.lozad', {
-    rootMargin: '0px', // syntax similar to that of CSS Margin
-    threshold: 0 // ratio of element convergence
-  });
+  (() => {
+    // Lozad
+    const observer_1 = lozad('.lozad', {
+      rootMargin: '0px', // syntax similar to that of CSS Margin
+      threshold: 0 // ratio of element convergence
+    });
 
-  const observer_2 = lozad('.lozad', {
-    rootMargin: '200px 0px', // syntax similar to that of CSS Margin
-    threshold: 0 // ratio of element convergence
-  });
+    const observer_2 = lozad('.lozad', {
+      rootMargin: '200px 0px', // syntax similar to that of CSS Margin
+      threshold: 0 // ratio of element convergence
+    });
 
-  const observer_3 = lozad('.lozad', {
-    rootMargin: '600px 0px', // syntax similar to that of CSS Margin
-    threshold: 0 // ratio of element convergence
-  });
+    const observer_3 = lozad('.lozad', {
+      rootMargin: '600px 0px', // syntax similar to that of CSS Margin
+      threshold: 0 // ratio of element convergence
+    });
 
-  observer_1.observe();
+    observer_1.observe();
 
-  setTimeout(function () {
-    observer_2.observe();
-  }, 5000);
+    setTimeout(() => {
+      observer_2.observe();
+    }, 4000);
 
-  setTimeout(function () {
-    observer_3.observe();
-  }, 10000);
-  // END: Lozad
+    setTimeout(() => {
+      observer_3.observe();
+    }, 8000);
+    // END: Lozad
+  })();
 
   if (typeof $meta_og_image_0 == 'undefined') {
     $meta_og_image_0 = $('#meta_og_image').attr('content');
@@ -35,8 +37,8 @@ $(function () {
   const filterCat = document.querySelectorAll('.maincontent .filter-button');
   const filterE = document.querySelectorAll('.maincontent .filterE');
 
-  function urlParams() {
-    let params = new URLSearchParams(window.location.search);
+  const urlParams = () => {
+    const params = new URLSearchParams(window.location.search);
     return {
       path: window.location.href.split('?')[0],
       category: params.get('category') === null ? [] : params.get('category').split(','),
@@ -44,9 +46,49 @@ $(function () {
     };
   }
 
-  let params_onLoading = urlParams();
-  var activeCatList = params_onLoading.category;
+  const params_onLoading = urlParams();
+  let activeCatList = params_onLoading.category;
   // console.log(activeCatList);
+
+  const toggleFilterCat = (activeCatList) => {
+    testList = activeCatList.join('|');
+    filterCat.forEach(cat => {
+      if (activeCatList.length === 0) {
+        if (cat.dataset.class === 'all') {
+          cat.classList.add('active');
+        }
+        else {
+          cat.classList.remove('active');
+        }
+      }
+      else {
+        if (testList.includes(cat.dataset.class)) {
+          cat.classList.add('active');
+        }
+        else {
+          cat.classList.remove('active');
+        }
+      }
+    })
+  };
+
+  const toggleFilterE = (activeCatList) => {
+    if (activeCatList.length === 0) {
+      filterE.forEach(e => {
+        e.style.display = 'block';
+      })
+    }
+    else {
+      filterE.forEach(e => {
+        if (activeCatList.every(a => e.dataset.class.includes(a))) {
+          e.style.display = 'block';
+        }
+        else {
+          e.style.display = 'none';
+        }
+      })
+    }
+  };
 
   // Activate filter on loading if URL parameters are present
   if (activeCatList.length > 0) {
@@ -56,14 +98,14 @@ $(function () {
 
   // Activate modal on loading if URL parameters are present
   if (params_onLoading.photo != null) {
-    let $photoid = $("#" + params_onLoading.photo);
+    const $photoid = $("#" + params_onLoading.photo);
 
     // Use large modal if photo is landscape
     if ($photoid.children('div').attr('class').indexOf('photo-landscape') > -1) {
       $('#imagemodal>div').attr('class', $('#imagemodal>div').attr('class') + ' modal-lg');
     }
 
-    let $image_src = $photoid.find('img').attr('data-src');
+    const $image_src = $photoid.find('img').attr('data-src');
     $('.modal-img').attr('src', $image_src);
     $('p.modal-photo-title').text($photoid.find('p.photo-title').text());
     $('p.modal-photo-location').text($photoid.find('p.photo-location').text());
@@ -103,46 +145,6 @@ $(function () {
     });
   })
 
-  function toggleFilterCat(activeCatList) {
-    testList = activeCatList.join('|');
-    filterCat.forEach(cat => {
-      if (activeCatList.length === 0) {
-        if (cat.dataset.class === 'all') {
-          cat.classList.add('active');
-        }
-        else {
-          cat.classList.remove('active');
-        }
-      }
-      else {
-        if (testList.includes(cat.dataset.class)) {
-          cat.classList.add('active');
-        }
-        else {
-          cat.classList.remove('active');
-        }
-      }
-    })
-  }
-
-  function toggleFilterE(activeCatList) {
-    if (activeCatList.length === 0) {
-      filterE.forEach(e => {
-        e.style.display = 'block';
-      })
-    }
-    else {
-      filterE.forEach(e => {
-        if (activeCatList.every(a => e.dataset.class.includes(a))) {
-          e.style.display = 'block';
-        }
-        else {
-          e.style.display = 'none';
-        }
-      })
-    }
-  }
-
   // Open modal
   $('.gallery .pop').click(function () {
 
@@ -151,12 +153,12 @@ $(function () {
       $('#imagemodal>div').attr('class', $('#imagemodal>div').attr('class') + ' modal-lg');
     }
 
-    let $image_src = $(this).find('img').attr('data-src');
+    const $image_src = $(this).find('img').attr('data-src');
     $('.modal-img').attr('src', $image_src);
     $('p.modal-photo-title').text($(this).find('p.photo-title').text());
     $('p.modal-photo-location').text($(this).find('p.photo-location').text());
 
-    let categoryInfoArr = $(this)
+    const categoryInfoArr = $(this)
       .find('div')
       .attr('data-class')
       .split(' ');
@@ -208,7 +210,7 @@ $(function () {
       $('#imagemodal>div').attr('class', 'modal-dialog modal-dialog-centered');
     }
 
-    let url_modalClosed = urlParams();
+    const url_modalClosed = urlParams();
     let url = '';
     if (url_modalClosed.category.length === 0) {
       url = url_modalClosed.path;
@@ -223,7 +225,7 @@ $(function () {
   })
 
   // Back to top button
-  var backToTopButton = document.getElementById("back-to-top-button");
+  const backToTopButton = document.getElementById("back-to-top-button");
 
   window.onscroll = () => {
     if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
@@ -233,7 +235,7 @@ $(function () {
     }
   };
 
-  $('#back-to-top-button').click(function () {
+  $('#back-to-top-button').click(() => {
     $('html,body').animate({ scrollTop: 0 }, 'slow');
     return false;
   })
