@@ -24,48 +24,50 @@
   </div>
 </div>
 <footer>
-<div class="container">
-  <div class="row">
-    <div class="d-flex col-10 justify-content-start">
-      <ul class="footer-icon">
-        <li class="pr-2 pr-sm-3 hvr-float"><a href="mailto:dongskyler@gmail.com"><i class="far fa-envelope"></i></a>
-        </li>
-        <li class="pr-2 pr-sm-3 hvr-float"><a href="https://www.linkedin.com/in/skylerdong/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        </li>
-        <li class="pr-2 pr-sm-3 hvr-float"><a href="https://github.com/dongskyler" target="_blank"><i class="fab fa-github"></i></a>
-        </li>
-        </li>
-        <li class="pr-2 pr-sm-3 hvr-float"><a href="https://www.instagram.com/skyler.dong.art/" target="_blank"><i class="fab fa-instagram"></i></a>
-        </li>
-      </ul>
+  <div class="container">
+    <div class="row">
+      <div class="d-flex col-10 justify-content-start">
+        <ul class="footer-icon">
+          <li class="pr-2 pr-sm-3 hvr-float"><a href="mailto:dongskyler@gmail.com"><i class="far fa-envelope"></i></a>
+          </li>
+          <li class="pr-2 pr-sm-3 hvr-float"><a href="https://www.linkedin.com/in/skylerdong/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li class="pr-2 pr-sm-3 hvr-float"><a href="https://github.com/dongskyler" target="_blank"><i class="fab fa-github"></i></a>
+          </li>
+          </li>
+          <li class="pr-2 pr-sm-3 hvr-float"><a href="https://www.instagram.com/skylerdong.studio/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-10 text-left mb-2">
+        <span><a href="<?php echo PATH; ?>/legal/copyright.php">Copyright&nbsp;Notice</a></span>
+        <span class="pipe-footer">&#124;</span>
+        <span><a href="<?php echo PATH; ?>/legal/privacy.php">Privacy&nbsp;Policy</a></span>
+        <span class="pipe-footer">&#124;</span>
+        <span><a href="<?php echo PATH; ?>/sitemap">Site&nbsp;Map</a></span>
+      </div>
+      <div class="col-10 text-left mb-2">
+        <?php
+        if (!defined('COPYRIGHT_NOTICE')) {
+          echo 'Copyright &copy; ', date("Y"), ' Skyler Dong.';
+        } elseif (COPYRIGHT_NOTICE == 'Images') {
+          echo 'All&nbsp;images&nbsp;&copy; 2013&#8211;', date("Y"), ' Skyler&nbsp;Dong. All&nbsp;rights&nbsp;reserved.';
+        } else echo 'Copyright&nbsp;&copy; ', date("Y"), ' Skyler&nbsp;Dong.';
+        ?>
+      </div>
+      <div class="col-10 text-left mb-2">
+        <?php echo PATH; ?>
+      </div>
     </div>
-    <div class="col-10 text-left mb-2">
-      <span><a href="<?php echo PATH;?>/legal/copyright.php">Copyright&nbsp;Notice</a></span>
-      <span class="pipe-footer">&#124;</span>
-      <span><a href="<?php echo PATH;?>/legal/privacy.php">Privacy&nbsp;Policy</a></span>
-      <span class="pipe-footer">&#124;</span>
-      <span><a href="<?php echo PATH;?>/sitemap">Site&nbsp;Map</a></span>
-    </div>
-    <div class="col-10 text-left mb-2"><?php
-      if (!defined('COPYRIGHT_NOTICE')) {
-        echo 'Copyright &copy; ',date("Y"),' Skyler Dong.';
-      }
-      elseif (COPYRIGHT_NOTICE=='Images') {
-        echo 'All&nbsp;images&nbsp;&copy; 2013&#8211;',date("Y"),' Skyler&nbsp;Dong. All&nbsp;rights&nbsp;reserved.';
-      }
-      else echo 'Copyright&nbsp;&copy; ',date("Y"),' Skyler&nbsp;Dong.';
-      ?>
-    </div>
-    <div class="col-10 text-left mb-2">
-      <?php echo PATH; ?>
-    </div>
-  </div><!--row-->
-</div><!--container-->
+    <!--row-->
+  </div>
+  <!--container-->
 </footer>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.14.0/lozad.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" defer src="<?php echo PATH; ?>/js/prism.min.js"></script>
-<script type="text/javascript" defer src="<?php echo PATH; ?>/js/<?php 
-  echo ($_SERVER['SERVER_NAME'] === 'localhost') ? 'script.js' : 'script.min.js';?>"></script>
+<script type="text/javascript" defer src="<?php echo PATH; ?>/js/
+  <?php
+  echo ($_SERVER['SERVER_NAME'] === 'localhost') ? 'script.js' : 'script.min.js'; ?>"></script>
 <script type="text/javascript" defer src="https://cse.google.com/cse.js?cx=005518303321825845417:jw3lu6ptjrw"></script>
