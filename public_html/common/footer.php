@@ -30,12 +30,12 @@
         <ul class="footer-icon">
           <li class="pr-2 pr-sm-3 hvr-float"><a href="mailto:dongskyler@gmail.com"><i class="far fa-envelope"></i></a>
           </li>
-          <li class="pr-2 pr-sm-3 hvr-float"><a href="https://www.linkedin.com/in/skylerdong/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <li class="pr-2 pr-sm-3 hvr-float"><a href="https://www.linkedin.com/in/skylerdong/" target=_blank" rel=”noreferrer”><i class="fab fa-linkedin-in"></i></a>
           </li>
-          <li class="pr-2 pr-sm-3 hvr-float"><a href="https://github.com/dongskyler" target="_blank"><i class="fab fa-github"></i></a>
+          <li class="pr-2 pr-sm-3 hvr-float"><a href="https://github.com/dongskyler" target=_blank" rel=”noreferrer”><i class="fab fa-github"></i></a>
           </li>
           </li>
-          <li class="pr-2 pr-sm-3 hvr-float"><a href="https://www.instagram.com/skylerdong.studio/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <li class="pr-2 pr-sm-3 hvr-float"><a href="https://www.instagram.com/skylerdong.studio/" target=_blank" rel=”noreferrer”><i class="fab fa-instagram"></i></a>
           </li>
         </ul>
       </div>

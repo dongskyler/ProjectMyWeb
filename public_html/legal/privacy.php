@@ -28,7 +28,7 @@ include_once '../common/htmlTag.php';
         <div>
           <p>After an hour of research on how to write a privacy policy, I deemed it too complicated for this tiny personal website.
           </p>
-          <p>In lieu of writing a 3,000-word essay like <a href="https://termly.io/resources/templates/privacy-policy-template/" target="_blank">this one</a>, let me put it in layman's terms.
+          <p>In lieu of writing a 3,000-word essay like <a href="https://termly.io/resources/templates/privacy-policy-template/" target="_blank" rel=”noreferrer”>this one</a>, let me put it in layman's terms.
           </p>
           <p>I use Google Analytics to understand how users visit my website. I'm not interested in your personal data. This is for me to improve my website. I use a rather bare minimum Google Analytics configuration.
           </p>

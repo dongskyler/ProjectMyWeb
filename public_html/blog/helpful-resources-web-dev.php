@@ -45,7 +45,7 @@ include_once '../common/htmlTag.php';
         <div class="content-block filterE" data-class="general book">
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="general">General</button>
           <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="book">Book</button>
-          <a href="http://www.crackingthecodinginterview.com" target="_blank">
+          <a href="http://www.crackingthecodinginterview.com" target="_blank" rel=”noreferrer”>
             <h3 class="content-block-title">Cracking the Coding Interview by Gayle Laakmann McDowell</h3>
             <h4 class="content-block-subtitle">A helpful book on how to prepare for interviews and a broad range of basic coding skills</h4>
           </a>
@@ -55,7 +55,7 @@ include_once '../common/htmlTag.php';
         <div class="content-block filterE" data-class="general book">
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="general">General</button>
           <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="book">Book</button>
-          <a href="https://www.goodreads.com/book/show/23232941-soft-skills" target="_blank">
+          <a href="https://www.goodreads.com/book/show/23232941-soft-skills" target="_blank" rel=”noreferrer”>
             <h3 class="content-block-title">Soft Skills: The software developer's life manual by John Z. Sonmez</h3>
             <h4 class="content-block-subtitle"></h4>
           </a>
@@ -67,7 +67,7 @@ include_once '../common/htmlTag.php';
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="html">HTML</button>
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="javascript">JavaScript</button>
           <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="online-cource">Online&nbsp;Course</button>
-          <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" target="_blank">
+          <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" target="_blank" rel=”noreferrer”>
             <h3 class="content-block-title">Coursera: HTML, CSS, and Javascript for Web Developers</h3>
             <h4 class="content-block-subtitle"></h4>
           </a>
@@ -79,7 +79,7 @@ include_once '../common/htmlTag.php';
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="mysql">MySQL</button>
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="php">PHP</button>
           <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="book">Book</button>
-          <a href="http://lpmj.net/5thedition/" target="_blank">
+          <a href="http://lpmj.net/5thedition/" target="_blank" rel=”noreferrer”>
             <h3 class="content-block-title">Learning PHP, MySQL & JavaScript by Robin Nixon</h3>
             <h4 class="content-block-subtitle"></h4>
           </a>
@@ -89,7 +89,7 @@ include_once '../common/htmlTag.php';
         <div class="content-block filterE" data-class="javascript book">
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="javascript">JavaScript</button>
           <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="book">Book</button>
-          <a href="#" target="_blank">
+          <a href="#" target="_blank" rel=”noreferrer”>
             <h3 class="content-block-title">JavaScript: The Definitive Guide by David Flanagan</h3>
             <h4 class="content-block-subtitle">A detailed book on JavaScript, although it's a littl old</h4>
           </a>
@@ -99,7 +99,7 @@ include_once '../common/htmlTag.php';
         <div class="content-block filterE" data-class="ruby-on-rails website">
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="ruby-on-rails">Ruby&nbsp;on&nbsp;Rails</button>
           <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="website">Website</button>
-          <a href="https://gorails.com/" target="_blank">
+          <a href="https://gorails.com/" target="_blank" rel=”noreferrer”>
             <h3 class="content-block-title">Go Rails</h3>
             <h4 class="content-block-subtitle"></h4>
           </a>
@@ -111,7 +111,7 @@ include_once '../common/htmlTag.php';
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="html">HTML</button>
           <button type="button" class="filter-button btn btn-outline-primary btn-sm" data-class="javascript">JavaScript</button>
           <button type="button" class="filter-button btn btn-outline-success btn-sm" data-class="website">Website</button>
-          <a href="https://caniuse.com" target="_blank">
+          <a href="https://caniuse.com" target="_blank" rel=”noreferrer”>
             <h3 class="content-block-title">Can I Use</h3>
             <h4 class="content-block-subtitle">Can I Use provides browser support tables for support of front-end web technologies on browsers.</h4>
           </a>

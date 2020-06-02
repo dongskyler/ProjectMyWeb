@@ -193,7 +193,7 @@ if (category != null) {
     </div>
 
     <div class="mb-5"><h2 id="final-words" class="anchor">Final words</h2>
-      <p>I hope you find this article helpful. You can find the source code on <a href="https://github.com/dongskyler/skylerdong.com-gen2" target="_blank">GitHub</a>. I periodically update this article and the source code. Please check back. Thank you for reading. <i class="fas fa-ankh"></i></p>
+      <p>I hope you find this article helpful. You can find the source code on <a href="https://github.com/dongskyler/skylerdong.com-gen2" target="_blank" rel=”noreferrer”>GitHub</a>. I periodically update this article and the source code. Please check back. Thank you for reading. <i class="fas fa-ankh"></i></p>
     </div>
     </div><!--COL-->  
   </div><!--ROW-->

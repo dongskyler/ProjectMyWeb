@@ -37,9 +37,9 @@ include_once '../common/htmlTag.php';
         </div>
         <div>
           <ul>
-            <li>I grew up in <a href="https://www.tripadvisor.com/Tourism-g297452-Dalian_Liaoning-Vacations.html?fid=8910bef2-878f-4d38-b12a-8db31df194ba" target="_blank">Dalian</a>, a city on the northern coast line of China. I love seafood.</li>
-            <li>I graduated from <a href="https://www.beloit.edu" target="_blank">Beloit College</a>, Wisconsin with a Geology major and a Physics minor.</li>
-            <li>I went to <a href="https://www.jsg.utexas.edu" target="_blank">geoscience graduate school</a> at <a href="https://www.utexas.edu" target="_blank">the University of Texas at Austin</a> to study <a href="https://www.jsg.utexas.edu/news/2017/10/fueling-the-future/" target="_blank">methane hydrate</a>.</li>
+            <li>I grew up in <a href="https://www.tripadvisor.com/Tourism-g297452-Dalian_Liaoning-Vacations.html?fid=8910bef2-878f-4d38-b12a-8db31df194ba" target="_blank" rel=”noreferrer”>Dalian</a>, a city on the northern coast line of China. I love seafood.</li>
+            <li>I graduated from <a href="https://www.beloit.edu" target="_blank" rel=”noreferrer”>Beloit College</a>, Wisconsin with a Geology major and a Physics minor.</li>
+            <li>I went to <a href="https://www.jsg.utexas.edu" target="_blank" rel=”noreferrer”>geoscience graduate school</a> at <a href="https://www.utexas.edu" target="_blank" rel=”noreferrer”>the University of Texas at Austin</a> to study <a href="https://www.jsg.utexas.edu/news/2017/10/fueling-the-future/" target="_blank" rel=”noreferrer”>methane hydrate</a>.</li>
             <li>Now I'm pursuing a career in web development.</li>
             <li>Read about <a href="<?php echo PATH; ?>/blog/this-website.php">how I'm building this website</a> with HTML, CSS, JavaScript, PHP and MySQL.</li>
           </ul>
@@ -48,16 +48,16 @@ include_once '../common/htmlTag.php';
           <ul>
             <li>I have built 2 websites in the past:
               <ul>
-                <li><a href="https://sites.google.com/site/tiannongsdong/" target="_blank">My old personal website</a>, which has been online since I was an undergrad student.
+                <li><a href="https://sites.google.com/site/tiannongsdong/" target="_blank" rel=”noreferrer”>My old personal website</a>, which has been online since I was an undergrad student.
                 </li>
-                <li><a href="https://sites.google.com/site/dongskyler/nav-ohare/shuttle-center" target="_blank">How to nagivate to the shuttle center</a> at <a href="https://www.flychicago.com/ohare/home/pages/default.aspx" target="_blank">O'Hare Airport of Chicago</a>. I made the website for new incoming students to my alma mater (Beloit College) and the general public. Many students fly to O'Hare and take an inter-state shuttle to the college. Reportedly, some people have trouble navigating to the shuttle center from terminals.</li>
+                <li><a href="https://sites.google.com/site/dongskyler/nav-ohare/shuttle-center" target="_blank" rel=”noreferrer”>How to nagivate to the shuttle center</a> at <a href="https://www.flychicago.com/ohare/home/pages/default.aspx" target="_blank" rel=”noreferrer”>O'Hare Airport of Chicago</a>. I made the website for new incoming students to my alma mater (Beloit College) and the general public. Many students fly to O'Hare and take an inter-state shuttle to the college. Reportedly, some people have trouble navigating to the shuttle center from terminals.</li>
                 <li>In the past, I used templates and modified their HTML codes, but now I'm building this website from scratch.</li>
               </ul>
             </li>
             <li>I have built many electronic devices. To name two of them:
               <ul>
-                <li><a href="https://en.wikipedia.org/wiki/Coulombmeter" target="_blank">Coulombmeters</a> for <a href="https://en.wikipedia.org/wiki/Coulometry" target="_blank">coulometric titration (a chemistry technique)</a> using <a href="https://www.raspberrypi.org/help/what-%20is-a-raspberry-pi/" target="_blank">Raspberry Pi's</a> with <a href="https://chemistry.beloit.edu/classes/lisensky/" target="_blank">my chemistry professor George Lisensky</a>.</li>
-                <li>Homemade data acquisition system and <a href="https://en.wikipedia.org/wiki/Thermoelectric_cooling" target="_blank">Peltier plate</a> cooling system using an <a href="https://www.arduino.cc/en/guide/introduction" target="_blank">Arduino</a> for my graduate school research. The Arduino code was written in C.</li>
+                <li><a href="https://en.wikipedia.org/wiki/Coulombmeter" target="_blank" rel=”noreferrer”>Coulombmeters</a> for <a href="https://en.wikipedia.org/wiki/Coulometry" target="_blank" rel=”noreferrer”>coulometric titration (a chemistry technique)</a> using <a href="https://www.raspberrypi.org/help/what-%20is-a-raspberry-pi/" target="_blank" rel=”noreferrer”>Raspberry Pi's</a> with <a href="https://chemistry.beloit.edu/classes/lisensky/" target="_blank" rel=”noreferrer”>my chemistry professor George Lisensky</a>.</li>
+                <li>Homemade data acquisition system and <a href="https://en.wikipedia.org/wiki/Thermoelectric_cooling" target="_blank" rel=”noreferrer”>Peltier plate</a> cooling system using an <a href="https://www.arduino.cc/en/guide/introduction" target="_blank" rel=”noreferrer”>Arduino</a> for my graduate school research. The Arduino code was written in C.</li>
               </ul>
             </li>
           </ul>

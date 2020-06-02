@@ -31,10 +31,10 @@ include_once '../common/htmlTag.php';
         </div>
         <div class="hanging-indent">
           <p><a href="mailto:skyler@skylerdong.com"><i class="far fa-envelope fa-icon hvr-buzz-out"></i></a>Email: <a href="mailto:dongskyler@gmail.com">dongskyler@gmail.com</a></p>
-          <p><a href="mailto:skyler.dong.art@gmail.com"><i class="fas fa-camera fa-icon hvr-buzz-out"></i></a>Photography&nbsp;inquiries: <a href="mailto:skyler.dong.art@gmail.com">skyler.dong.art@gmail.com</a></p>
-          <p><a href="https://www.linkedin.com/in/skylerdong/" target="_blank"><i class="fab fa-linkedin-in fa-icon hvr-buzz-out"></i></a>LinkedIn: <a href="https://www.linkedin.com/in/skylerdong/" target="_blank">Tiannong&nbsp;"Skyler"&nbsp;Dong</a></p>
-          <p><a href="https://github.com/dongskyler" target="_blank"><i class="fab fa-github fa-icon hvr-buzz-out"></i></a>GitHub: <a href="https://github.com/dongskyler" target="_blank">Skyler&nbsp;Dong</a></p>
-          <p><a href="https://www.instagram.com/skyler.dong.art/" target="_blank"><i class="fab fa-instagram fa-icon hvr-buzz-out"></i></a>Instagram: <a href="https://www.instagram.com/skyler.dong.art/" target="_blank">@skyler.dong.art</a></p>
+          <p><a href="mailto:skylerdong.studio@gmail.com"><i class="fas fa-camera fa-icon hvr-buzz-out"></i></a>Photography&nbsp;inquiries: <a href="mailto:skylerdong.studio@gmail.com">skylerdong.studio@gmail.com</a></p>
+          <p><a href="https://www.linkedin.com/in/skylerdong/" target="_blank" rel=”noreferrer”><i class="fab fa-linkedin-in fa-icon hvr-buzz-out"></i></a>LinkedIn: <a href="https://www.linkedin.com/in/skylerdong/" target="_blank" rel=”noreferrer”>Tiannong&nbsp;"Skyler"&nbsp;Dong</a></p>
+          <p><a href="https://github.com/dongskyler" target="_blank" rel=”noreferrer”><i class="fab fa-github fa-icon hvr-buzz-out"></i></a>GitHub: <a href="https://github.com/dongskyler" target="_blank" rel=”noreferrer”>Skyler&nbsp;Dong</a></p>
+          <p><a href="https://www.instagram.com/skylerdong.studio/" target="_blank" rel=”noreferrer”><i class="fab fa-instagram fa-icon hvr-buzz-out"></i></a>Instagram: <a href="https://www.instagram.com/skylerdong.studio/" target="_blank" rel=”noreferrer”>@skylerdong.studio</a></p>
         </div>
         <div class="mb-3">
           <p>If you have any comments or suggestions about my website, please feel free to contact me.</p>

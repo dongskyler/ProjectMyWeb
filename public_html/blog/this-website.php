@@ -48,18 +48,18 @@
       
       <div class="mb-5"><h2 id="key-points" class="anchor">Key points</h2>
         <ul>
-          <li><p>I have been building my website using HTML, CSS, JavaScript (including JQuery), PHP and MySQL, with version control powered by <a href="https://github.com/dongskyler" target="_blank">GitHub</a>.</p></li>
+          <li><p>I have been building my website using HTML, CSS, JavaScript (including JQuery), PHP and MySQL, with version control powered by <a href="https://github.com/dongskyler" target="_blank" rel=”noreferrer”>GitHub</a>.</p></li>
           <li><p>For back-end, I use PHP to query data from MySQL database and dynamically generate contents in HTML.</p></li>
           <li><p>I use JavaScript and JQuery library to implement front-end features, such as filtering photos by category, parsing and updating URL parameters and lazy loading images.</p></li>
-          <li><p>For styling, I adopted <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> framework and write additional customized CSS with Sass and JavaScript to achieve a mobile-first, responsive and interactive design that is functional and sleek on all kinds of devices.</p></li>
+          <li><p>For styling, I adopted <a href="https://getbootstrap.com" target="_blank" rel=”noreferrer”>Bootstrap</a> framework and write additional customized CSS with Sass and JavaScript to achieve a mobile-first, responsive and interactive design that is functional and sleek on all kinds of devices.</p></li>
         </ul>
       </div><!--KEY POINTS-->
       
       <div class="mb-5"><h2 id="front-end" class="anchor">Front-end CSS and JavaScript</h2>
         <ul>
-          <li><p>I'm using <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> framework as my basic CSS and JavaScript foundation. <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> is argubly the most popular CSS framework. It was originally developed and made public by Twitter developers. It emphasizes on a mobile-first, responsive front-end design, as <a href="https://www.broadbandsearch.net/blog/mobile-desktop-internet-usage-statistics" target="_blank">more and more people use mobile devices to browse the internet</a>. The strategy is to design your website to fit on a small screen first and then work your way up to larger screens. It encourages a "less is more" philosophy. It is always a good idea to avoid clusters and too much information.</p></li>
-          <li><p>I'm writing customized CSS using <a href="https://sass-lang.com/" target="_blank">Sass</a> to deploy variable-based and easy-to-maintain CSS.</p></li>
-          <li><p>Syntax highlighting of code snippets is powered by <a href="https://prismjs.com/index.html" target="_blank">Prism</a>, which is a lightweight syntax highlighter written in JavaScript and CSS. It supports many languages.</p></li>
+          <li><p>I'm using <a href="https://getbootstrap.com" target="_blank" rel=”noreferrer”>Bootstrap</a> framework as my basic CSS and JavaScript foundation. <a href="https://getbootstrap.com" target="_blank" rel=”noreferrer”>Bootstrap</a> is argubly the most popular CSS framework. It was originally developed and made public by Twitter developers. It emphasizes on a mobile-first, responsive front-end design, as <a href="https://www.broadbandsearch.net/blog/mobile-desktop-internet-usage-statistics" target="_blank" rel=”noreferrer”>more and more people use mobile devices to browse the internet</a>. The strategy is to design your website to fit on a small screen first and then work your way up to larger screens. It encourages a "less is more" philosophy. It is always a good idea to avoid clusters and too much information.</p></li>
+          <li><p>I'm writing customized CSS using <a href="https://sass-lang.com/" target="_blank" rel=”noreferrer”>Sass</a> to deploy variable-based and easy-to-maintain CSS.</p></li>
+          <li><p>Syntax highlighting of code snippets is powered by <a href="https://prismjs.com/index.html" target="_blank" rel=”noreferrer”>Prism</a>, which is a lightweight syntax highlighter written in JavaScript and CSS. It supports many languages.</p></li>
         </ul>
     </div><!--CSS AND JAVASCRIPT-->
 
@@ -177,7 +177,7 @@ Records: 91  Deleted: 0  Skipped: 0  Warnings: 0</code>
     // Echo HTML code that contains the aspect ratio
   }
 ?&gt;</code></pre>
-      <p>The reason why I use <code class="language-html">data-src</code> instead of the regular <code class="language-html">src</code> is to lazy-load images using <a href="https://apoorv.pro/lozad.js/" target="_blank">Lozad.js</a>, described in <a href="#photo-lazy-loading">3-stage lazy loading images using JavaScript</a>.</p>
+      <p>The reason why I use <code class="language-html">data-src</code> instead of the regular <code class="language-html">src</code> is to lazy-load images using <a href="https://apoorv.pro/lozad.js/" target="_blank" rel=”noreferrer”>Lozad.js</a>, described in <a href="#photo-lazy-loading">3-stage lazy loading images using JavaScript</a>.</p>
     </div><!--PHOTO IMPORT USING PHP-->
 
     <div class="mb-5"><h3 id="photo-php-query-mysql" class="anchor">Querying photo attributes from MySQL database using PHP</h3>
@@ -264,7 +264,7 @@ Records: 91  Deleted: 0  Skipped: 0  Warnings: 0</code>
 }</code></pre></div><!--MULTI-COLUMN LAYOUT-->
 
     <div class="mb-5"><h3 id="photo-modal" class="anchor">Photo modal with captions and updating URL parameters using JavaScript and JQuery library</h3>
-        <p>The implementation of modal is consist of two parts: HTML and JavaScript. In the HTML, I adopted the <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> modal layout:</p>
+        <p>The implementation of modal is consist of two parts: HTML and JavaScript. In the HTML, I adopted the <a href="https://getbootstrap.com" target="_blank" rel=”noreferrer”>Bootstrap</a> modal layout:</p>
         <pre><code class="language-html">&lt;div class=&quot;modal fade&quot; id=&quot;imagemodal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; 
           aria-labelledby=&quot;photoModal&quot; aria-hidden=&quot;true&quot;&gt;
   &lt;div class=&quot;modal-dialog modal-dialog-centered&quot;&gt;
@@ -291,7 +291,7 @@ Records: 91  Deleted: 0  Skipped: 0  Warnings: 0</code>
     &lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-<p>As I have mentioned, the reason why I use <code class="language-html">data-src</code> instead of the regular <code class="language-html">src</code> is to lazy-load images using <a href="https://apoorv.pro/lozad.js/" target="_blank">Lozad.js</a>, described in <a href="#photo-lazy-loading">3-stage lazy loading images using JavaScript</a>.</p>
+<p>As I have mentioned, the reason why I use <code class="language-html">data-src</code> instead of the regular <code class="language-html">src</code> is to lazy-load images using <a href="https://apoorv.pro/lozad.js/" target="_blank" rel=”noreferrer”>Lozad.js</a>, described in <a href="#photo-lazy-loading">3-stage lazy loading images using JavaScript</a>.</p>
 <p>Then we use JQuery to replace dummy titles and dummy locations with actual titles and locations:</p>
 <pre><code class="language-javascript">$(function() {
 // Only activate this function after the page is loaded
@@ -449,7 +449,7 @@ $(function() {
       </div><!--CONTENT JUMPING-->
 
       <div class="mb-5"><h3 id="photo-lazy-loading" class="anchor">3-stage lazy loading images using JavaScript</h3>
-        <p>To improve user experience on image-heavy webpages with limited bandwidth, I implemented image lazy loading with <a href="https://apoorv.pro/lozad.js/" target="_blank">Lozad.js</a>. It is a lightweight JavaScript lazy loader that uses <a href="https://www.w3.org/TR/intersection-observer/" target="_blank">IntersectionObserver API</a> with no external dependencies. It prioritizes loading the images visible in the viewport. It really enhances the user experience on image-heavy webpages with limited bandwidth.</p>
+        <p>To improve user experience on image-heavy webpages with limited bandwidth, I implemented image lazy loading with <a href="https://apoorv.pro/lozad.js/" target="_blank" rel=”noreferrer”>Lozad.js</a>. It is a lightweight JavaScript lazy loader that uses <a href="https://www.w3.org/TR/intersection-observer/" target="_blank" rel=”noreferrer”>IntersectionObserver API</a> with no external dependencies. It prioritizes loading the images visible in the viewport. It really enhances the user experience on image-heavy webpages with limited bandwidth.</p>
         <p>Typically, you include the following code in your JavaScript:</p>
         <pre><code class="language-javascript">const observer = lozad('.lozad', {
     rootMargin: '0px', // syntax similar to that of CSS Margin
@@ -540,7 +540,7 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
       </ul>  
     </div><!--htacess-->
     <hr/>
-    <p>I hope you find this article helpful. You can find the source code on <a href="https://github.com/dongskyler/personal_website" target="_blank">GitHub</a>. I periodically update this article and the source code. Please check back. Thank you for reading. <i class="fas fa-ankh"></i></p>
+    <p>I hope you find this article helpful. You can find the source code on <a href="https://github.com/dongskyler/personal_website" target="_blank" rel=”noreferrer”>GitHub</a>. I periodically update this article and the source code. Please check back. Thank you for reading. <i class="fas fa-ankh"></i></p>
     </div><!--COL-->  
   </div><!--ROW-->
 </div><!--MAINCONTENT-->
