@@ -1,20 +1,35 @@
-# Working Repository for My Soon-To-Be-Retired 2nd-Generation Personal Website
+# Working Repository for My 2nd-Generation Personal Website
 
-[https://gen2.skylerdong.com](https://gen2.skylerdong.com)
-GitHub: [https://github.com/dongskyler/skylerdong.com-gen2](https://github.com/dongskyler/skylerdong.com-gen2)
+Website: [https://gen2.skylerdong.com](https://gen2.skylerdong.com)
+
+Repository: [https://github.com/dongskyler/skylerdong.com-gen2](https://github.com/dongskyler/skylerdong.com-gen2)
+
+[![CodeFactor](https://www.codefactor.io/repository/github/dongskyler/gen2.skylerdong.com/badge)](https://www.codefactor.io/repository/github/dongskyler/gen2.skylerdong.com)
+[![DeepScan grade](https://deepscan.io/api/teams/9441/projects/12304/branches/188578/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=9441&pid=12304&bid=188578)
+
+***
 
 ## Description
 
-This repository is the working repository for my soon-to-be-retired 2nd-generation personal website. It was established in early 2020 and built with HTML, Sass, Bootstrap 4, JQuery, vanilla PHP and MySQL.
+This is the working repository for my 2nd-generation personal website. It was established in early 2020 and built with Bootstrap 4, Sass, JQuery, vanilla PHP and MySQL.
 
-I&apos;m currently building the [3rd generation of my personal website](https://skylerdong.com), with React, Sass, Node, Express, MongoDB and TypeScript. Its working repository is [also on GitHub](https://github.com/dongskyler/skylerdong.com-gen3).
+***
+
+## Architecture
+
+![Architecture](./doc/architecture_gen2.svg)
+
+***
+
+## Other generations of my personal website
+
+- [3rd generation of my website](https://skylerdong.com), built with TypeScript React and Sass, with its back-end supported by [api.skylerdong.com](api.skylerdong.com).
+- [1st generation of my website](https://gen1.skylerdong.com/), which was established in 2015 and built with a Google Site template.
+
+***
 
 ## Copyright Notice
 
 The software is under MIT license. You are welcome to use it.
 
-However, my photographs are not. It is always appreciated when you
-refer back to my website. However, all images appearing on this
-domain and all subdomains are not to be downloaded or reproduced in
-any way without permission. If you intend to use my images by any
-means or purchase prints, you are welcome to contact me. Thank you.
+However, my images are not. It is always appreciated when you refer back to my website. However, all images appearing on this domain and all subdomains are not to be downloaded or reproduced in any way without permission. If you intend to use my images by any means or purchase prints, you are welcome to contact me. Thank you.
