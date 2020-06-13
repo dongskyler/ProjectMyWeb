@@ -2,7 +2,7 @@
 
 Website: [https://gen2.skylerdong.com](https://gen2.skylerdong.com)
 
-Repository: [https://github.com/dongskyler/skylerdong.com-gen2](https://github.com/dongskyler/skylerdong.com-gen2)
+Repository: [https://github.com/dongskyler/gen2.skylerdong.com](https://github.com/dongskyler/gen2.skylerdong.com)
 
 [![CodeFactor](https://www.codefactor.io/repository/github/dongskyler/gen2.skylerdong.com/badge)](https://www.codefactor.io/repository/github/dongskyler/gen2.skylerdong.com)
 [![DeepScan grade](https://deepscan.io/api/teams/9441/projects/12304/branches/188578/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=9441&pid=12304&bid=188578)
