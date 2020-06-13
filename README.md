@@ -4,6 +4,9 @@ Website: [https://gen2.skylerdong.com](https://gen2.skylerdong.com)
 
 Repository: [https://github.com/dongskyler/skylerdong.com-gen2](https://github.com/dongskyler/skylerdong.com-gen2)
 
+[![CodeFactor](https://www.codefactor.io/repository/github/dongskyler/gen2.skylerdong.com/badge)](https://www.codefactor.io/repository/github/dongskyler/gen2.skylerdong.com)
+[![DeepScan grade](https://deepscan.io/api/teams/9441/projects/12304/branches/188578/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=9441&pid=12304&bid=188578)
+
 ## Description
 
 This is the working repository for my 2nd-generation personal website. It was established in early 2020 and built with Bootstrap 4, Sass, JQuery, vanilla PHP and MySQL.
