@@ -84,7 +84,7 @@ function initMap() {
       // console.log('permutator activated!');
       let results = [];
       function permute(arr, memo) {
-        let cur, memo = memo || [];
+        var cur, memo = memo || [];
         
         for (let i=0; i<arr.length; ++i) {
             cur = arr.splice(i, 1);
