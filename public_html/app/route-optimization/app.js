@@ -36,9 +36,9 @@ function initMap() {
         // console.log('Status OK!')
         console.log(response);
         // Add travel time of the first pair
-        for (i=0; i<TestRoute.comb.length; ++i) {
+        for (let i=0; i<TestRoute.comb.length; ++i) {
           travelTime = 0;
-          for (j=0; j<TestRoute.comb[0].length-1; ++j) {
+          for (let j=0; j<TestRoute.comb[0].length-1; ++j) {
           travelTime += response.rows[TestRoute.comb[i][j]].elements[TestRoute.comb[i][j+1]].duration.value;
           }
           if (i==0) {
@@ -63,7 +63,7 @@ function initMap() {
       RouteComb.dest = [];
       RouteComb.comb = [];
   
-      for (var i=1; i<=numDestn; ++i) {
+      for (let i=1; i<=numDestn; ++i) {
         RouteComb.dest.push(i);
       }
       // Generate an array of destination indices from 1 to n, as 0 is reserved for
@@ -72,8 +72,8 @@ function initMap() {
       RouteComb.comb = permutator(RouteComb.dest);
       // Generate all permutations
   
-      var origin = 0;
-      for (var i=0; i<RouteComb.comb.length; RouteComb.comb[i].unshift(0), ++i);
+      // var origin = 0;
+      for (let i=0; i<RouteComb.comb.length; RouteComb.comb[i].unshift(0), ++i);
       // Add origin 0 to the array
   
       return RouteComb;
@@ -82,11 +82,11 @@ function initMap() {
     function permutator(inputArr) {
     // Generate all permutations
       // console.log('permutator activated!');
-      var results = [];
+      let results = [];
       function permute(arr, memo) {
         var cur, memo = memo || [];
         
-        for (var i=0; i<arr.length; ++i) {
+        for (let i=0; i<arr.length; ++i) {
             cur = arr.splice(i, 1);
             if (arr.length === 0) {
             results.push(memo.concat(cur));
