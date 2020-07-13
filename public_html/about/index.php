@@ -32,7 +32,7 @@ include_once '../common/htmlTag.php';
         </div>
         <div>
           <p>I'm Tiannong "Skyler" Dong.</p>
-          <p>I'm an aspiring web developer. Check out my <a href="https://github.com/dongskyler" target="_blank" rel="noreferrer noopener">GitHub</a>.</p>
+          <p>I'm an aspiring web developer. Check out my <a href="https://github.com/dongskyler" target="_blank" rel="noreferrer noopener">GitHub</a> and my <a href="https://api.skylerdong.com/resume" target="_blank" rel="noreferrer noopener">resume</a>.</p>
         </div>
         <div class="col-12 float-none mb-3 photo-block text-center small col-sm-6 float-sm-right col-md-4">
           <img class="img-fluid" src="../images/other/SD-IMG_4854-Edit-Web.jpg" alt="Photo of Skyler Dong. Photo courtesy of Alexey Portnov.">Photo courtesy of Alexey Portnov
