@@ -40,6 +40,8 @@
         </ul>
       </div>
       <div class="col-10 text-left mb-2">
+        <span><a href="https://api.skylerdong.com/resume/" target="_blank" rel=”noreferrer”>Resume</a></span>
+        <span class="pipe-footer">&#124;</span>
         <span><a href="<?php echo PATH; ?>/legal/copyright.php">Copyright&nbsp;Notice</a></span>
         <span class="pipe-footer">&#124;</span>
         <span><a href="<?php echo PATH; ?>/legal/privacy.php">Privacy&nbsp;Policy</a></span>
